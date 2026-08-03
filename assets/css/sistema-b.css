@@ -1,0 +1,397 @@
+/* ============================================================
+   Diseño y Diagramación Digital · Sistema de componentes
+   Sistema B — "Cuaderno"  ·  Unidades 2, 4, 6, 8
+   ============================================================ */
+
+/* ---------- Fuentes ---------- */
+@font-face{font-family:'Montserrat';src:url('../fonts/montserrat-latin-600-normal.woff2') format('woff2');font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:'Montserrat';src:url('../fonts/montserrat-latin-700-normal.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:'DM Sans';src:url('../fonts/dm-sans-latin-400-normal.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'DM Sans';src:url('../fonts/dm-sans-latin-500-normal.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:'DM Sans';src:url('../fonts/dm-sans-latin-700-normal.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:'DM Mono';src:url('../fonts/dm-mono-latin-400-normal.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'DM Mono';src:url('../fonts/dm-mono-latin-500-normal.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
+
+/* ---------- Tokens · Sistema B ---------- */
+:root{
+  --fondo:#F2F5EF;
+  --superficie:#FFFFFF;
+  --tinta:#17251C;
+  --acento:#1F6640;
+  --acento-suave:#E4EFE7;
+  --acento-borde:#B9D5C4;
+  --ocre:#8A5D08;
+  --ocre-suave:#FBF0D8;
+  --ocre-borde:#E6C98A;
+  --apoyo:#54615A;
+  --linea:#DDE4DA;
+  --alerta:#A8461C;
+  --alerta-suave:#FBEFE9;
+  --ok:#1F6640;
+
+  --radio:20px;
+  --radio-sm:12px;
+  --radio-lg:26px;
+
+  --s1:8px; --s2:16px; --s3:24px; --s4:32px; --s5:48px; --s6:64px;
+
+  --display:'Montserrat',system-ui,sans-serif;
+  --texto:'DM Sans',system-ui,sans-serif;
+  --mono:'DM Mono','SF Mono',Menlo,monospace;
+
+  --ancho-texto:660px;
+  --sidebar:228px;
+  --marco-w:960px;
+  --marco-h:540px;
+  --exterior:#E2E8DE;
+}
+
+/* ---------- Base ---------- */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}
+}
+body{
+  margin:0;background:var(--exterior);color:var(--tinta);
+  font-family:var(--texto);font-size:15px;line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+  min-height:100vh;padding:16px;
+  display:flex;align-items:center;justify-content:center;
+}
+img,svg{max-width:100%}
+
+h1,h2,h3,h4{font-family:var(--display);font-weight:700;line-height:1.2;margin:0 0 var(--s2)}
+h1{font-size:26px;letter-spacing:-.02em;line-height:1.22}
+h2{font-size:21px;letter-spacing:-.01em;margin-top:var(--s4)}
+h3{font-size:17px;font-weight:600;margin-top:var(--s3)}
+h4{font-size:15.5px;font-weight:600;margin-top:var(--s2);font-family:var(--texto)}
+p{margin:0 0 var(--s2)}
+a{color:var(--acento);text-underline-offset:3px}
+strong{font-weight:700}
+ul,ol{margin:0 0 var(--s2);padding-left:1.3em}
+li{margin-bottom:6px}
+hr{border:0;border-top:1px solid var(--linea);margin:var(--s5) 0}
+
+code,kbd,.mono{font-family:var(--mono);font-size:.88em}
+code{background:var(--acento-suave);color:#14512F;padding:2px 7px;border-radius:6px;white-space:nowrap}
+
+/* ---------- Foco accesible ---------- */
+:focus-visible{outline:3px solid var(--acento);outline-offset:2px;border-radius:4px}
+
+.saltar{
+  position:absolute;left:-9999px;top:0;background:var(--acento);color:#fff;
+  padding:12px 20px;border-radius:0 0 var(--radio) 0;z-index:100;font-weight:500;
+}
+.saltar:focus{left:0}
+
+/* ---------- Estructura ---------- */
+/* ---------- Estructura · contenedor fijo ---------- */
+.envoltorio{
+  display:flex;align-items:stretch;
+  width:var(--marco-w);height:var(--marco-h);
+  max-width:100%;max-height:100%;
+  background:var(--fondo);
+  border:1px solid var(--linea);
+  border-radius:var(--radio-lg);
+  overflow:hidden;
+  box-shadow:0 12px 40px rgba(30,36,48,.10),0 2px 8px rgba(30,36,48,.05);
+}
+
+.lateral{
+  width:var(--sidebar);flex:0 0 var(--sidebar);height:100%;
+  background:var(--superficie);border-right:1px solid var(--linea);
+  padding:var(--s3) 18px 16px;overflow-y:auto;overscroll-behavior:contain;
+  display:flex;flex-direction:column;gap:18px;
+}
+.marca{font-family:var(--display);font-weight:700;font-size:15px;line-height:1.25}
+.marca span{display:block;font-family:var(--texto);font-weight:400;font-size:12px;color:var(--apoyo);margin-top:3px}
+
+.indice{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+.indice button{
+  width:100%;text-align:left;background:none;border:0;cursor:pointer;
+  font-family:var(--texto);font-size:13.5px;color:var(--tinta);
+  padding:7px 10px;border-radius:var(--radio-sm);display:flex;gap:9px;align-items:baseline;
+  transition:background .15s;
+}
+.indice button:hover{background:var(--fondo)}
+.indice button[aria-current="true"]{background:var(--acento-suave);color:#2E2CA8;font-weight:500}
+.indice .n{font-family:var(--mono);font-size:12px;color:var(--apoyo);flex:0 0 14px}
+.indice button[aria-current="true"] .n{color:var(--acento)}
+.indice .visto::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--ok);margin-left:auto;align-self:center;flex:0 0 6px}
+
+.avance{margin-top:auto;font-size:12px;color:var(--apoyo)}
+.barra{height:6px;background:var(--linea);border-radius:99px;overflow:hidden;margin-top:8px}
+.barra i{display:block;height:100%;background:var(--acento);width:0;transition:width .35s ease}
+
+.principal{
+  flex:1;min-width:0;height:100%;
+  overflow-y:auto;overscroll-behavior:contain;
+  padding:var(--s4) var(--s4) var(--s5);
+  scroll-behavior:smooth;
+}
+.contenido{max-width:var(--ancho-texto);margin:0 auto}
+
+/* ---------- Elementos firma · Sistema B ---------- */
+
+/* Resaltado de marcador */
+.marcador{
+  background:linear-gradient(180deg,transparent 52%,var(--ocre-suave) 52%);
+  padding:0 2px;box-decoration-break:clone;-webkit-box-decoration-break:clone;
+}
+
+/* Nota al margen */
+.margen{
+  margin:var(--s3) 0;padding:0 0 0 20px;
+  border-left:3px solid var(--acento-borde);
+  font-size:14.5px;color:#33403A;
+}
+.margen .rotulo{
+  font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--acento);margin:0 0 5px;font-weight:500;
+}
+.margen p:last-child{margin-bottom:0}
+
+/* Ficha tipográfica al margen de cada sección */
+.ficha-tipo{
+  font-family:var(--mono);font-size:10.5px;line-height:1.6;color:var(--apoyo);
+  border-left:2px solid var(--acento-borde);padding-left:12px;
+  margin:0 0 var(--s3);
+}
+.ficha-tipo b{font-weight:500;color:var(--acento)}
+
+/* Índice del cuaderno: sin pastilla, con marca lateral */
+.indice button{border-left:2px solid transparent;border-radius:0 var(--radio-sm) var(--radio-sm) 0}
+.indice button[aria-current="true"]{
+  background:var(--acento-suave);color:#14512F;font-weight:500;border-left-color:var(--acento);
+}
+
+/* ---------- Crédito del pie ---------- */
+.credito{
+  font-family:var(--mono);font-size:10px;line-height:1.5;
+  color:var(--apoyo);
+  padding-top:12px;border-top:1px solid var(--linea);
+  letter-spacing:.01em;
+}
+.credito b{font-weight:500;color:var(--tinta)}
+
+/* ---------- Encabezado de unidad ---------- */
+.portada{margin-bottom:var(--s4)}
+.etiqueta{
+  display:inline-block;font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--acento);background:transparent;
+  padding:0 0 6px;border-bottom:2px solid var(--acento-borde);margin-bottom:var(--s2);
+}
+.portada .bajada{font-size:16px;color:var(--apoyo);max-width:60ch}
+
+/* ---------- Secciones ---------- */
+.seccion{display:none;animation:entra .3s ease;counter-reset:paso}
+.seccion.activa{display:block}
+@keyframes entra{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.seccion > h2:first-of-type{margin-top:0}
+
+/* ---------- Tarjeta base ---------- */
+.tarjeta{
+  background:var(--superficie);border:1px solid var(--linea);
+  border-radius:var(--radio);padding:var(--s2) 20px;margin:var(--s2) 0;
+}
+
+/* ---------- Paso numerado (elemento firma) ---------- */
+.pasos{list-style:none;padding:0;margin:var(--s3) 0}
+.paso{
+  position:relative;background:var(--superficie);border:1px solid var(--linea);
+  border-radius:var(--radio);padding:13px 20px 13px 58px;
+  margin-bottom:9px;counter-increment:paso;
+}
+.paso::before{
+  content:counter(paso);position:absolute;left:14px;top:12px;
+  width:30px;height:30px;border-radius:50%;
+  background:var(--acento-suave);color:var(--acento);
+  border:1.5px solid var(--acento-borde);
+  font-family:var(--mono);font-weight:500;font-size:12.5px;
+  display:flex;align-items:center;justify-content:center;
+}
+.paso p{margin:0}
+.paso p + p{margin-top:8px}
+
+/* ---------- Tarjeta de dato ---------- */
+.dato{
+  background:var(--ocre-suave);border:0;
+  border-left:5px solid var(--ocre-borde);
+  border-radius:0 var(--radio) var(--radio) 0;
+  padding:18px 22px;margin:var(--s3) 0;
+}
+.dato .rotulo{
+  font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ocre);margin:0 0 6px;font-weight:500;
+}
+.dato h4{font-family:var(--display);font-size:16px;font-weight:600;margin:0 0 8px;color:var(--tinta)}
+.dato p{margin:0;font-size:14.5px;color:#33403A}
+
+/* ---------- Bloque Sin Adobe ---------- */
+.sinadobe{
+  background:var(--superficie);border:1.5px solid var(--acento-borde);
+  border-radius:var(--radio);padding:var(--s3);margin:var(--s4) 0;
+}
+.sinadobe > h4{
+  font-family:var(--display);font-size:16px;font-weight:600;margin:0 0 4px;color:var(--acento);
+}
+.sinadobe > .sub{font-size:14px;color:var(--apoyo);margin:0 0 var(--s2)}
+.equiv{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.equiv > div{background:var(--fondo);border-radius:var(--radio-sm);padding:14px}
+.equiv h5{margin:0 0 6px;font-family:var(--texto);font-size:14px;font-weight:700}
+.equiv p{margin:0;font-size:13.5px;line-height:1.5;color:#2C3444}
+
+/* ---------- Caja de error ---------- */
+.error{
+  background:var(--superficie);border:1px solid var(--linea);
+  border-left:4px solid var(--alerta);border-radius:var(--radio);
+  padding:var(--s3);margin:var(--s3) 0;
+}
+.error h3{margin:0 0 12px;font-family:var(--display);font-size:16px;font-weight:600}
+.error dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:14.5px}
+.error dt{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--apoyo);padding-top:5px;
+}
+.error dd{margin:0}
+
+/* ---------- Checklist ---------- */
+.checklist{list-style:none;padding:0;margin:var(--s3) 0}
+.checklist li{margin-bottom:8px}
+.checklist label{
+  display:flex;gap:12px;align-items:flex-start;cursor:pointer;
+  background:var(--superficie);border:1px solid var(--linea);
+  border-radius:var(--radio-sm);padding:12px 14px;transition:border-color .15s,background .15s;
+}
+.checklist label:hover{border-color:var(--acento-borde)}
+.checklist input{
+  appearance:none;width:20px;height:20px;flex:0 0 20px;margin-top:2px;
+  border:2px solid var(--apoyo);border-radius:6px;cursor:pointer;position:relative;background:#fff;
+}
+.checklist input:checked{background:var(--acento);border-color:var(--acento)}
+.checklist input:checked::after{
+  content:"";position:absolute;left:6px;top:2px;width:5px;height:10px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(45deg);
+}
+.checklist input:checked + span{color:var(--apoyo);text-decoration:line-through}
+
+/* ---------- Figuras ---------- */
+figure{margin:var(--s3) 0}
+figure svg{display:block;width:100%;height:auto;background:var(--superficie);border:1px solid var(--linea);border-radius:var(--radio)}
+figcaption{margin-top:9px;font-size:13.5px;color:var(--apoyo);line-height:1.45}
+
+/* ---------- Tablas ---------- */
+.tabla{overflow-x:auto;margin:var(--s3) 0;border:1px solid var(--linea);border-radius:var(--radio);background:var(--superficie)}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:480px}
+th,td{text-align:left;padding:9px 13px;border-bottom:1px solid var(--linea);vertical-align:top}
+thead th{font-family:var(--texto);font-weight:700;font-size:14px;background:var(--fondo);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+td:first-child,th:first-child{font-weight:500}
+
+/* ---------- Cita / nota ---------- */
+.nota{
+  background:var(--acento-suave);border-radius:var(--radio);
+  padding:14px 20px;margin:var(--s2) 0;font-size:14.5px;
+}
+.nota p:last-child{margin-bottom:0}
+
+/* ---------- Glosario ---------- */
+.glosario{margin:var(--s3) 0}
+.glosario div{
+  padding:14px 0;border-bottom:1px solid var(--linea);
+}
+.glosario div:last-child{border-bottom:0}
+.glosario dt{font-weight:700;font-size:15px;margin-bottom:2px}
+.glosario dd{margin:0;color:#2C3444;font-size:14.5px}
+
+/* ---------- Navegación inferior ---------- */
+.navpie{
+  display:flex;justify-content:space-between;gap:var(--s2);
+  margin-top:var(--s4);padding-top:var(--s3);border-top:1px solid var(--linea);
+}
+.btn{
+  font-family:var(--texto);font-size:14px;font-weight:500;cursor:pointer;
+  padding:10px 18px;border-radius:var(--radio);border:1px solid var(--linea);
+  background:var(--superficie);color:var(--tinta);transition:border-color .15s,background .15s;
+}
+.btn:hover:not(:disabled){border-color:var(--acento);color:var(--acento)}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.btn-p{background:var(--acento);border-color:var(--acento);color:#fff}
+.btn-p:hover:not(:disabled){background:#3A37C4;border-color:#3A37C4;color:#fff}
+
+.fin{
+  background:var(--superficie);border:1px solid var(--acento-borde);
+  border-radius:var(--radio-lg);padding:var(--s3);text-align:center;margin-top:var(--s4);
+}
+.fin h3{margin-top:0}
+
+/* ---------- Barra móvil ---------- */
+.movil{display:none}
+
+/* ---------- Adaptación ---------- */
+/* Si la ventana no da para el marco completo, ocupa lo disponible */
+@media (max-width:1000px),(max-height:600px){
+  body{padding:0;align-items:stretch;justify-content:stretch}
+  .envoltorio{width:100%;height:100vh;height:100dvh;border:0;border-radius:0;box-shadow:none}
+}
+
+/* Disposición vertical en pantallas estrechas */
+@media (max-width:760px){
+  body{font-size:15.5px}
+  .envoltorio{flex-direction:column}
+  .lateral{
+    width:auto;flex:0 0 auto;height:auto;overflow:visible;
+    border-right:0;border-bottom:1px solid var(--linea);
+    flex-direction:row;align-items:center;gap:14px;padding:10px 14px;
+  }
+  .lateral .indice,.lateral .avance,.lateral .credito{display:none}
+  .marca{font-size:13.5px}
+  .marca span{display:none}
+  .movil{display:flex;align-items:center;gap:10px;margin-left:auto}
+  .movil select{
+    font-family:var(--texto);font-size:13.5px;padding:8px 10px;border-radius:var(--radio-sm);
+    border:1px solid var(--linea);background:var(--superficie);color:var(--tinta);max-width:180px;
+  }
+  .movil .barra{width:56px;margin:0;flex:0 0 56px}
+  .principal{padding:var(--s3) var(--s2) var(--s4)}
+  .equiv{grid-template-columns:1fr}
+  .error dl{grid-template-columns:1fr;gap:2px 0}
+  .error dt{padding-top:9px}
+}
+
+@media (max-width:420px){
+  .navpie{flex-direction:column-reverse}
+  .btn{width:100%}
+}
+
+/* ---------- Barras de desplazamiento internas ---------- */
+.principal::-webkit-scrollbar,.lateral::-webkit-scrollbar{width:10px}
+.principal::-webkit-scrollbar-track,.lateral::-webkit-scrollbar-track{background:transparent}
+.principal::-webkit-scrollbar-thumb,.lateral::-webkit-scrollbar-thumb{
+  background:#C3D0C6;border-radius:99px;border:3px solid transparent;background-clip:content-box;
+}
+.principal::-webkit-scrollbar-thumb:hover,.lateral::-webkit-scrollbar-thumb:hover{background:#A5B5AA;background-clip:content-box}
+.principal,.lateral{scrollbar-width:thin;scrollbar-color:#C3D0C6 transparent}
+
+/* ---------- Impresión ---------- */
+@media print{
+  .lateral,.navpie,.saltar{display:none}
+  .seccion{display:block!important}
+  .principal{padding:0}
+}
+
+/* ---------- Texto dentro de ilustraciones ---------- */
+svg text{font-family:var(--texto)}
+.s-ttl{font-size:14px;font-weight:700;fill:var(--tinta)}
+.s-lbl{font-size:12.5px;fill:var(--apoyo)}
+.s-acc{font-size:12.5px;font-weight:500;fill:var(--acento)}
+.s-mono{font-family:var(--mono);font-size:11.5px;fill:var(--acento)}
+.s-num{font-family:var(--mono);font-size:12px;font-weight:500;fill:#fff}
+.s-err{font-size:12.5px;font-weight:500;fill:var(--alerta)}
+.s-ocre{font-size:12.5px;font-weight:500;fill:var(--ocre)}
+
+/* ---------- Enlace de vuelta (versión web) ---------- */
+.volver{display:inline-block;font-family:var(--mono);font-size:10.5px;color:var(--apoyo);text-decoration:none;margin-bottom:6px}
+.volver:hover{color:var(--acento)}
