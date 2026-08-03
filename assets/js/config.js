@@ -8,6 +8,6 @@
    Las instrucciones para obtener esta URL están en LEEME.md
    ============================================================ */
 var CONFIG = {
-  endpoint: '',
+  endpoint: 'https://script.google.com/macros/s/AKfycbwzZVAxo1yIqFqKm5DDAoCuUh752j9dtS5L0l0SWYhG-ON8fuipzVob8Ur9REp2EcpuWw/exec',
   clave: 'ddd-2026'
 };
