@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Unidad 7 · Diseño y Diagramación Digital</title>
+<link rel="stylesheet" href="assets/css/sistema-a.css">
+</head>
+<body data-unidad="u07">
+<a class="saltar" href="#principal">Saltar al contenido</a>
+<div id="aviso" role="status" aria-live="polite" class="saltar" style="left:-9999px"></div>
+
+<div class="envoltorio">
+
+<nav class="lateral" aria-label="Índice de la unidad">
+  <a class="volver" href="index.html">← Todas las unidades</a>
+  <div class="marca">Diagramación Digital<span>Unidad 7 · Semana 7</span></div>
+
+  <ul class="indice">
+    <li><button type="button" data-titulo="Antes de empezar" aria-current="true"><span class="n">1</span> Antes de empezar</button></li>
+    <li><button type="button" data-titulo="El porqué"><span class="n">2</span> El porqué</button></li>
+    <li><button type="button" data-titulo="Manos a la obra"><span class="n">3</span> Manos a la obra</button></li>
+    <li><button type="button" data-titulo="Lo que siempre sale mal"><span class="n">4</span> Lo que siempre sale mal</button></li>
+    <li><button type="button" data-titulo="Tu entrega de la semana"><span class="n">5</span> Tu entrega</button></li>
+    <li><button type="button" data-titulo="Revisa antes de entregar"><span class="n">6</span> Revisa antes de entregar</button></li>
+    <li><button type="button" data-titulo="Glosario y recursos"><span class="n">7</span> Glosario y recursos</button></li>
+  </ul>
+
+  <div class="avance">
+    <span class="avance-texto">0 de 7 secciones</span>
+    <div class="barra"><i></i></div>
+  </div>
+
+  <p class="credito"><b>D&amp;Dd SCORM v1.0</b><br>Designed by @joselopantoja</p>
+
+  <div class="movil">
+    <div class="barra"><i></i></div>
+    <label class="saltar" for="selector-movil">Ir a la sección</label>
+    <select id="selector-movil">
+      <option>1 · Antes de empezar</option>
+      <option>2 · El porqué</option>
+      <option>3 · Manos a la obra</option>
+      <option>4 · Lo que siempre sale mal</option>
+      <option>5 · Tu entrega</option>
+      <option>6 · Revisa antes de entregar</option>
+      <option>7 · Glosario y recursos</option>
+    </select>
+  </div>
+</nav>
+
+<main class="principal" id="principal">
+<div class="contenido">
+
+<header class="portada">
+  <span class="etiqueta">Unidad 7 · Semana 7</span>
+  <h1>¿Cómo se trabaja sobre un archivo que otra persona va a tocar?</h1>
+  <p class="bajada">Tu portafolio es tuyo y lo hiciste solo. Lo que cambia esta semana es la pregunta: ¿qué pasa cuando tu archivo sale de tu computador?</p>
+</header>
+
+<!-- ================= 1 ================= -->
+<section class="seccion activa" aria-label="Antes de empezar">
+<h2>Antes de empezar</h2>
+
+<p>Porque va a salir. Se lo vas a mandar a un cliente, a un impresor, a un compañero de estudio, o a ti mismo dentro de dos años cuando ya no recuerdes nada. Y ahí se acaba tu ventaja de saber dónde está cada cosa.</p>
+<p>Esta es la habilidad profesional que nadie enseña y que todo empleador da por sentada: <strong>entregar un archivo que otra persona pueda abrir, entender y continuar.</strong></p>
+<p>Y la segunda mitad de la semana es su complemento: aprender a mirar el trabajo ajeno y a decir algo útil sobre él, que es más difícil de lo que parece.</p>
+
+<h3>Al terminar vas a poder</h3>
+<ul>
+  <li>Explicar por qué la colaboración real en diseño es asincrónica y sobre archivos ajenos</li>
+  <li>Auditar tu documento con la comprobación preliminar de InDesign</li>
+  <li>Dejar el archivo ordenado: capas nombradas, estilos limpios, nada suelto</li>
+  <li>Nombrar y versionar archivos de forma que no genere confusión</li>
+  <li>Escribir una hoja de decisiones que explique tu trabajo sin ti presente</li>
+  <li>Publicar tu portafolio en Figma y recibir comentarios</li>
+  <li>Dar retroalimentación que sirva, y filtrar la que recibes</li>
+</ul>
+
+<h3>Qué necesitas tener listo</h3>
+<div class="tarjeta">
+  <p><strong>Uno.</strong> Tu archivo <code>portafolio_v06.indd</code> con las imágenes auditadas y la versión vertical.</p>
+  <p><strong>Dos.</strong> Una cuenta gratuita de Figma. Créala antes de la clase si puedes; es gratis y toma dos minutos.</p>
+  <p style="margin-bottom:0"><strong>Tres.</strong> Saber quiénes son los dos compañeros a los que vas a revisar. Si el docente no los asignó, ponte de acuerdo con dos personas.</p>
+</div>
+
+<h3>Lo que sumas al portafolio esta semana</h3>
+<p>Un archivo limpio y entregable, una hoja de decisiones, y la retroalimentación de dos compañeros. La semana 8 vas a usar esa retroalimentación para las correcciones finales.</p>
+</section>
+
+<!-- ================= 2 ================= -->
+<section class="seccion" aria-label="El porqué">
+<h2>El porqué</h2>
+
+<h3>La colaboración real casi nunca es simultánea</h3>
+<p>Cuando uno se imagina «trabajo en equipo» piensa en varias personas alrededor de una mesa decidiendo juntas. Eso pasa a veces, sobre todo al principio de un proyecto.</p>
+<p>Pero el grueso del trabajo colaborativo en diseño no es así. Es <strong>asincrónico</strong>: alguien hace algo, lo deja, y otra persona lo retoma horas o días después, sin poder preguntarle nada. Un diseñador entrega un archivo y se va de vacaciones. Un cliente pide un cambio dos meses más tarde. Un impresor abre tu paquete a las siete de la mañana.</p>
+<p>En todos esos casos, <span class="marcador">el archivo tiene que hablar por ti</span>. Si necesita que estés presente para entenderse, no está terminado.</p>
+
+<figure>
+<svg viewBox="0 0 700 280" role="img" aria-labelledby="t1 d1">
+<title id="t1">Dos archivos que llegan a otras manos</title>
+<desc id="d1">A la izquierda, un archivo desordenado que genera cinco preguntas sin respuesta. A la derecha, el mismo archivo ordenado, que se entiende sin preguntar nada.</desc>
+<text x="30" y="28" class="s-err">Un archivo que no habla</text>
+<rect x="30" y="42" width="270" height="128" rx="8" fill="var(--superficie)" stroke="var(--linea)"/>
+<g class="s-mono" style="font-size:11px" fill="var(--apoyo)">
+<text x="46" y="66">Capa 1</text>
+<text x="46" y="86">Capa 2</text>
+<text x="46" y="106">Estilo de párrafo 4</text>
+<text x="46" y="126">final_v2_bueno.indd</text>
+<text x="46" y="146">(sin fuentes)</text>
+</g>
+<g class="s-err" style="font-size:11.5px">
+<text x="30" y="196">¿Qué tipografía era?</text>
+<text x="30" y="214">¿Por qué esta retícula?</text>
+<text x="30" y="232">¿Cuál es la versión buena?</text>
+<text x="30" y="250">¿Falta algo por hacer?</text>
+<text x="30" y="268">¿A quién le pregunto?</text>
+</g>
+<line x1="350" y1="20" x2="350" y2="270" stroke="var(--linea)" stroke-width="1.5" stroke-dasharray="5 5"/>
+<text x="400" y="28" class="s-acc">Un archivo que se explica</text>
+<rect x="400" y="42" width="270" height="128" rx="8" fill="var(--superficie)" stroke="var(--acento-borde)" stroke-width="1.4"/>
+<g class="s-mono" style="font-size:11px" fill="var(--acento)">
+<text x="416" y="66">Contenido</text>
+<text x="416" y="86">Imágenes</text>
+<text x="416" y="106">02 Título proyecto</text>
+<text x="416" y="126">portafolio_perez_v07.indd</text>
+<text x="416" y="146">Document fonts · Links · LEEME</text>
+</g>
+<g class="s-lbl" style="font-size:11.5px">
+<text x="400" y="196">Los nombres lo dicen.</text>
+<text x="400" y="214">La hoja de decisiones lo dice.</text>
+<text x="400" y="232">La versión lo dice.</text>
+<text x="400" y="250">Los pendientes están escritos.</text>
+</g>
+<text x="400" y="268" class="s-acc">Cero preguntas.</text>
+</svg>
+<figcaption>La diferencia no es de esfuerzo: nombrar bien cuesta lo mismo que nombrar mal.</figcaption>
+</figure>
+
+<h3>El factor autobús</h3>
+<p>En el desarrollo de software hay un concepto con un nombre brutal: el <strong>factor autobús</strong>. Es el número de personas de un equipo que tendrían que ser atropelladas por un autobús para que el proyecto quedara varado.</p>
+<p>Si solo tú sabes cómo está armado tu archivo, el factor autobús es uno. Y en un proyecto con plazos, eso es un riesgo real: si te enfermas la semana de la entrega, nadie puede continuar.</p>
+<p>La solución no es documentar todo de forma obsesiva. Es dejar el trabajo en un estado donde las decisiones se puedan <strong>deducir</strong> mirándolo.</p>
+
+<aside class="dato">
+<p class="rotulo">Dato curioso</p>
+<h4>El nombre viene de una broma que se volvió métrica</h4>
+<p>El factor autobús empezó como chiste entre programadores y terminó siendo un indicador que algunas empresas miden en serio. Un factor autobús de uno es una alarma; de tres o más, un equipo saludable. Aplica igual a un estudio de diseño que a un equipo de software.</p>
+</aside>
+
+<h3>Los nombres de archivo son un mensaje</h3>
+<p>Todo el mundo se ha reído alguna vez de <code>final_final_v2_DEFINITIVO_bueno.indd</code>. El chiste es universal porque el problema es universal.</p>
+<p>Un buen sistema de nombres responde tres preguntas sin abrir el archivo: <strong>qué es, de quién es y en qué momento está.</strong></p>
+
+<div class="sim" id="sim-explorador">
+  <div class="sim-cab">
+    <span class="puntos" aria-hidden="true"><i></i><i></i><i></i></span>
+    <h4>Carpeta del proyecto — ordenada por nombre</h4>
+  </div>
+  <div class="sim-cuerpo">
+    <div class="expl">
+      <div class="expl-lista"></div>
+      <p class="aviso mal expl-aviso"></p>
+    </div>
+  </div>
+  <div class="sim-pie">
+    <p class="sim-nota">Así es como el sistema operativo ordena tus archivos. Pulsa el botón para comparar.</p>
+    <button type="button" class="sim-btn expl-btn">Aplicar la convención de nombres</button>
+  </div>
+</div>
+
+<p>Tres reglas:</p>
+<ul>
+<li><strong>Sin espacios, sin tildes, sin eñes.</strong> Ya lo sabes desde la semana 1, y ahora sabes por qué importa más: algunos sistemas rompen las rutas con caracteres especiales.</li>
+<li><strong>Números con dos dígitos.</strong> <code>v07</code> se ordena bien; <code>v7</code> se coloca después de <code>v10</code> en cualquier lista alfabética.</li>
+<li><strong>Nunca «final».</strong> Siempre hay una versión después de la final. Usa números o fechas.</li>
+</ul>
+
+<h3>Nombrar es documentar</h3>
+<p>Un archivo bien nombrado por dentro no necesita manual. Si tus capas se llaman <code>Imágenes</code>, <code>Textos</code> y <code>Guías</code>, cualquiera entiende la estructura en diez segundos. Si se llaman <code>Capa 1</code>, <code>Capa 2</code> y <code>Capa 3</code>, hay que abrirlas una por una para averiguarlo.</p>
+<p>Lo mismo con los estilos. <code>02 Título proyecto</code> dice qué es y dónde va en la jerarquía. <code>Estilo de párrafo 4</code> no dice nada.</p>
+<p>Y fíjate en que esto no es trabajo extra: es la misma cantidad de tecleo, con las letras en mejor orden.</p>
+
+<h3>Lo que un archivo profesional lleva</h3>
+<p>Cuando en un estudio se entrega un proyecto, el paquete incluye más que el documento:</p>
+
+<figure>
+<svg viewBox="0 0 700 250" role="img" aria-labelledby="t2 d2">
+<title id="t2">Anatomía de un paquete de entrega</title>
+<desc id="d2">Una carpeta con sus cuatro componentes: el archivo editable, las fuentes y vínculos, los archivos exportados y la hoja de decisiones, con lo que aporta cada uno.</desc>
+<path d="M40 40 h60 l10 12 h150 a8 8 0 0 1 8 8 v22 a8 8 0 0 1 -8 8 h-220 a8 8 0 0 1 -8 -8 v-34 a8 8 0 0 1 8 -8 z" fill="var(--acento-suave)" stroke="var(--acento)" stroke-width="1.5"/>
+<text x="56" y="76" class="s-acc" style="font-size:12px">portafolio_perez-juan_v07</text>
+<path d="M60 90 v120" stroke="var(--linea)" stroke-width="1.5"/>
+<path d="M60 116 h24 M60 152 h24 M60 188 h24" stroke="var(--linea)" stroke-width="1.5"/>
+<g>
+<rect x="90" y="100" width="180" height="32" rx="6" fill="var(--superficie)" stroke="var(--linea)"/>
+<text x="104" y="121" class="s-mono" style="font-size:11px">portafolio_v07.indd</text>
+<text x="292" y="121" class="s-lbl">el archivo editable</text>
+</g>
+<g>
+<rect x="90" y="136" width="180" height="32" rx="6" fill="var(--superficie)" stroke="var(--linea)"/>
+<text x="104" y="157" class="s-mono" style="font-size:11px">Document fonts · Links</text>
+<text x="292" y="157" class="s-lbl">para que abra en cualquier equipo</text>
+</g>
+<g>
+<rect x="90" y="172" width="180" height="32" rx="6" fill="var(--superficie)" stroke="var(--linea)"/>
+<text x="104" y="193" class="s-mono" style="font-size:11px">portafolio_A4.pdf</text>
+<text x="292" y="193" class="s-lbl">lo exportado, listo para ver</text>
+</g>
+<g>
+<rect x="90" y="208" width="180" height="32" rx="6" fill="var(--ocre-suave, #FBF0D8)" stroke="var(--acento-borde)" stroke-width="1.4"/>
+<text x="104" y="229" class="s-mono" style="font-size:11px">LEEME.txt</text>
+<text x="292" y="229" class="s-acc">lo que no se ve mirando</text>
+</g>
+</svg>
+<figcaption>De los cuatro, el último es el que casi nadie hace y el que más agradece quien recibe.</figcaption>
+</figure>
+
+<p>La hoja de decisiones no es un informe: son quince o veinte líneas que responden lo que alguien preguntaría si pudiera preguntarte.</p>
+
+<h3>Por qué Figma para esta parte</h3>
+<p>Podríamos revisarnos el trabajo por correo, por WhatsApp o imprimiéndolo. Elegimos Figma por cuatro razones concretas, y conviene que las sepas para que no parezca capricho.</p>
+
+<div class="tabla">
+<table>
+<thead><tr><th scope="col">Razón</th><th scope="col">Qué resuelve</th></tr></thead>
+<tbody>
+<tr><td><strong>El comentario va anclado</strong></td><td>Se clava en el punto exacto de la página. Nadie tiene que escribir «en la tercera ficha, arriba a la derecha»</td></tr>
+<tr><td><strong>No hay que instalar nada</strong></td><td>Funciona en el navegador, en cualquier computador y también en el celular</td></tr>
+<tr><td><strong>El plan gratuito basta</strong></td><td>Comentar está disponible en cualquier plan; no hay que pagar ni pedir licencias</td></tr>
+<tr><td><strong>Es el estándar del oficio</strong></td><td>Es donde de verdad se revisa diseño hoy. Aprenderlo aquí te sirve fuera</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="nota">
+<p>Hay una razón más, menos obvia: al subir tus páginas como imagen, <strong>nadie puede editar tu trabajo</strong>. Reciben comentarios, no modificaciones. Para un proyecto individual eso es exactamente lo que queremos.</p>
+</div>
+
+<h3>La crítica es una técnica, no una opinión</h3>
+<p>La crítica de diseño tiene tradición larga. Viene de las escuelas de bellas artes, donde el alumno colgaba su trabajo y el grupo lo comentaba en público, y pasó a las escuelas de diseño del siglo XX. La idea de fondo es que <strong>el trabajo mejora al exponerse</strong>.</p>
+<p>Lo que casi nadie aprende es a <strong>darla bien</strong>. Un comentario útil tiene tres partes: qué observas, qué efecto te produce y qué preguntarías. Prueba a abrir los comentarios de este ejemplo:</p>
+
+<div class="sim" id="sim-figma">
+  <div class="sim-cab">
+    <span class="puntos" aria-hidden="true"><i></i><i></i><i></i></span>
+    <h4>portafolio_perez-juan — modo comentario</h4>
+  </div>
+  <div class="sim-cuerpo">
+    <div class="fig">
+      <div class="fig-lienzo">
+        <svg viewBox="0 0 340 210" role="img" aria-label="Ficha de proyecto de ejemplo con tres comentarios anclados" style="width:100%;height:auto;background:#fff;border:1px solid var(--linea);border-radius:6px">
+          <rect x="24" y="22" width="150" height="13" rx="2" fill="#1E2430" opacity=".8"/>
+          <rect x="24" y="44" width="140" height="11" rx="2" fill="#1E2430" opacity=".72"/>
+          <rect x="24" y="66" width="292" height="86" rx="4" fill="#4A47D6" opacity=".2" stroke="#4A47D6" stroke-width="1"/>
+          <rect x="24" y="162" width="180" height="4" rx="2" fill="#667085" opacity=".4"/>
+          <rect x="24" y="174" width="180" height="4" rx="2" fill="#667085" opacity=".4"/>
+          <rect x="24" y="186" width="130" height="4" rx="2" fill="#667085" opacity=".4"/>
+          <rect x="228" y="162" width="88" height="4" rx="2" fill="#667085" opacity=".4"/>
+        </svg>
+        <button type="button" class="fig-pin" style="left:56%;top:26%" aria-expanded="false" aria-controls="fc1">1</button>
+        <button type="button" class="fig-pin" style="left:24%;top:78%" aria-expanded="false" aria-controls="fc2">2</button>
+        <button type="button" class="fig-pin" style="left:86%;top:82%" aria-expanded="false" aria-controls="fc3">3</button>
+      </div>
+
+      <div class="fig-caja" id="fc1" hidden>
+        <div class="fig-quien"><span class="fig-av" aria-hidden="true">M</span><div><b>María</b> <span>· sobre el título y los datos</span></div></div>
+        <div class="fig-mal"><span class="fig-rot">Reacción · no sirve</span>No me gusta cómo se ve el título, le falta algo.</div>
+        <div class="fig-bien"><span class="fig-rot">Crítica · sí sirve</span>El título y la línea de datos tienen casi el mismo peso. Al abrir la página no supe cuál leer primero y empecé por el de abajo. ¿Probaste bajar la línea de datos dos puntos o pasarla a gris?</div>
+        <ul class="fig-partes"><li><b>Observa:</b> pesos casi iguales</li><li><b>Efecto:</b> no supo por dónde entrar</li><li><b>Propone:</b> dos salidas posibles</li></ul>
+      </div>
+
+      <div class="fig-caja" id="fc2" hidden>
+        <div class="fig-quien"><span class="fig-av" aria-hidden="true">J</span><div><b>Julián</b> <span>· sobre la descripción</span></div></div>
+        <div class="fig-mal"><span class="fig-rot">Reacción · no sirve</span>El texto está muy largo.</div>
+        <div class="fig-bien"><span class="fig-rot">Crítica · sí sirve</span>La descripción llega casi al borde derecho, mucho más que el bloque de arriba. Se me hizo pesada de leer y me salté el final. ¿La retícula te deja cerrarla en la columna 7 como en tu ficha anterior?</div>
+        <ul class="fig-partes"><li><b>Observa:</b> ancho distinto al del resto</li><li><b>Efecto:</b> abandonó la lectura</li><li><b>Propone:</b> referencia a su propio trabajo</li></ul>
+      </div>
+
+      <div class="fig-caja" id="fc3" hidden>
+        <div class="fig-quien"><span class="fig-av" aria-hidden="true">M</span><div><b>María</b> <span>· sobre la zona de técnica</span></div></div>
+        <div class="fig-mal"><span class="fig-rot">Reacción · no sirve</span>Eso de la derecha sobra.</div>
+        <div class="fig-bien"><span class="fig-rot">Crítica · sí sirve</span>La técnica quedó a la misma distancia de la descripción que del pie de imagen. Tardé en entender a cuál de los dos pertenecía. ¿Y si la subes para que quede pegada al bloque del título?</div>
+        <ul class="fig-partes"><li><b>Observa:</b> distancias iguales</li><li><b>Efecto:</b> ambigüedad de pertenencia</li><li><b>Propone:</b> mover, no eliminar</li></ul>
+      </div>
+    </div>
+  </div>
+  <div class="sim-pie">
+    <p class="sim-nota">Pulsa cada marcador para ver el mismo señalamiento formulado de dos maneras.</p>
+  </div>
+</div>
+
+<aside class="dato">
+<p class="rotulo">Dato curioso</p>
+<h4>«Me gusta» no es retroalimentación</h4>
+<p>En los estudios se distingue entre reacción y crítica. Una reacción informa sobre quien habla; una crítica informa sobre el trabajo. Ambas tienen valor, pero solo la segunda es accionable. Por eso muchas sesiones de revisión empiezan con la regla de no usar los verbos gustar y encantar.</p>
+</aside>
+
+<h3>Recibir crítica sin deshacerte</h3>
+<p>Al otro lado del mostrador hay otra habilidad, y es más difícil.</p>
+<p><strong>Escucha completo antes de explicar.</strong> El impulso de justificar cada decisión es fuerte y arruina la sesión. Si tienes que explicar por qué hiciste algo, es información útil: significa que no se entendía solo.</p>
+<p><strong>No todo comentario merece un cambio.</strong> Recibir cinco opiniones no significa hacer cinco cambios. Significa tener cinco datos.</p>
+<p><strong>Busca patrones, no votos.</strong> Si una persona dice que algo no se entiende, puede ser esa persona. Si tres lo dicen, es tu página. <span class="marcador">La coincidencia pesa más que la insistencia.</span></p>
+<p><strong>Anota todo, decide después.</strong> En la sesión no decidas nada. Anota, agradece, y al día siguiente revisa la lista en frío.</p>
+</section>
+
+<!-- ================= 3 ================= -->
+<section class="seccion" aria-label="Manos a la obra">
+<h2>Manos a la obra</h2>
+<p>Vas a dejar tu archivo entregable y publicarlo para revisión. Los atajos van entre paréntesis: primero Windows, después Mac.</p>
+
+<h3>Parte 1 · La comprobación preliminar</h3>
+<p>InDesign trae un verificador automático que casi nadie usa y que detecta la mayoría de los problemas antes de que lleguen a producción. Así se ve trabajando:</p>
+
+<div class="sim" id="sim-preflight">
+  <div class="sim-cab">
+    <span class="puntos" aria-hidden="true"><i></i><i></i><i></i></span>
+    <h4>Comprobación preliminar — perfil «Portafolio»</h4>
+  </div>
+  <div class="sim-cuerpo">
+    <p class="pref-est hay"><span class="luz" aria-hidden="true"></span><span class="pref-txt">4 errores encontrados</span></p>
+    <ul class="pref-lista">
+      <li>
+        <button type="button" class="pref-item" aria-expanded="false" aria-controls="pd1">
+          <span class="sig" aria-hidden="true">!</span>
+          <span class="txt">VÍNCULOS · Falta 1 vínculo — <code>p03_marca_01.jpg</code></span>
+        </button>
+        <div class="pref-det" id="pd1" hidden>
+          <dl>
+            <dt>Página</dt><dd>6</dd>
+            <dt>Problema</dt><dd>El archivo se movió o se renombró después de colocarlo. La página muestra un recuadro gris.</dd>
+            <dt>Cómo se arregla</dt><dd>Panel Vínculos → seleccionar el vínculo roto → <strong>Volver a vincular</strong> y señalar dónde está ahora.</dd>
+          </dl>
+          <button type="button" class="sim-btn sec pref-fix" style="margin-top:10px">Corregir</button>
+        </div>
+      </li>
+      <li>
+        <button type="button" class="pref-item" aria-expanded="false" aria-controls="pd2">
+          <span class="sig" aria-hidden="true">!</span>
+          <span class="txt">IMÁGENES · Resolución por debajo de 300 ppp — 140 ppp efectivos</span>
+        </button>
+        <div class="pref-det" id="pd2" hidden>
+          <dl>
+            <dt>Página</dt><dd>7</dd>
+            <dt>Problema</dt><dd>La imagen está escalada al 215 %. Sus 300 ppp reales caen a 140 efectivos y se va a imprimir blanda.</dd>
+            <dt>Cómo se arregla</dt><dd>Buscar el original en mejor calidad, o reducirla en la página hasta que la resolución efectiva suba de 300.</dd>
+          </dl>
+          <button type="button" class="sim-btn sec pref-fix" style="margin-top:10px">Corregir</button>
+        </div>
+      </li>
+      <li>
+        <button type="button" class="pref-item" aria-expanded="false" aria-controls="pd3">
+          <span class="sig" aria-hidden="true">!</span>
+          <span class="txt">TEXTO · Texto desbordado en 1 marco</span>
+        </button>
+        <div class="pref-det" id="pd3" hidden>
+          <dl>
+            <dt>Página</dt><dd>8</dd>
+            <dt>Problema</dt><dd>Hay más texto del que cabe en el marco. Lo que sobra no se ve y no se va a exportar.</dd>
+            <dt>Cómo se arregla</dt><dd>Recortar el texto o bajar medio punto el cuerpo. No agrandes el marco rompiendo la retícula.</dd>
+          </dl>
+          <button type="button" class="sim-btn sec pref-fix" style="margin-top:10px">Corregir</button>
+        </div>
+      </li>
+      <li>
+        <button type="button" class="pref-item" aria-expanded="false" aria-controls="pd4">
+          <span class="sig" aria-hidden="true">!</span>
+          <span class="txt">TEXTO · Falta 1 fuente — <code>Work Sans Medium</code></span>
+        </button>
+        <div class="pref-det" id="pd4" hidden>
+          <dl>
+            <dt>Página</dt><dd>2</dd>
+            <dt>Problema</dt><dd>El documento pide un peso que no está instalado. InDesign lo sustituye y la maqueta se descuadra.</dd>
+            <dt>Cómo se arregla</dt><dd>Instalar el peso que falta, o cambiar el estilo a un peso que sí tengas.</dd>
+          </dl>
+          <button type="button" class="sim-btn sec pref-fix" style="margin-top:10px">Corregir</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="sim-pie">
+    <p class="sim-nota">Pulsa cada error para ver qué lo causa y cómo se arregla. En InDesign, el doble clic te lleva al elemento.</p>
+    <button type="button" class="sim-btn sec pref-reset">Reiniciar</button>
+  </div>
+</div>
+
+<ol class="pasos">
+<li class="paso"><p>Abre <code>portafolio_v06.indd</code> y guárdalo como <code>portafolio_v07.indd</code>.</p></li>
+<li class="paso"><p>Ve a <code>Ventana &gt; Salida &gt; Comprobación preliminar</code>.</p></li>
+<li class="paso"><p>En <strong>Perfil</strong> verás <code>[Básico]</code>. Ese perfil solo detecta vínculos rotos y texto excedente. Vamos a hacer uno mejor.</p></li>
+<li class="paso"><p>En el menú del panel, elige <strong>Definir perfiles</strong>.</p></li>
+<li class="paso"><p>Crea un perfil nuevo con el botón de más y llámalo <code>Portafolio</code>.</p></li>
+<li class="paso"><p>Despliega <strong>VÍNCULOS</strong> y activa <strong>Faltan vínculos o están modificados</strong>.</p></li>
+<li class="paso"><p>Despliega <strong>IMÁGENES Y OBJETOS</strong>. Activa <strong>Resolución de imagen</strong> y define un mínimo de <code>300</code> ppp para imágenes en color.</p><p>Aquí acabas de automatizar lo que la semana pasada hiciste a mano.</p></li>
+<li class="paso"><p>Despliega <strong>TEXTO</strong>. Activa <strong>Texto desbordado</strong> y <strong>Fuentes que faltan</strong>.</p></li>
+<li class="paso"><p>Guarda el perfil y ciérralo. En el panel, selecciónalo en la lista de perfiles.</p></li>
+<li class="paso"><p>Ahora el panel te muestra los errores en tiempo real. Haz doble clic en cualquiera para ir directo al elemento que lo produce.</p></li>
+<li class="paso"><p>Corrígelos todos. Cuando el panel diga <strong>Sin errores</strong>, tu archivo está técnicamente limpio.</p></li>
+</ol>
+
+<h3>Parte 2 · Ordenar por dentro</h3>
+<ol class="pasos">
+<li class="paso"><p>Abre <code>Ventana &gt; Capas</code> (<code>F7</code>). Probablemente tengas una sola capa llamada <code>Capa 1</code>.</p></li>
+<li class="paso"><p>Renómbrala a <code>Contenido</code> con doble clic sobre su nombre.</p></li>
+<li class="paso"><p>Crea dos capas más con el botón de más: <code>Imágenes</code> y <code>Guías y notas</code>.</p></li>
+<li class="paso"><p>Mueve tus marcos de imagen a la capa <code>Imágenes</code>: selecciónalos y arrastra el punto de color que aparece a la derecha en el panel de capas.</p></li>
+<li class="paso"><p>Deja <code>Guías y notas</code> vacía por ahora, con el candado puesto. Es donde irían anotaciones si trabajaras con alguien más.</p></li>
+<li class="paso"><p>Ahora limpia los estilos. En el panel de estilos de párrafo, menú del panel, <strong>Seleccionar todos los estilos no utilizados</strong>, y bórralos.</p></li>
+<li class="paso"><p>Haz lo mismo en estilos de carácter y en muestras de color.</p></li>
+<li class="paso"><p>Revisa que todos tus estilos tengan nombres descriptivos y numerados, como los dejaste en la semana 4. Guarda.</p></li>
+</ol>
+
+<h3>Parte 3 · El paquete de entrega</h3>
+<ol class="pasos">
+<li class="paso"><p>Ve a <code>Archivo &gt; Empaquetar</code>.</p></li>
+<li class="paso"><p>En la primera pantalla, revisa el resumen. Te avisa de fuentes, vínculos y colores. Si algo aparece en rojo, vuelve atrás y corrígelo.</p></li>
+<li class="paso"><p>Haz clic en <strong>Paquete</strong>.</p></li>
+<li class="paso"><p>Activa: <strong>Copiar fuentes</strong>, <strong>Copiar gráficos vinculados</strong>, <strong>Actualizar vínculos gráficos en el paquete</strong> e <strong>Incluir fuentes y vínculos de contenido oculto</strong>.</p></li>
+<li class="paso"><p>Nombra la carpeta <code>portafolio_apellido-nombre_v07</code>.</p></li>
+<li class="paso"><p>Acepta. InDesign te muestra un aviso legal sobre las licencias de las fuentes: léelo.</p><p>Es real, y por eso solo debes usar fuentes que permitan redistribución, como las de Google Fonts.</p></li>
+<li class="paso"><p>Abre la carpeta generada y verifica que tenga el <code>.indd</code>, la carpeta <code>Document fonts</code> y la carpeta <code>Links</code>.</p></li>
+</ol>
+
+<h3>Parte 4 · La hoja de decisiones</h3>
+<ol class="pasos">
+<li class="paso"><p>Crea un archivo de texto dentro de la carpeta del paquete, llamado <code>LEEME.txt</code>.</p></li>
+<li class="paso"><p>Escribe estas seis cosas, en dos o tres líneas cada una:</p>
+<p><strong>Formato y proporción.</strong> Qué tamaño es, por qué, y si hay versión alternativa.<br>
+<strong>Retícula.</strong> Cuántas columnas y filas, con qué medianil.<br>
+<strong>Tipografías.</strong> Cuáles usaste, dónde conseguirlas, y tu escala con el cuerpo base.<br>
+<strong>Color.</strong> Tus tres muestras con sus valores, y el resultado de la auditoría de contraste.<br>
+<strong>Estructura.</strong> Qué maestra va en qué página y por qué.<br>
+<strong>Pendientes.</strong> Lo que sabes que falta o cambiarías.</p></li>
+<li class="paso"><p>No lo escribas bonito. Escríbelo claro. Es un documento técnico, no un texto de presentación.</p></li>
+</ol>
+
+<h3>Parte 5 · Publicar en Figma</h3>
+<ol class="pasos">
+<li class="paso"><p>Entra a <code>figma.com</code> y crea una cuenta gratuita si no la tienes.</p></li>
+<li class="paso"><p>En tu panel, crea un archivo nuevo de diseño.</p></li>
+<li class="paso"><p>Exporta tus páginas de InDesign como imágenes: <code>Archivo &gt; Exportar</code>, formato <strong>JPEG</strong>, calidad alta, <strong>Rango: todas las páginas</strong>. Vas a obtener un archivo por página.</p></li>
+<li class="paso"><p>Arrastra esas imágenes al lienzo de Figma. Se colocan automáticamente.</p></li>
+<li class="paso"><p>Ordénalas en una fila horizontal, en orden de página, con separación uniforme. Nombra el archivo con tu nombre.</p></li>
+<li class="paso"><p>Haz clic en <strong>Share</strong>, arriba a la derecha.</p></li>
+<li class="paso"><p>En el desplegable de acceso, cambia de <strong>Only people invited</strong> a <strong>Anyone with the link</strong>.</p></li>
+<li class="paso"><p>Al lado, deja el permiso en <strong>can view</strong>. Con ese nivel cualquiera puede comentar, pero <strong>nadie puede modificar tu archivo</strong>.</p></li>
+<li class="paso"><p>Copia el enlace y compártelo con tus dos compañeros revisores.</p></li>
+<li class="paso"><p>Verifica que funcione: pega el enlace en una ventana de incógnito de tu navegador. Si se abre sin pedir contraseña, está bien publicado.</p></li>
+</ol>
+
+<div class="sinadobe">
+<h4>Sin Figma</h4>
+<p class="sub">Si no puedes usarlo, estas alternativas permiten comentar sobre una imagen</p>
+<div class="equiv">
+<div><h5>Penpot</h5><p>Editor de código abierto con modo comentario equivalente. Se puede usar en su servicio en línea sin instalar nada.</p></div>
+<div><h5>Google Drive</h5><p>Sube el PDF y activa los comentarios. Quedan anclados a la página, aunque no a un punto exacto.</p></div>
+<div><h5>PDF anotado</h5><p>Cualquier lector de PDF permite añadir notas. Es lo más rudimentario, pero funciona sin conexión.</p></div>
+</div>
+</div>
+
+<h3>Parte 6 · La revisión cruzada</h3>
+<ol class="pasos">
+<li class="paso"><p>Abre el archivo de tu primer compañero.</p></li>
+<li class="paso"><p>Activa el modo comentario presionando <code>C</code>, o con el ícono de bocadillo de la barra de herramientas.</p></li>
+<li class="paso"><p>Haz clic sobre el punto exacto de la página al que te refieres, y escribe. El comentario queda anclado a esa posición.</p></li>
+<li class="paso"><p>Deja <strong>cinco comentarios como mínimo</strong>, y que cada uno siga la estructura de tres partes: qué observas, qué efecto te produce, qué preguntarías.</p></li>
+<li class="paso"><p>Cubre estos cinco frentes, uno por comentario:</p>
+<p><strong>Jerarquía:</strong> ¿qué leíste primero?<br>
+<strong>Retícula:</strong> ¿hay algo que no se alinee?<br>
+<strong>Tipografía:</strong> ¿el texto se lee cómodo?<br>
+<strong>Color:</strong> ¿algo compite con las imágenes?<br>
+<strong>Imagen:</strong> ¿alguna se ve blanda o mal encuadrada?</p></li>
+<li class="paso"><p>Repite con tu segundo compañero.</p></li>
+<li class="paso"><p>Cuando recibas los tuyos, <strong>no respondas todavía</strong>. Léelos, anótalos y déjalos reposar un día.</p></li>
+<li class="paso"><p>Al día siguiente, haz una lista de las correcciones que sí vas a hacer, <strong>agrupando los comentarios que coincidan</strong>. Esa lista es tu plan de trabajo de la semana 8.</p></li>
+</ol>
+
+<figure>
+<svg viewBox="0 0 700 260" role="img" aria-labelledby="t3 d3">
+<title id="t3">Agrupar la retroalimentación por coincidencia</title>
+<desc id="d3">Diez comentarios sueltos de dos revisores se agrupan en tres temas. El que señalaron los dos revisores queda como prioridad alta; los mencionados una sola vez, como baja.</desc>
+<text x="30" y="26" class="s-lbl">Lo que recibiste</text>
+<g>
+<rect x="30" y="40" width="150" height="18" rx="9" fill="var(--fondo)" stroke="var(--linea)"/>
+<text x="42" y="53" class="s-lbl" style="font-size:10px">título ambiguo · María</text>
+<rect x="30" y="64" width="150" height="18" rx="9" fill="var(--fondo)" stroke="var(--linea)"/>
+<text x="42" y="77" class="s-lbl" style="font-size:10px">no sé qué leer primero · Julián</text>
+<rect x="30" y="88" width="150" height="18" rx="9" fill="var(--fondo)" stroke="var(--linea)"/>
+<text x="42" y="101" class="s-lbl" style="font-size:10px">descripción muy ancha · Julián</text>
+<rect x="30" y="112" width="150" height="18" rx="9" fill="var(--fondo)" stroke="var(--linea)"/>
+<text x="42" y="125" class="s-lbl" style="font-size:10px">línea larga · María</text>
+<rect x="30" y="136" width="150" height="18" rx="9" fill="var(--fondo)" stroke="var(--linea)"/>
+<text x="42" y="149" class="s-lbl" style="font-size:10px">foto 3 borrosa · María</text>
+</g>
+<path d="M200 100 L250 100" stroke="var(--acento)" stroke-width="1.8" fill="none"/>
+<path d="M242 94 L252 100 L242 106" fill="none" stroke="var(--acento)" stroke-width="1.8"/>
+<text x="225" y="88" class="s-acc" text-anchor="middle" style="font-size:10px">agrupar</text>
+<text x="280" y="26" class="s-acc">Tu plan de la semana 8</text>
+<g>
+<rect x="280" y="40" width="390" height="52" rx="8" fill="var(--acento-suave)" stroke="var(--acento)" stroke-width="1.6"/>
+<text x="296" y="60" class="s-acc" style="font-size:12px;font-weight:700">1 · Jerarquía del título</text>
+<text x="296" y="78" class="s-lbl" style="font-size:11px">Lo señalaron los dos revisores · prioridad alta</text>
+<rect x="608" y="50" width="48" height="20" rx="10" fill="var(--acento)"/>
+<text x="632" y="64" class="s-num" text-anchor="middle">2 de 2</text>
+</g>
+<g>
+<rect x="280" y="100" width="390" height="52" rx="8" fill="var(--superficie)" stroke="var(--acento-borde)" stroke-width="1.3"/>
+<text x="296" y="120" class="s-ttl" style="font-size:12px">2 · Ancho de la descripción</text>
+<text x="296" y="138" class="s-lbl" style="font-size:11px">Lo señalaron los dos · prioridad alta</text>
+<rect x="608" y="110" width="48" height="20" rx="10" fill="var(--acento)" opacity=".75"/>
+<text x="632" y="124" class="s-num" text-anchor="middle">2 de 2</text>
+</g>
+<g>
+<rect x="280" y="160" width="390" height="52" rx="8" fill="var(--superficie)" stroke="var(--linea)"/>
+<text x="296" y="180" class="s-ttl" style="font-size:12px">3 · Calidad de la foto 3</text>
+<text x="296" y="198" class="s-lbl" style="font-size:11px">Lo señaló una persona · verificar y decidir</text>
+<rect x="608" y="170" width="48" height="20" rx="10" fill="var(--apoyo)" opacity=".5"/>
+<text x="632" y="184" class="s-num" text-anchor="middle">1 de 2</text>
+</g>
+<text x="350" y="246" class="s-acc" text-anchor="middle">Cinco comentarios no son cinco tareas. Son tres, y en ese orden.</text>
+</svg>
+<figcaption>La coincidencia pesa más que la insistencia. Si dos personas distintas tropiezan en el mismo punto, es tu página.</figcaption>
+</figure>
+</section>
+
+<!-- ================= 4 ================= -->
+<section class="seccion" aria-label="Lo que siempre sale mal">
+<h2>Lo que siempre sale mal</h2>
+<p>Cinco cosas que le pasan a todo el mundo al preparar una entrega y al recibir crítica.</p>
+
+<div class="error">
+<h3>La comprobación preliminar marca errores que no entiendo</h3>
+<dl>
+<dt>Síntoma</dt><dd>El panel muestra advertencias con nombres técnicos.</dd>
+<dt>Causa</dt><dd>El perfil incluye comprobaciones que no aplican a tu caso.</dd>
+<dt>Solución</dt><dd>Haz doble clic en el error: InDesign te lleva al elemento y en la parte inferior del panel te explica qué pasa. Si una comprobación no aplica a tu proyecto, desactívala en el perfil.</dd>
+</dl>
+</div>
+
+<div class="error">
+<h3>El paquete no incluyó las fuentes</h3>
+<dl>
+<dt>Síntoma</dt><dd>La carpeta <code>Document fonts</code> está vacía o no existe.</dd>
+<dt>Causa</dt><dd>O no marcaste <strong>Copiar fuentes</strong>, o tus fuentes tienen restricciones de licencia que impiden redistribuirlas.</dd>
+<dt>Solución</dt><dd>Verifica la casilla. Si el problema es la licencia, anota en el <code>LEEME.txt</code> cuáles usaste y dónde conseguirlas. Es una razón más para usar fuentes libres.</dd>
+</dl>
+</div>
+
+<div class="error">
+<h3>Compartí el enlace de Figma y me piden permiso</h3>
+<dl>
+<dt>Síntoma</dt><dd>Tus compañeros dicen que el enlace les pide solicitar acceso.</dd>
+<dt>Causa</dt><dd>El archivo sigue en <strong>Only people invited</strong>.</dd>
+<dt>Solución</dt><dd>Vuelve a <strong>Share</strong> y cambia a <strong>Anyone with the link</strong>. Y compruébalo siempre en una ventana de incógnito antes de dar el enlace por bueno.</dd>
+</dl>
+</div>
+
+<div class="error">
+<h3>Recibí comentarios contradictorios</h3>
+<dl>
+<dt>Síntoma</dt><dd>Un compañero dice que agrandes el título y el otro que lo reduzcas.</dd>
+<dt>Causa</dt><dd>Es normal y esperable. Son dos lectores distintos.</dd>
+<dt>Solución</dt><dd>Ninguno de los dos tiene razón por sí solo. Lo que sí te dice esa contradicción es que <strong>ese elemento llama la atención de forma ambigua</strong>. Mira tu página otra vez con la prueba de entrecerrar los ojos y decide tú.</dd>
+</dl>
+</div>
+
+<div class="error">
+<h3>Me dieron un comentario que me molestó</h3>
+<dl>
+<dt>Síntoma</dt><dd>Alguien señaló algo en lo que trabajaste mucho.</dd>
+<dt>Causa</dt><dd>Recibir crítica sobre trabajo propio incomoda. Le pasa a todo el mundo, incluidos los profesionales con veinte años de oficio.</dd>
+<dt>Solución</dt><dd>Separa el comentario de la persona y de ti. No dice que seas mal diseñador: dice que en esa página algo no funcionó para un lector. Anótalo, déjalo un día y decide en frío. Y si al final decides que no aplica, también está bien: el trabajo es tuyo.</dd>
+</dl>
+</div>
+
+<aside class="dato">
+<p class="rotulo">Dato curioso</p>
+<h4>La carpeta se llama «Links» aunque tu InDesign esté en español</h4>
+<p>El empaquetado genera siempre <code>Document fonts</code> y <code>Links</code> con los nombres en inglés, sin importar el idioma de la interfaz. Es una convención interna del formato: así cualquier equipo del mundo reconoce la estructura del paquete al abrirlo. No lo renombres.</p>
+</aside>
+</section>
+
+<!-- ================= 5 ================= -->
+<section class="seccion" aria-label="Tu entrega de la semana">
+<h2>Tu entrega de la semana</h2>
+
+<h3>Qué entregas</h3>
+<p>La carpeta <code>portafolio_apellido-nombre_v07</code> completa, con:</p>
+<ul>
+<li>El archivo <code>.indd</code> sin errores en la comprobación preliminar</li>
+<li>Las carpetas <code>Document fonts</code> y <code>Links</code> generadas por el empaquetado</li>
+<li>El archivo <code>LEEME.txt</code> con las seis decisiones documentadas</li>
+<li>Capas nombradas y estilos sin sobrantes</li>
+</ul>
+
+<p>Más:</p>
+<ul>
+<li>El enlace público a tu archivo de Figma, verificado en incógnito</li>
+<li>Cinco comentarios en el archivo de cada uno de tus dos compañeros</li>
+</ul>
+
+<h3>Y además, tu plan de correcciones</h3>
+<p>Un archivo con la lista de lo que vas a corregir en la semana 8, ordenada por prioridad, indicando en cada punto cuántos compañeros lo señalaron.</p>
+
+<div class="nota">
+<p>Es literalmente tu lista de tareas para la última semana. <span class="marcador">Hacerla ahora significa llegar a la semana 8 sabiendo qué hacer.</span></p>
+</div>
+
+<h3>Lo que viene</h3>
+<p>La semana 8 cierras: aplicas las correcciones, exportas las versiones definitivas, publicas y sustentas.</p>
+</section>
+
+<!-- ================= 6 ================= -->
+<section class="seccion" aria-label="Revisa antes de entregar">
+<h2>Revisa antes de entregar</h2>
+<p>Márcalos tú mismo. Si alguno se queda sin marcar, ya sabes qué te falta.</p>
+
+<ul class="checklist">
+<li><label><input type="checkbox"><span>Guardé como portafolio_v07.indd</span></label></li>
+<li><label><input type="checkbox"><span>Creé un perfil de comprobación preliminar con resolución mínima de 300 ppp</span></label></li>
+<li><label><input type="checkbox"><span>La comprobación preliminar no reporta ningún error</span></label></li>
+<li><label><input type="checkbox"><span>Mis capas tienen nombres descriptivos</span></label></li>
+<li><label><input type="checkbox"><span>Borré todos los estilos y muestras sin usar</span></label></li>
+<li><label><input type="checkbox"><span>Empaqueté con las fuentes y los vínculos incluidos</span></label></li>
+<li><label><input type="checkbox"><span>La carpeta del paquete tiene mi apellido y el número de versión</span></label></li>
+<li><label><input type="checkbox"><span>Escribí el LEEME.txt con las seis decisiones</span></label></li>
+<li><label><input type="checkbox"><span>Subí mis páginas a Figma y las ordené</span></label></li>
+<li><label><input type="checkbox"><span>Cambié el acceso a «Anyone with the link»</span></label></li>
+<li><label><input type="checkbox"><span>Verifiqué el enlace en una ventana de incógnito</span></label></li>
+<li><label><input type="checkbox"><span>Dejé cinco comentarios en el archivo de cada compañero</span></label></li>
+<li><label><input type="checkbox"><span>Mis comentarios siguen la estructura de tres partes</span></label></li>
+<li><label><input type="checkbox"><span>Hice mi plan de correcciones agrupando lo que coincidió</span></label></li>
+</ul>
+
+<div class="nota">
+<p>Lo que marques se guarda solo. Si cierras y vuelves más tarde, tus marcas siguen ahí.</p>
+</div>
+</section>
+
+<!-- ================= 7 ================= -->
+<section class="seccion" aria-label="Glosario y recursos">
+<h2>Glosario y recursos</h2>
+<p>Los términos que aparecieron esta semana.</p>
+
+<dl class="glosario">
+<div><dt>Asincrónico</dt><dd>Modo de trabajo en el que las personas intervienen en momentos distintos, sin coincidir.</dd></div>
+<div><dt>Comprobación preliminar</dt><dd>Verificación automática que revisa un documento en busca de problemas antes de la producción.</dd></div>
+<div><dt>Crítica</dt><dd>Observación sobre un trabajo formulada en términos de hechos y efectos, no de gusto personal.</dd></div>
+<div><dt>Empaquetar</dt><dd>Función que reúne el documento, sus vínculos y sus fuentes en una sola carpeta.</dd></div>
+<div><dt>Factor autobús</dt><dd>Número de personas cuya ausencia dejaría un proyecto varado. Indica cuánto conocimiento está concentrado en pocas manos.</dd></div>
+<div><dt>Hoja de decisiones</dt><dd>Documento breve que explica las decisiones técnicas de un proyecto para quien lo reciba.</dd></div>
+<div><dt>Modo comentario</dt><dd>Estado de Figma en el que los clics dejan notas ancladas a una posición en vez de seleccionar objetos.</dd></div>
+<div><dt>Perfil de comprobación</dt><dd>Conjunto de reglas que define qué se considera un error en un documento.</dd></div>
+<div><dt>Versionado</dt><dd>Práctica de numerar los estados sucesivos de un archivo de forma ordenada y legible.</dd></div>
+</dl>
+
+<h3>Para profundizar</h3>
+<ul>
+<li>Gómez-Palacio, Bryony (2011). <em>Guía completa del diseño gráfico</em>. Biblioteca CUN — producción y entrega</li>
+<li>Poulin, Richard (2012). <em>El lenguaje del diseño gráfico</em>. Biblioteca CUN — proceso de trabajo</li>
+<li>Heller, Steven (2012). <em>100 ideas que cambiaron el diseño gráfico</em>. Biblioteca CUN</li>
+<li>Ayuda oficial de Adobe InDesign, sección Comprobación preliminar y empaquetado</li>
+<li>Centro de ayuda de Figma, secciones de compartir archivos y de comentarios</li>
+</ul>
+
+<div class="fin" id="fin" hidden>
+<h3>Terminaste la Unidad 7</h3>
+<p>Recorriste las siete secciones y tu avance quedó registrado. Nos vemos en el cierre.</p>
+</div>
+</section>
+
+<div class="fin" id="siguiente-unidad" hidden>
+  <h3>Unidad 7 completada</h3>
+  <p style="margin:0 0 var(--s2)">Ya puedes continuar con la unidad 8.</p><a class="btn btn-p" href="u08.html">Ir a la unidad 8 →</a>
+</div>
+
+<nav class="navpie" aria-label="Navegación entre secciones">
+  <button type="button" class="btn" id="anterior">← Anterior</button>
+  <button type="button" class="btn btn-p" id="siguiente">Siguiente →</button>
+</nav>
+
+</div>
+</main>
+</div>
+
+<script src="assets/js/almacen.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/sim-u07.js"></script>
+</body>
+</html>

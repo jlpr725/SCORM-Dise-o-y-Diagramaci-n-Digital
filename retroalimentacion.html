@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Retroalimentación · Diseño y Diagramación Digital</title>
+<link rel="stylesheet" href="assets/css/portal.css">
+<link rel="stylesheet" href="assets/css/formulario.css">
+</head>
+<body>
+<a class="saltar" href="#principal">Saltar al contenido</a>
+
+<div class="marco">
+  <div class="marco-scroll">
+
+    <header class="cab">
+      <div>
+        <p class="rot">Diseño y Diagramación Digital</p>
+        <h1>Tu retroalimentación</h1>
+      </div>
+      <a class="volver-portal" href="index.html">← Volver a las unidades</a>
+    </header>
+
+    <main id="principal" class="form-cuerpo">
+
+      <p class="intro">Gracias por revisar el material. Lo que buscamos no son elogios sino <strong>señalamientos concretos</strong>: qué no funciona, qué falta y qué sobra. Las respuestas incómodas son las útiles.</p>
+
+      <div class="privacidad">
+        <p><strong>Qué se guarda.</strong> Tu nombre y tus respuestas quedan registrados en una hoja de cálculo privada a la que solo accede el responsable del material. Se usan únicamente para mejorarlo. No se comparten con terceros ni se publican.</p>
+      </div>
+
+      <form id="form" novalidate>
+
+        <!-- ===== Quién responde ===== -->
+        <fieldset>
+          <legend><span class="ln">1</span> Quién responde</legend>
+
+          <div class="campo">
+            <label for="nombre">Dinos tu nombre. <span class="req">*</span></label>
+            <input type="text" id="nombre" name="nombre" required autocomplete="name" maxlength="120">
+          </div>
+
+          
+          <div class="campo">
+            <label>¿Cuánto del material alcanzaste a revisar? <span class="req">*</span></label>
+            <div class="opciones">
+              <label class="op"><input type="radio" name="alcance" value="Una o dos unidades" required><span>Una o dos unidades</span></label>
+              <label class="op"><input type="radio" name="alcance" value="Entre tres y cinco"><span>Entre tres y cinco</span></label>
+              <label class="op"><input type="radio" name="alcance" value="Casi todas"><span>Casi todas</span></label>
+              <label class="op"><input type="radio" name="alcance" value="Las ocho completas"><span>Las ocho completas</span></label>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- ===== Valoración por dimensiones ===== -->
+        <fieldset>
+          <legend><span class="ln">2</span> Valoración por dimensiones</legend>
+          <p class="ayuda">Del 1 al 5, donde 1 es «hay que rehacerlo» y 5 es «está listo para usarse tal cual».</p>
+
+          <div class="escalas" id="escalas"></div>
+        </fieldset>
+
+        <!-- ===== Lo concreto ===== -->
+        <fieldset>
+          <legend><span class="ln">3</span> Lo concreto</legend>
+
+          <div class="campo">
+            <label for="mejor">¿Qué es lo mejor que tiene el material? <span class="req">*</span></label>
+            <p class="ayuda">Lo que conservarías sin tocar, y por qué.</p>
+            <textarea id="mejor" name="mejor" rows="3" required maxlength="1200"></textarea>
+          </div>
+
+          <div class="campo">
+            <label for="falta">¿Qué falta? <span class="req">*</span></label>
+            <p class="ayuda">Contenido, ejemplos, explicaciones o recursos que un estudiante de tercer semestre necesitaría y no están.</p>
+            <textarea id="falta" name="falta" rows="3" required maxlength="1200"></textarea>
+          </div>
+
+          <div class="campo">
+            <label for="sobra">¿Qué sobra o recortarías?</label>
+            <p class="ayuda">Esta es la pregunta que menos gente responde con franqueza y la que más ayuda.</p>
+            <textarea id="sobra" name="sobra" rows="3" maxlength="1200"></textarea>
+          </div>
+
+          <div class="dos">
+            <div class="campo">
+              <label for="mas-fuerte">Unidad más sólida</label>
+              <select id="mas-fuerte" name="mas_fuerte"></select>
+            </div>
+            <div class="campo">
+              <label for="mas-debil">Unidad más floja</label>
+              <select id="mas-debil" name="mas_debil"></select>
+            </div>
+          </div>
+
+          <div class="campo">
+            <label for="porque-debil">¿Por qué esa es la más floja?</label>
+            <textarea id="porque-debil" name="porque_debil" rows="2" maxlength="800"></textarea>
+          </div>
+        </fieldset>
+
+        <!-- ===== Lo pedagógico ===== -->
+        <fieldset>
+          <legend><span class="ln">4</span> Lo pedagógico</legend>
+
+          <div class="campo">
+            <label>¿La carga de trabajo semanal te parece realista para tercer semestre? <span class="req">*</span></label>
+            <div class="opciones">
+              <label class="op"><input type="radio" name="carga" value="Demasiado alta" required><span>Demasiado alta</span></label>
+              <label class="op"><input type="radio" name="carga" value="Alta pero asumible"><span>Alta pero asumible</span></label>
+              <label class="op"><input type="radio" name="carga" value="Adecuada"><span>Adecuada</span></label>
+              <label class="op"><input type="radio" name="carga" value="Se podría exigir más"><span>Se podría exigir más</span></label>
+            </div>
+          </div>
+
+          <div class="campo">
+            <label>¿El tono cercano y el tuteo te parecen adecuados? <span class="req">*</span></label>
+            <div class="opciones">
+              <label class="op"><input type="radio" name="tono" value="Sí, funciona bien" required><span>Sí, funciona bien</span></label>
+              <label class="op"><input type="radio" name="tono" value="Sí, pero con reservas"><span>Sí, pero con reservas</span></label>
+              <label class="op"><input type="radio" name="tono" value="Debería ser más formal"><span>Debería ser más formal</span></label>
+            </div>
+          </div>
+
+          <div class="campo">
+            <label for="secuencia">¿El orden de las unidades te parece el correcto?</label>
+            <p class="ayuda">Empezamos por la herramienta y después la teoría de composición. ¿Lo harías igual?</p>
+            <textarea id="secuencia" name="secuencia" rows="2" maxlength="800"></textarea>
+          </div>
+
+          <div class="campo">
+            <label for="error">¿Detectaste algún error de contenido?</label>
+            <p class="ayuda">Datos históricos, cifras, nombres de menús, procedimientos. Indica la unidad si puedes.</p>
+            <textarea id="error" name="error" rows="2" maxlength="800"></textarea>
+          </div>
+        </fieldset>
+
+        <!-- ===== Cierre ===== -->
+        <fieldset>
+          <legend><span class="ln">5</span> Cierre</legend>
+
+          <div class="campo">
+            <label>¿Usarías un material así en tu propia asignatura? <span class="req">*</span></label>
+            <div class="opciones">
+              <label class="op"><input type="radio" name="usaria" value="Sí, tal como está" required><span>Sí, tal como está</span></label>
+              <label class="op"><input type="radio" name="usaria" value="Sí, con ajustes"><span>Sí, con ajustes</span></label>
+              <label class="op"><input type="radio" name="usaria" value="Tal vez"><span>Tal vez</span></label>
+              <label class="op"><input type="radio" name="usaria" value="No"><span>No</span></label>
+            </div>
+          </div>
+
+          <div class="campo">
+            <label for="prioridad">Si solo se pudiera cambiar una cosa antes de usarlo con estudiantes, ¿cuál sería? <span class="req">*</span></label>
+            <textarea id="prioridad" name="prioridad" rows="2" required maxlength="800"></textarea>
+          </div>
+
+          <div class="campo">
+            <label for="libre">Cualquier otra cosa que quieras decir</label>
+            <textarea id="libre" name="libre" rows="3" maxlength="1500"></textarea>
+          </div>
+        </fieldset>
+
+        <div class="acciones">
+          <button type="submit" class="btn" id="btn-enviar">Enviar retroalimentación</button>
+          <button type="button" class="btn sec" id="btn-descargar">Descargar mis respuestas</button>
+          <p class="estado" id="estado" role="status" aria-live="polite"></p>
+        </div>
+
+      </form>
+
+      <!-- Pantalla de agradecimiento -->
+      <div class="gracias" id="gracias" hidden>
+        <p class="rot-gracias">Retroalimentación recibida</p>
+        <hr class="regla-gracias">
+        <p class="frase-gracias">Gracias. Esto es exactamente lo que hace que el material mejore.</p>
+        <p class="coda-gracias">Tus respuestas quedaron registradas. Si quieres conservar una copia, puedes descargarlas.</p>
+        <div class="acciones-gracias">
+          <button type="button" class="btn sec" id="btn-descargar-2">Descargar copia</button>
+          <a class="btn" href="index.html">Volver al inicio</a>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="pie-portal">
+      <span>Los datos se guardan en una hoja privada del responsable del material.</span>
+      <span class="der">D&amp;Dd SCORM v1.0 · @joselopantoja</span>
+    </footer>
+
+  </div>
+</div>
+
+<script src="assets/js/almacen.js"></script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/formulario.js"></script>
+</body>
+</html>

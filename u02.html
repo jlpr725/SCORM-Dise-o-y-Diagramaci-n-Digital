@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Unidad 2 · Diseño y Diagramación Digital</title>
+<link rel="stylesheet" href="assets/css/sistema-b.css">
+</head>
+<body data-unidad="u02">
+<a class="saltar" href="#principal">Saltar al contenido</a>
+<div id="aviso" role="status" aria-live="polite" class="saltar" style="left:-9999px"></div>
+
+<div class="envoltorio">
+
+<nav class="lateral" aria-label="Índice de la unidad">
+  <a class="volver" href="index.html">← Todas las unidades</a>
+  <div class="marca">Diagramación Digital<span>Unidad 2 · Semana 2</span></div>
+
+  <ul class="indice">
+    <li><button type="button" data-titulo="Antes de empezar" aria-current="true"><span class="n">1</span> Antes de empezar</button></li>
+    <li><button type="button" data-titulo="El porqué"><span class="n">2</span> El porqué</button></li>
+    <li><button type="button" data-titulo="Manos a la obra"><span class="n">3</span> Manos a la obra</button></li>
+    <li><button type="button" data-titulo="Lo que siempre sale mal"><span class="n">4</span> Lo que siempre sale mal</button></li>
+    <li><button type="button" data-titulo="Tu entrega de la semana"><span class="n">5</span> Tu entrega</button></li>
+    <li><button type="button" data-titulo="Revisa antes de entregar"><span class="n">6</span> Revisa antes de entregar</button></li>
+    <li><button type="button" data-titulo="Glosario y recursos"><span class="n">7</span> Glosario y recursos</button></li>
+  </ul>
+
+  <div class="avance">
+    <span class="avance-texto">0 de 7 secciones</span>
+    <div class="barra"><i></i></div>
+  </div>
+
+  <p class="credito"><b>D&amp;Dd SCORM v1.0</b><br>Designed by @joselopantoja</p>
+
+  <div class="movil">
+    <div class="barra"><i></i></div>
+    <label class="saltar" for="selector-movil">Ir a la sección</label>
+    <select id="selector-movil">
+      <option>1 · Antes de empezar</option>
+      <option>2 · El porqué</option>
+      <option>3 · Manos a la obra</option>
+      <option>4 · Lo que siempre sale mal</option>
+      <option>5 · Tu entrega</option>
+      <option>6 · Revisa antes de entregar</option>
+      <option>7 · Glosario y recursos</option>
+    </select>
+  </div>
+</nav>
+
+<main class="principal" id="principal">
+<div class="contenido">
+
+<header class="portada">
+  <span class="etiqueta">Unidad 2 · Semana 2</span>
+  <h1>¿Cómo se construye una estructura que sostenga cualquier página?</h1>
+  <p class="bajada">La semana pasada montaste una caja vacía. Esta semana le pones el esqueleto adentro.</p>
+</header>
+
+<!-- ================= 1 ================= -->
+<section class="seccion activa" aria-label="Antes de empezar">
+<p class="ficha-tipo"><b>Sección 1</b> · Antes de empezar<br>Lectura estimada 4 min</p>
+<h2>Antes de empezar</h2>
+
+<p>Una retícula es un conjunto de líneas invisibles que deciden dónde puede ir cada cosa. Suena a limitación y lo es: <span class="marcador">ese es exactamente el punto</span>. Sin ella vas a tomar cuarenta decisiones de posición a lo largo del portafolio y unas cuantas se van a contradecir. Con ella tomas una decisión ahora y las otras treinta y nueve salen solas.</p>
+
+<h3>Al terminar vas a poder</h3>
+<ul>
+  <li>Explicar qué es una retícula, para qué sirve y por qué no es lo mismo que una guía suelta</li>
+  <li>Distinguir los cuatro tipos de retícula y saber cuál pide cada proyecto</li>
+  <li>Construir una retícula modular de columnas y filas en tu documento</li>
+  <li>Configurar una retícula de línea base y alinear texto a ella</li>
+  <li>Resolver tres composiciones distintas de ficha —de una, dos y cuatro imágenes— sobre la misma estructura</li>
+  <li>Reconocer cuándo una página está rota porque nadie definió una retícula</li>
+</ul>
+
+<h3>Qué necesitas tener listo</h3>
+<div class="tarjeta">
+  <p><strong>Uno.</strong> Tu archivo <code>portafolio_v01.indd</code> de la semana pasada, con sus tres maestras.</p>
+  <p><strong>Dos.</strong> Las fichas escritas de tus seis proyectos. Si no las escribiste, hazlo ahora: esta semana vas a necesitar saber cuántas imágenes tiene cada uno.</p>
+  <p style="margin-bottom:0"><strong>Tres.</strong> Un vistazo a tus imágenes. Cuenta cuántas tienes por proyecto. La retícula que construyas tiene que servirle a todos.</p>
+</div>
+
+<h3>Lo que sumas al portafolio esta semana</h3>
+<p>La maestra <code>B-Ficha</code> deja de estar vacía. Al terminar vas a tener la estructura sobre la que se van a parar tus seis fichas de proyecto, y tres esquemas probados para distintas cantidades de imagen.</p>
+</section>
+
+<!-- ================= 2 ================= -->
+<section class="seccion" aria-label="El porqué">
+<p class="ficha-tipo"><b>Sección 2</b> · El porqué<br>Lectura estimada 12 min</p>
+<h2>El porqué</h2>
+
+<h3>Una retícula no es una guía</h3>
+<p>Ya usaste guías: los márgenes de la semana pasada son guías. La diferencia está en la ambición.</p>
+<p>Una guía marca <strong>un</strong> límite. Una retícula es un <strong>sistema completo de posiciones posibles</strong>: divide el espacio útil de la página en unidades que se repiten, y a partir de ahí todo lo que coloques se alinea con algo. No decides dónde va una foto mirando la página. La colocas en dos módulos, o en cuatro, o en la mitad izquierda. La decisión pasa de ser estética a ser estructural, y por eso se puede repetir sin pensarla otra vez.</p>
+<p>Eso hace dos cosas por ti. Primero, <strong>acelera</strong>: te quita de encima las decisiones que no importan para dejarte tiempo en las que sí. Segundo, <strong>unifica</strong>: seis fichas hechas en seis días distintos se van a parecer entre sí porque comparten las mismas posiciones posibles.</p>
+
+<figure>
+<svg viewBox="0 0 700 260" role="img" aria-labelledby="t1 d1">
+<title id="t1">Los cuatro tipos de retícula</title>
+<desc id="d1">Cuatro páginas esquemáticas lado a lado: de manuscrito con un solo bloque de texto, de columnas con tres franjas verticales, modular con columnas cruzadas por filas, y jerárquica con bloques de alturas distintas.</desc>
+<g>
+<rect x="30" y="40" width="130" height="160" rx="4" fill="var(--superficie)" stroke="var(--tinta)" stroke-width="1.4"/>
+<rect x="46" y="56" width="98" height="128" rx="2" fill="var(--acento-suave)" stroke="var(--acento)" stroke-width="1.2"/>
+<text x="95" y="224" class="s-ttl" text-anchor="middle">De manuscrito</text>
+<text x="95" y="243" class="s-lbl" text-anchor="middle">Lectura continua</text>
+</g>
+<g>
+<rect x="200" y="40" width="130" height="160" rx="4" fill="var(--superficie)" stroke="var(--tinta)" stroke-width="1.4"/>
+<rect x="216" y="56" width="28" height="128" rx="2" fill="var(--acento-suave)" stroke="var(--acento)" stroke-width="1.2"/>
+<rect x="251" y="56" width="28" height="128" rx="2" fill="var(--acento-suave)" stroke="var(--acento)" stroke-width="1.2"/>
+<rect x="286" y="56" width="28" height="128" rx="2" fill="var(--acento-suave)" stroke="var(--acento)" stroke-width="1.2"/>
+<text x="265" y="224" class="s-ttl" text-anchor="middle">De columnas</text>
+<text x="265" y="243" class="s-lbl" text-anchor="middle">Prensa y revista</text>
+</g>
+<g>
+<rect x="370" y="40" width="130" height="160" rx="4" fill="var(--superficie)" stroke="var(--acento)" stroke-width="2"/>
+<g fill="var(--acento-suave)" stroke="var(--acento)" stroke-width="1.2">
+<rect x="386" y="56" width="28" height="28" rx="2"/><rect x="421" y="56" width="28" height="28" rx="2"/><rect x="456" y="56" width="28" height="28" rx="2"/>
+<rect x="386" y="90" width="28" height="28" rx="2"/><rect x="421" y="90" width="28" height="28" rx="2"/><rect x="456" y="90" width="28" height="28" rx="2"/>
+<rect x="386" y="124" width="28" height="28" rx="2"/><rect x="421" y="124" width="28" height="28" rx="2"/><rect x="456" y="124" width="28" height="28" rx="2"/>
+<rect x="386" y="158" width="28" height="26" rx="2"/><rect x="421" y="158" width="28" height="26" rx="2"/><rect x="456" y="158" width="28" height="26" rx="2"/>
+</g>
+<text x="435" y="224" class="s-ttl" text-anchor="middle">Modular</text>
+<text x="435" y="243" class="s-acc" text-anchor="middle">La que necesitas</text>
+</g>
+<g>
+<rect x="540" y="40" width="130" height="160" rx="4" fill="var(--superficie)" stroke="var(--tinta)" stroke-width="1.4"/>
+<rect x="556" y="56" width="98" height="42" rx="2" fill="var(--acento-suave)" stroke="var(--acento)" stroke-width="1.2"/>
+<rect x="556" y="104" width="46" height="80" rx="2" fill="var(--acento-suave)" stroke="var(--acento)" stroke-width="1.2"/>
+<rect x="608" y="104" width="46" height="34" rx="2" fill="var(--acento-suave)" stroke="var(--acento)" stroke-width="1.2"/>
+<rect x="608" y="144" width="46" height="40" rx="2" fill="var(--acento-suave)" stroke="var(--acento)" stroke-width="1.2"/>
+<text x="605" y="224" class="s-ttl" text-anchor="middle">Jerárquica</text>
+<text x="605" y="243" class="s-lbl" text-anchor="middle">Web, y la más difícil</text>
+</g>
+</svg>
+<figcaption>Cuatro maneras de dividir el mismo espacio. La elección no es de gusto: la dicta el contenido.</figcaption>
+</figure>
+
+<h3>Los cuatro tipos, y cuál te sirve</h3>
+<p><strong>De manuscrito.</strong> Un solo bloque de texto ocupando la caja tipográfica. Es la más antigua y la de los libros de lectura continua: una novela no necesita más. Simple no significa fácil, porque todo el peso recae en los márgenes y en la tipografía.</p>
+<p><strong>De columnas.</strong> El espacio se divide en franjas verticales. Un periódico clásico tiene cinco o seis; una revista, tres. Sirve cuando el contenido es sobre todo texto pero necesita más de una velocidad de lectura.</p>
+<p><strong>Modular.</strong> Las columnas se cruzan con filas y aparecen <strong>módulos</strong>, unidades rectangulares que se pueden agrupar. Es la que necesita tu portafolio, porque tienes texto e imagen de tamaños variables y necesitas que convivan sin improvisar.</p>
+<p><strong>Jerárquica.</strong> No hay repetición regular: las divisiones se definen según lo que pide el contenido. Es la más común en web y la más difícil de hacer bien, porque no te sostiene desde afuera.</p>
+
+<h3>De dónde salen las retículas</h3>
+<p><strong>Villard de Honnecourt, hacia 1235.</strong> El cuaderno de este constructor francés contiene un diagrama para dividir una página en proporciones armónicas trazando solo diagonales. Es el mismo principio del canon que usaste la semana pasada: geometría en vez de números. Ese esquema circuló entre talleres durante siglos.</p>
+
+<aside class="dato">
+<p class="rotulo">Dato curioso</p>
+<h4>Un cuaderno de viaje sobrevivió ochocientos años</h4>
+<p>El cuaderno de Villard tiene treinta y tres hojas de pergamino con dibujos de catedrales, máquinas, animales y esquemas geométricos. No era un tratado: era la libreta de trabajo de alguien que viajaba mirando obras. Es uno de los pocos documentos que muestran cómo pensaba un constructor medieval.</p>
+</aside>
+
+<figure>
+<svg viewBox="0 0 700 320" role="img" aria-labelledby="t2 d2">
+<title id="t2">El diagrama de Villard de Honnecourt</title>
+<desc id="d2">Una página con las diagonales trazadas de esquina a esquina y sus puntos de intersección, que generan divisiones armónicas sucesivas sin necesidad de medir.</desc>
+<rect x="220" y="30" width="260" height="250" fill="var(--superficie)" stroke="var(--tinta)" stroke-width="1.6"/>
+<g stroke="var(--acento)" stroke-width="1.1" fill="none" opacity=".9">
+<line x1="220" y1="30" x2="480" y2="280"/>
+<line x1="480" y1="30" x2="220" y2="280"/>
+<line x1="220" y1="30" x2="350" y2="280"/>
+<line x1="350" y1="30" x2="220" y2="280"/>
+<line x1="350" y1="30" x2="480" y2="280"/>
+<line x1="480" y1="30" x2="350" y2="280"/>
+</g>
+<line x1="350" y1="30" x2="350" y2="280" stroke="var(--tinta)" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="220" y1="155" x2="480" y2="155" stroke="var(--tinta)" stroke-width="1" stroke-dasharray="4 3"/>
+<g fill="var(--ocre)">
+<circle cx="350" cy="155" r="4.5"/>
+<circle cx="285" cy="93" r="4.5"/><circle cx="415" cy="93" r="4.5"/>
+<circle cx="285" cy="218" r="4.5"/><circle cx="415" cy="218" r="4.5"/>
+</g>
+<text x="350" y="308" class="s-lbl" text-anchor="middle">Los cruces marcan las divisiones. No hay una sola medida.</text>
+<text x="60" y="80" class="s-ttl">Solo diagonales</text>
+<text x="60" y="104" class="s-lbl">Sin regla graduada,</text>
+<text x="60" y="122" class="s-lbl">sin cuentas, sin</text>
+<text x="60" y="140" class="s-lbl">unidades de medida.</text>
+<text x="60" y="176" class="s-acc">Funciona en</text>
+<text x="60" y="194" class="s-acc">cualquier formato.</text>
+<path d="M170 150 L215 152" stroke="var(--acento)" stroke-width="1.2" fill="none"/>
+<text x="510" y="120" class="s-ocre">Puntos notables</text>
+<path d="M505 132 L425 100" stroke="var(--ocre-borde)" stroke-width="1.2" fill="none"/>
+</svg>
+<figcaption>Ocho siglos antes de InDesign, alguien ya resolvía esto con una regla sin números.</figcaption>
+</figure>
+
+<p><strong>La Bauhaus y la nueva tipografía, años veinte.</strong> Cuando el diseño se vuelve una disciplina moderna, la retícula deja de ser un truco de taller y pasa a ser una posición ideológica. Jan Tschichold publica <em>Die neue Typographie</em> en 1928 defendiendo la composición asimétrica y funcional frente a la simetría clásica. Décadas después cambiaría de opinión y volvería a los cánones antiguos, cosa que dice mucho sobre lo poco resuelto que está este oficio.</p>
+<p><strong>Suiza, años cincuenta.</strong> Aquí nace la retícula tal como la conoces. Diseñadores como Josef Müller-Brockmann, Emil Ruder y Karl Gerstner convierten el sistema modular en el centro del método. Para ellos la retícula no era una comodidad: era una <span class="marcador">postura ética</span>. Creían que el diseñador debía retirarse y dejar hablar al contenido, y que la estructura objetiva era la manera de lograrlo.</p>
+
+<aside class="dato">
+<p class="rotulo">Dato curioso</p>
+<h4>El libro de retículas que nunca dejó de imprimirse</h4>
+<p>Müller-Brockmann publicó <em>Sistemas de retículas</em> en 1981, cuando ya llevaba treinta años trabajando con ellas. Sigue en catálogo, se traduce a idiomas nuevos y aparece en la bibliografía de casi cualquier programa de diseño del mundo. Pocos manuales técnicos aguantan cuarenta años.</p>
+</aside>
+
+<p><strong>Karl Gerstner y la retícula flexible, 1962.</strong> Gerstner diseñó para la revista <em>Capital</em> una retícula modular que podía subdividirse en distintos números de columnas sin dejar de ser la misma estructura. Fue la demostración de que un sistema rígido puede producir variedad enorme si está bien pensado. Es exactamente lo que vas a hacer esta semana a menor escala: una sola retícula, tres composiciones distintas.</p>
+
+<h3>La herencia que ves todos los días</h3>
+<p>Cuando el diseño saltó a la pantalla, se llevó la retícula puesta. Los primeros marcos de trabajo para web adoptaron <strong>doce columnas</strong> y de ahí no se han movido: cualquier sitio que abras hoy probablemente esté construido sobre doce.</p>
+<p>La razón es aritmética. Doce se divide exacto entre 2, 3, 4 y 6. Con una sola retícula obtienes medios, tercios, cuartos y sextos sin que sobre ni falte nada. Ocho columnas no te dan tercios; diez no te da cuartos. <span class="marcador">Doce es el número más pequeño que resuelve las cuatro divisiones que de verdad usas.</span></p>
+
+<figure>
+<svg viewBox="0 0 700 300" role="img" aria-labelledby="t3 d3">
+<title id="t3">Por qué doce columnas</title>
+<desc id="d3">Cinco barras de doce módulos apiladas, mostrando cómo doce se divide exacto en dos mitades, tres tercios, cuatro cuartos y seis sextos.</desc>
+<text x="30" y="34" class="s-ttl">Doce módulos</text>
+<g>
+<text x="30" y="72" class="s-lbl">12</text>
+<g fill="var(--acento-suave)" stroke="var(--acento)" stroke-width="1">
+<rect x="80" y="56" width="42" height="22" rx="3"/><rect x="126" y="56" width="42" height="22" rx="3"/><rect x="172" y="56" width="42" height="22" rx="3"/>
+<rect x="218" y="56" width="42" height="22" rx="3"/><rect x="264" y="56" width="42" height="22" rx="3"/><rect x="310" y="56" width="42" height="22" rx="3"/>
+<rect x="356" y="56" width="42" height="22" rx="3"/><rect x="402" y="56" width="42" height="22" rx="3"/><rect x="448" y="56" width="42" height="22" rx="3"/>
+<rect x="494" y="56" width="42" height="22" rx="3"/><rect x="540" y="56" width="42" height="22" rx="3"/><rect x="586" y="56" width="42" height="22" rx="3"/>
+</g>
+</g>
+<g>
+<text x="30" y="118" class="s-lbl">÷2</text>
+<rect x="80" y="102" width="272" height="22" rx="4" fill="var(--acento)" opacity=".22" stroke="var(--acento)" stroke-width="1.2"/>
+<rect x="356" y="102" width="272" height="22" rx="4" fill="var(--acento)" opacity=".22" stroke="var(--acento)" stroke-width="1.2"/>
+<text x="650" y="118" class="s-acc">mitades</text>
+</g>
+<g>
+<text x="30" y="164" class="s-lbl">÷3</text>
+<rect x="80" y="148" width="180" height="22" rx="4" fill="var(--acento)" opacity=".22" stroke="var(--acento)" stroke-width="1.2"/>
+<rect x="264" y="148" width="180" height="22" rx="4" fill="var(--acento)" opacity=".22" stroke="var(--acento)" stroke-width="1.2"/>
+<rect x="448" y="148" width="180" height="22" rx="4" fill="var(--acento)" opacity=".22" stroke="var(--acento)" stroke-width="1.2"/>
+<text x="650" y="164" class="s-acc">tercios</text>
+</g>
+<g>
+<text x="30" y="210" class="s-lbl">÷4</text>
+<rect x="80" y="194" width="134" height="22" rx="4" fill="var(--acento)" opacity=".22" stroke="var(--acento)" stroke-width="1.2"/>
+<rect x="218" y="194" width="134" height="22" rx="4" fill="var(--acento)" opacity=".22" stroke="var(--acento)" stroke-width="1.2"/>
+<rect x="356" y="194" width="134" height="22" rx="4" fill="var(--acento)" opacity=".22" stroke="var(--acento)" stroke-width="1.2"/>
+<rect x="494" y="194" width="134" height="22" rx="4" fill="var(--acento)" opacity=".22" stroke="var(--acento)" stroke-width="1.2"/>
+<text x="650" y="210" class="s-acc">cuartos</text>
+</g>
+<g>
+<text x="30" y="256" class="s-lbl">÷6</text>
+<rect x="80" y="240" width="88" height="22" rx="4" fill="var(--acento)" opacity=".22" stroke="var(--acento)" stroke-width="1.2"/>
+<rect x="172" y="240" width="88" height="22" rx="4" fill="var(--acento)" opacity=".22" stroke="var(--acento)" stroke-width="1.2"/>
+<rect x="264" y="240" width="88" height="22" rx="4" fill="var(--acento)" opacity=".22" stroke="var(--acento)" stroke-width="1.2"/>
+<rect x="356" y="240" width="88" height="22" rx="4" fill="var(--acento)" opacity=".22" stroke="var(--acento)" stroke-width="1.2"/>
+<rect x="448" y="240" width="88" height="22" rx="4" fill="var(--acento)" opacity=".22" stroke="var(--acento)" stroke-width="1.2"/>
+<rect x="540" y="240" width="88" height="22" rx="4" fill="var(--acento)" opacity=".22" stroke="var(--acento)" stroke-width="1.2"/>
+<text x="650" y="256" class="s-acc">sextos</text>
+</g>
+<text x="350" y="290" class="s-lbl" text-anchor="middle">Ocho no da tercios. Diez no da cuartos. Doce da las cuatro.</text>
+</svg>
+<figcaption>La pantalla no inventó nada: heredó la aritmética de la imprenta.</figcaption>
+</figure>
+
+<aside class="dato">
+<p class="rotulo">Dato curioso</p>
+<h4>Doce columnas, cero casualidad</h4>
+<p>Los sistemas de retícula para web se estandarizaron en doce columnas a finales de los años dos mil, y el motivo fue el mismo que llevaba siglos operando en el papel. La aritmética que sirve en una página impresa sirve igual en una pantalla.</p>
+</aside>
+
+<h3>Anatomía: los nombres que vas a usar</h3>
+<ul>
+<li><strong>Columna.</strong> Cada franja vertical.</li>
+<li><strong>Medianil.</strong> El espacio entre dos columnas. Nunca se ocupa: es lo que impide que dos bloques de texto se toquen y se lean como uno solo.</li>
+<li><strong>Fila.</strong> Cada franja horizontal, cuando la retícula es modular.</li>
+<li><strong>Módulo.</strong> El rectángulo que resulta de cruzar una columna con una fila. Es la unidad mínima.</li>
+<li><strong>Zona.</strong> Un grupo de módulos contiguos tratado como una sola área. Aquí es donde de verdad trabajas: una foto no ocupa «un módulo», ocupa una zona de dos por tres.</li>
+<li><strong>Retícula de línea base.</strong> Una malla horizontal de líneas separadas por la distancia exacta del interlineado, a la que se ancla el texto.</li>
+</ul>
+
+<figure>
+<svg viewBox="0 0 700 330" role="img" aria-labelledby="t4 d4">
+<title id="t4">Anatomía de la retícula modular</title>
+<desc id="d4">Página con doce columnas cruzadas por ocho filas, señalando una columna, un medianil, una fila, un módulo individual y una zona formada por seis módulos agrupados.</desc>
+<rect x="150" y="40" width="400" height="240" fill="var(--superficie)" stroke="var(--tinta)" stroke-width="1.4"/>
+<g fill="var(--acento-suave)" stroke="var(--acento)" stroke-width=".7" opacity=".85">
+<rect x="162" y="52" width="27" height="24"/><rect x="193" y="52" width="27" height="24"/><rect x="224" y="52" width="27" height="24"/><rect x="255" y="52" width="27" height="24"/><rect x="286" y="52" width="27" height="24"/><rect x="317" y="52" width="27" height="24"/><rect x="348" y="52" width="27" height="24"/><rect x="379" y="52" width="27" height="24"/><rect x="410" y="52" width="27" height="24"/><rect x="441" y="52" width="27" height="24"/><rect x="472" y="52" width="27" height="24"/><rect x="503" y="52" width="27" height="24"/>
+<rect x="162" y="80" width="27" height="24"/><rect x="193" y="80" width="27" height="24"/><rect x="224" y="80" width="27" height="24"/><rect x="255" y="80" width="27" height="24"/><rect x="286" y="80" width="27" height="24"/><rect x="317" y="80" width="27" height="24"/><rect x="348" y="80" width="27" height="24"/><rect x="379" y="80" width="27" height="24"/><rect x="410" y="80" width="27" height="24"/><rect x="441" y="80" width="27" height="24"/><rect x="472" y="80" width="27" height="24"/><rect x="503" y="80" width="27" height="24"/>
+<rect x="348" y="108" width="27" height="24"/><rect x="379" y="108" width="27" height="24"/><rect x="410" y="108" width="27" height="24"/><rect x="441" y="108" width="27" height="24"/><rect x="472" y="108" width="27" height="24"/><rect x="503" y="108" width="27" height="24"/>
+<rect x="348" y="136" width="27" height="24"/><rect x="379" y="136" width="27" height="24"/><rect x="410" y="136" width="27" height="24"/><rect x="441" y="136" width="27" height="24"/><rect x="472" y="136" width="27" height="24"/><rect x="503" y="136" width="27" height="24"/>
+<rect x="162" y="164" width="27" height="24"/><rect x="193" y="164" width="27" height="24"/><rect x="224" y="164" width="27" height="24"/><rect x="255" y="164" width="27" height="24"/><rect x="286" y="164" width="27" height="24"/><rect x="317" y="164" width="27" height="24"/><rect x="348" y="164" width="27" height="24"/><rect x="379" y="164" width="27" height="24"/><rect x="410" y="164" width="27" height="24"/><rect x="441" y="164" width="27" height="24"/><rect x="472" y="164" width="27" height="24"/><rect x="503" y="164" width="27" height="24"/>
+<rect x="162" y="192" width="27" height="24"/><rect x="193" y="192" width="27" height="24"/><rect x="224" y="192" width="27" height="24"/><rect x="255" y="192" width="27" height="24"/><rect x="286" y="192" width="27" height="24"/><rect x="317" y="192" width="27" height="24"/><rect x="348" y="192" width="27" height="24"/><rect x="379" y="192" width="27" height="24"/><rect x="410" y="192" width="27" height="24"/><rect x="441" y="192" width="27" height="24"/><rect x="472" y="192" width="27" height="24"/><rect x="503" y="192" width="27" height="24"/>
+<rect x="162" y="220" width="27" height="24"/><rect x="193" y="220" width="27" height="24"/><rect x="224" y="220" width="27" height="24"/><rect x="255" y="220" width="27" height="24"/><rect x="286" y="220" width="27" height="24"/><rect x="317" y="220" width="27" height="24"/><rect x="348" y="220" width="27" height="24"/><rect x="379" y="220" width="27" height="24"/><rect x="410" y="220" width="27" height="24"/><rect x="441" y="220" width="27" height="24"/><rect x="472" y="220" width="27" height="24"/><rect x="503" y="220" width="27" height="24"/>
+<rect x="162" y="248" width="27" height="24"/><rect x="193" y="248" width="27" height="24"/><rect x="224" y="248" width="27" height="24"/><rect x="255" y="248" width="27" height="24"/><rect x="286" y="248" width="27" height="24"/><rect x="317" y="248" width="27" height="24"/><rect x="348" y="248" width="27" height="24"/><rect x="379" y="248" width="27" height="24"/><rect x="410" y="248" width="27" height="24"/><rect x="441" y="248" width="27" height="24"/><rect x="472" y="248" width="27" height="24"/><rect x="503" y="248" width="27" height="24"/>
+</g>
+<rect x="162" y="108" width="182" height="52" fill="var(--ocre-suave)" stroke="var(--ocre-borde)" stroke-width="2"/>
+<text x="253" y="139" class="s-ocre" text-anchor="middle">Zona · 6 módulos</text>
+<rect x="503" y="52" width="27" height="24" fill="none" stroke="var(--acento)" stroke-width="2.4"/>
+<path d="M600 64 L534 64" stroke="var(--acento)" stroke-width="1.2" fill="none"/>
+<text x="606" y="60" class="s-acc">Módulo</text>
+<path d="M118 64 L158 64" stroke="var(--apoyo)" stroke-width="1.2" fill="none"/>
+<text x="26" y="60" class="s-lbl">Columna</text>
+<path d="M118 200 L158 200" stroke="var(--apoyo)" stroke-width="1.2" fill="none"/>
+<text x="26" y="196" class="s-lbl">Fila</text>
+<path d="M600 232 L506 232" stroke="var(--apoyo)" stroke-width="1.2" fill="none"/>
+<text x="606" y="228" class="s-lbl">Medianil</text>
+<text x="350" y="306" class="s-lbl" text-anchor="middle">12 columnas × 8 filas = 96 módulos. Nunca usas uno solo: usas zonas.</text>
+</svg>
+<figcaption>Muchos módulos pequeños dan más combinaciones que pocos grandes.</figcaption>
+</figure>
+
+<h3>La retícula de línea base, que casi nadie configura</h3>
+<p>Esta es la que separa un trabajo cuidado de uno que se ve casi bien y nadie sabe por qué.</p>
+<p>Si pones dos columnas de texto una al lado de la otra y no las anclas a nada, sus líneas van a quedar desfasadas por unos pocos puntos. La diferencia es mínima y el lector no la identifica, pero la percibe: la página se siente vibrante, sucia, mal impresa.</p>
+<p>La retícula de línea base resuelve eso obligando a todas las líneas de texto de la página a caer sobre la misma malla horizontal. Todo se alinea con todo, aunque esté en columnas distintas.</p>
+
+<div class="margen">
+<p class="rotulo">De dónde viene</p>
+<p>En la imprenta de tipos móviles esto no era una opción. Cada letra era un bloque de metal de altura fija, y las líneas se separaban metiendo tiras de plomo entre ellas. El resultado se alineaba solo porque físicamente no podía hacer otra cosa.</p>
+</div>
+
+<aside class="dato">
+<p class="rotulo">Dato curioso</p>
+<h4>«Interlineado» quiere decir literalmente eso</h4>
+<p>Para separar más las líneas se insertaban tiras finas de plomo entre las filas de tipos. De ahí viene la palabra: había, de verdad, plomo entre las líneas. El nombre sobrevivió a la desaparición de la técnica.</p>
+</aside>
+
+<h3>Cómo se elige una retícula</h3>
+<p>No se elige mirando: se deduce del contenido. Tres preguntas, en este orden.</p>
+<p><strong>¿Cuántos tipos de elemento tengo?</strong> Tu ficha tiene título, línea de datos, descripción, técnica, imágenes y pies. Seis. Una retícula de una sola columna no puede acomodar seis niveles sin que se vea como una lista.</p>
+<p><strong>¿Qué tan variable es el tamaño de mis imágenes?</strong> Si todas fueran idénticas, bastarían columnas. Como las tuyas van de una a cuatro por proyecto y con formas distintas, necesitas módulos que se puedan agrupar de varias maneras.</p>
+<p><strong>¿Cuántas divisiones distintas necesito?</strong> Si vas a tener fichas de una imagen grande, de dos medianas y de cuatro pequeñas, necesitas una retícula que dé mitades, tercios y cuartos. Doce columnas otra vez.</p>
+<p>De ahí sale la decisión de esta semana, y no de una intuición.</p>
+</section>
+
+<!-- ================= 3 ================= -->
+<section class="seccion" aria-label="Manos a la obra">
+<p class="ficha-tipo"><b>Sección 3</b> · Manos a la obra<br>38 pasos · Lectura estimada 20 min</p>
+<h2>Manos a la obra</h2>
+
+<p>Vas a construir la retícula modular de tu portafolio y a probarla con tres composiciones distintas. Los atajos van entre paréntesis: primero Windows, después Mac.</p>
+
+<h3>Parte 1 · Recuperar y preparar</h3>
+<ol class="pasos">
+<li class="paso"><p>Abre <code>portafolio_v01.indd</code>. Si InDesign te avisa de vínculos rotos, arréglalos ahora con el panel Vínculos antes de seguir.</p></li>
+<li class="paso"><p>Guarda inmediatamente como <code>portafolio_v02.indd</code> en la misma carpeta <code>documento</code>.</p><p>Trabaja siempre sobre una copia nueva: si algo sale muy mal esta semana, la versión anterior sigue intacta.</p></li>
+<li class="paso"><p>Activa la vista de guías con <code>Ver &gt; Cuadrículas y guías &gt; Mostrar guías</code> (<code>Ctrl+;</code> / <code>Cmd+;</code>). Vas a necesitar verlas todo el tiempo.</p></li>
+</ol>
+
+<h3>Parte 2 · Las columnas</h3>
+<ol class="pasos">
+<li class="paso"><p>En el panel Páginas, haz doble clic en <strong>B-Ficha</strong> para editarla. Todo lo que hagas aquí va a aparecer en tus seis fichas.</p></li>
+<li class="paso"><p>Ve a <code>Maquetación &gt; Márgenes y columnas</code>.</p></li>
+<li class="paso"><p>En <strong>Número</strong>, escribe <code>12</code>.</p></li>
+<li class="paso"><p>En <strong>Medianil</strong>, escribe <code>4</code> mm.</p></li>
+<li class="paso"><p>No toques los márgenes: ya los definiste la semana pasada y siguen siendo correctos.</p></li>
+<li class="paso"><p>Acepta. Ahora ves doce franjas verticales dentro de la caja tipográfica.</p></li>
+</ol>
+
+<div class="margen">
+<p class="rotulo">Ojo con esto</p>
+<p>Doce columnas de un A4 con estos márgenes quedan bastante estrechas, alrededor de once milímetros cada una. <strong>No vas a poner texto en una sola columna.</strong> Las columnas no son contenedores: son posiciones de referencia. Tu texto va a ocupar cuatro, seis u ocho de ellas.</p>
+<p>Esa distinción confunde a todo el mundo al principio. Una retícula de doce columnas no significa doce columnas de texto: significa <span class="marcador">doce puntos de anclaje posibles</span>.</p>
+</div>
+
+<div class="sinadobe">
+<h4>Sin Adobe</h4>
+<p class="sub">Crear las columnas</p>
+<div class="equiv">
+<div><h5>Affinity</h5><p><code>Ver &gt; Configurar guías</code> abre el gestor. Define el número de columnas y el medianil. Las columnas se calculan siempre dentro de los márgenes, no de la página.</p></div>
+<div><h5>Figma</h5><p>Selecciona el frame y en el panel derecho añade una <strong>Cuadrícula de maquetación</strong> de tipo Columnas: define recuento, medianil y margen.</p></div>
+<div><h5>Scribus</h5><p><code>Página &gt; Gestionar guías</code>, pestaña <strong>Columnas</strong>. Marca que se refieran a los <strong>márgenes</strong> y no a la página, y usa <strong>Aplicar a todas las páginas</strong>.</p></div>
+</div>
+</div>
+
+<h3>Parte 3 · Las filas, y con eso los módulos</h3>
+<ol class="pasos">
+<li class="paso"><p>Con la maestra <code>B-Ficha</code> todavía abierta, ve a <code>Maquetación &gt; Crear guías</code>.</p></li>
+<li class="paso"><p>En <strong>Filas</strong>, escribe <code>8</code>. En <strong>Medianil</strong> de filas, escribe <code>4</code> mm.</p></li>
+<li class="paso"><p>En <strong>Columnas</strong> de este mismo cuadro, escribe <code>0</code>. Ya las creaste en el paso anterior y no quieres duplicarlas.</p></li>
+<li class="paso"><p>En <strong>Ajustar guías a</strong>, elige <strong>Márgenes</strong>. Si eliges Página, las guías se van a extender hasta el borde y perderás la relación con la caja tipográfica.</p></li>
+<li class="paso"><p>Activa <strong>Eliminar guías existentes</strong> solo si ya habías intentado esto antes y quieres empezar limpio.</p></li>
+<li class="paso"><p>Acepta.</p></li>
+<li class="paso"><p>Ahora tienes una malla de 12 columnas por 8 filas: <strong>96 módulos</strong>.</p><p>Parece exagerado y no lo es. Nunca vas a usar un módulo suelto; vas a usar zonas de varios módulos, y tener muchos pequeños te da más combinaciones que tener pocos grandes.</p></li>
+</ol>
+
+<figure>
+<svg viewBox="0 0 700 300" role="img" aria-labelledby="t5 d5">
+<title id="t5">El cuadro Crear guías</title>
+<desc id="d5">Esquema del cuadro de diálogo Crear guías con los campos de filas, columnas, medianil y ajuste a márgenes resaltados, y una miniatura del resultado al lado.</desc>
+<rect x="40" y="30" width="380" height="240" rx="14" fill="var(--superficie)" stroke="var(--linea)" stroke-width="1.5"/>
+<rect x="40" y="30" width="380" height="40" rx="14" fill="var(--fondo)"/>
+<rect x="40" y="56" width="380" height="14" fill="var(--fondo)"/>
+<text x="62" y="56" class="s-ttl">Crear guías</text>
+<text x="62" y="98" class="s-lbl">Filas</text>
+<rect x="150" y="82" width="60" height="26" rx="8" fill="var(--fondo)" stroke="var(--acento)" stroke-width="1.6"/>
+<text x="180" y="100" class="s-acc" text-anchor="middle">8</text>
+<text x="230" y="98" class="s-lbl">Medianil</text>
+<rect x="310" y="82" width="70" height="26" rx="8" fill="var(--fondo)" stroke="var(--acento)" stroke-width="1.6"/>
+<text x="345" y="100" class="s-acc" text-anchor="middle">4 mm</text>
+<circle cx="52" cy="95" r="12" fill="var(--acento-suave)" stroke="var(--acento-borde)" stroke-width="1.4"/>
+<text x="52" y="99" class="s-mono" text-anchor="middle">11</text>
+<text x="62" y="142" class="s-lbl">Columnas</text>
+<rect x="150" y="126" width="60" height="26" rx="8" fill="var(--fondo)" stroke="var(--acento)" stroke-width="1.6"/>
+<text x="180" y="144" class="s-acc" text-anchor="middle">0</text>
+<text x="230" y="142" class="s-lbl">Medianil</text>
+<rect x="310" y="126" width="70" height="26" rx="8" fill="var(--fondo)" stroke="var(--linea)"/>
+<text x="345" y="144" class="s-lbl" text-anchor="middle">—</text>
+<circle cx="52" cy="139" r="12" fill="var(--acento-suave)" stroke="var(--acento-borde)" stroke-width="1.4"/>
+<text x="52" y="143" class="s-mono" text-anchor="middle">12</text>
+<line x1="62" y1="170" x2="398" y2="170" stroke="var(--linea)"/>
+<text x="62" y="196" class="s-lbl">Ajustar guías a</text>
+<rect x="190" y="180" width="80" height="26" rx="8" fill="var(--acento)"/>
+<text x="230" y="198" class="s-num" text-anchor="middle">Márgenes</text>
+<rect x="278" y="180" width="70" height="26" rx="8" fill="var(--fondo)" stroke="var(--linea)"/>
+<text x="313" y="198" class="s-lbl" text-anchor="middle">Página</text>
+<circle cx="52" cy="193" r="12" fill="var(--acento-suave)" stroke="var(--acento-borde)" stroke-width="1.4"/>
+<text x="52" y="197" class="s-mono" text-anchor="middle">13</text>
+<rect x="62" y="222" width="18" height="18" rx="5" fill="var(--fondo)" stroke="var(--apoyo)" stroke-width="1.4"/>
+<text x="92" y="236" class="s-lbl">Eliminar guías existentes</text>
+<text x="480" y="52" class="s-ttl" text-anchor="middle">Resultado</text>
+<rect x="450" y="66" width="180" height="190" fill="var(--superficie)" stroke="var(--tinta)" stroke-width="1.4"/>
+<g stroke="var(--acento)" stroke-width=".8" opacity=".75">
+<line x1="464" y1="80" x2="616" y2="80"/><line x1="464" y1="102" x2="616" y2="102"/><line x1="464" y1="124" x2="616" y2="124"/><line x1="464" y1="146" x2="616" y2="146"/>
+<line x1="464" y1="168" x2="616" y2="168"/><line x1="464" y1="190" x2="616" y2="190"/><line x1="464" y1="212" x2="616" y2="212"/><line x1="464" y1="234" x2="616" y2="234"/>
+<line x1="464" y1="80" x2="464" y2="242"/><line x1="477" y1="80" x2="477" y2="242"/><line x1="490" y1="80" x2="490" y2="242"/><line x1="503" y1="80" x2="503" y2="242"/>
+<line x1="516" y1="80" x2="516" y2="242"/><line x1="529" y1="80" x2="529" y2="242"/><line x1="542" y1="80" x2="542" y2="242"/><line x1="555" y1="80" x2="555" y2="242"/>
+<line x1="568" y1="80" x2="568" y2="242"/><line x1="581" y1="80" x2="581" y2="242"/><line x1="594" y1="80" x2="594" y2="242"/><line x1="607" y1="80" x2="607" y2="242"/><line x1="616" y1="80" x2="616" y2="242"/>
+</g>
+<text x="540" y="278" class="s-acc" text-anchor="middle">96 módulos</text>
+</svg>
+<figcaption>Los números en círculo remiten al paso del tutorial.</figcaption>
+</figure>
+
+<h3>Parte 4 · La retícula de línea base</h3>
+<ol class="pasos">
+<li class="paso"><p>Sal de la maestra por un momento: esto es un ajuste de documento, no de página. Ve a <code>Edición &gt; Preferencias &gt; Cuadrículas</code> (<code>Ctrl+K</code> / <code>Cmd+K</code> y luego la sección Cuadrículas).</p></li>
+<li class="paso"><p>En <strong>Cuadrícula base</strong>, busca el campo <strong>Incremento cada</strong> y escribe <code>14</code> pt.</p></li>
+<li class="paso"><p>En <strong>Inicio</strong>, escribe el valor de tu margen superior en puntos: <code>20</code> mm son aproximadamente <code>56.7</code> pt. En <strong>En relación con</strong>, elige <strong>Margen superior</strong>.</p></li>
+<li class="paso"><p>Acepta.</p></li>
+<li class="paso"><p>Muestra la retícula con <code>Ver &gt; Cuadrículas y guías &gt; Mostrar cuadrícula base</code> (<code>Ctrl+Alt+'</code> / <code>Cmd+Alt+'</code>). Aparece una malla horizontal de líneas finas.</p></li>
+<li class="paso"><p>Si no ves nada, acércate: InDesign oculta la cuadrícula base por debajo de cierto nivel de zoom. Súbelo por encima del 75 %.</p></li>
+<li class="paso"><p>Para anclar texto a ella: selecciona un marco de texto y en el panel <strong>Párrafo</strong> activa <strong>Alinear con cuadrícula base</strong>.</p></li>
+<li class="paso"><p>El texto va a saltar de posición. Es normal y es correcto: se está acomodando a la línea más cercana de la malla.</p></li>
+</ol>
+
+<div class="margen">
+<p class="rotulo">Por qué 14 puntos</p>
+<p>El incremento de la retícula base debe coincidir con el interlineado de tu texto principal, o ser un divisor suyo. La semana entrante vas a definir tu tipografía y probablemente uses un cuerpo de 10 u 11 puntos con interlineado de 14.</p>
+<p>Si al llegar allá cambias ese interlineado, vuelve aquí y ajusta este número. Es la única cifra de esta unidad que quizá tengas que corregir después.</p>
+</div>
+
+<figure>
+<svg viewBox="0 0 700 290" role="img" aria-labelledby="t6 d6">
+<title id="t6">Con y sin retícula de línea base</title>
+<desc id="d6">Dos pares de columnas de texto. A la izquierda, sin retícula base, las líneas de una columna no coinciden con las de la otra. A la derecha, ancladas a la malla, todas las líneas coinciden.</desc>
+<text x="30" y="32" class="s-err">Sin anclar</text>
+<g fill="var(--apoyo)" opacity=".55">
+<rect x="30" y="52" width="110" height="5" rx="2"/><rect x="30" y="70" width="110" height="5" rx="2"/><rect x="30" y="88" width="110" height="5" rx="2"/><rect x="30" y="106" width="110" height="5" rx="2"/><rect x="30" y="124" width="110" height="5" rx="2"/><rect x="30" y="142" width="88" height="5" rx="2"/>
+<rect x="160" y="57" width="110" height="5" rx="2"/><rect x="160" y="76" width="110" height="5" rx="2"/><rect x="160" y="95" width="110" height="5" rx="2"/><rect x="160" y="114" width="110" height="5" rx="2"/><rect x="160" y="133" width="110" height="5" rx="2"/><rect x="160" y="152" width="72" height="5" rx="2"/>
+</g>
+<g stroke="var(--alerta)" stroke-width="1" stroke-dasharray="3 3">
+<line x1="24" y1="54.5" x2="286" y2="54.5"/><line x1="24" y1="90.5" x2="286" y2="90.5"/><line x1="24" y1="126.5" x2="286" y2="126.5"/>
+</g>
+<g fill="var(--alerta)">
+<circle cx="292" cy="59.5" r="4"/><circle cx="292" cy="97.5" r="4"/><circle cx="292" cy="135.5" r="4"/>
+</g>
+<text x="155" y="196" class="s-err" text-anchor="middle">Las líneas no coinciden</text>
+<text x="155" y="215" class="s-lbl" text-anchor="middle">El lector no lo identifica,</text>
+<text x="155" y="233" class="s-lbl" text-anchor="middle">pero lo percibe.</text>
+<line x1="350" y1="20" x2="350" y2="260" stroke="var(--linea)" stroke-width="1.5" stroke-dasharray="5 5"/>
+<text x="400" y="32" class="s-acc">Ancladas a la malla</text>
+<g stroke="var(--acento-borde)" stroke-width="1">
+<line x1="394" y1="54.5" x2="670" y2="54.5"/><line x1="394" y1="72.5" x2="670" y2="72.5"/><line x1="394" y1="90.5" x2="670" y2="90.5"/><line x1="394" y1="108.5" x2="670" y2="108.5"/><line x1="394" y1="126.5" x2="670" y2="126.5"/><line x1="394" y1="144.5" x2="670" y2="144.5"/>
+</g>
+<g fill="var(--acento)" opacity=".6">
+<rect x="400" y="52" width="110" height="5" rx="2"/><rect x="400" y="70" width="110" height="5" rx="2"/><rect x="400" y="88" width="110" height="5" rx="2"/><rect x="400" y="106" width="110" height="5" rx="2"/><rect x="400" y="124" width="110" height="5" rx="2"/><rect x="400" y="142" width="88" height="5" rx="2"/>
+<rect x="530" y="52" width="110" height="5" rx="2"/><rect x="530" y="70" width="110" height="5" rx="2"/><rect x="530" y="88" width="110" height="5" rx="2"/><rect x="530" y="106" width="110" height="5" rx="2"/><rect x="530" y="124" width="110" height="5" rx="2"/><rect x="530" y="142" width="72" height="5" rx="2"/>
+</g>
+<text x="525" y="196" class="s-acc" text-anchor="middle">Todo cae en la misma malla</text>
+<text x="525" y="215" class="s-lbl" text-anchor="middle">La página se asienta.</text>
+</svg>
+<figcaption>La diferencia es de pocos puntos y cambia por completo la sensación de la página.</figcaption>
+</figure>
+
+<div class="sinadobe">
+<h4>Sin Adobe</h4>
+<p class="sub">Retícula de línea base</p>
+<div class="equiv">
+<div><h5>Affinity</h5><p><code>Ver &gt; Configurar línea base</code> para definir el espaciado. Para anclar el texto, en el panel Párrafo activa <strong>Alinear a la cuadrícula base</strong>.</p></div>
+<div><h5>Figma</h5><p>No existe retícula de línea base. Se aproxima definiendo el interlineado como múltiplo del espaciado de la cuadrícula.</p></div>
+<div><h5>Scribus</h5><p><code>Archivo &gt; Configurar documento &gt; Guías</code>, sección <strong>Cuadrícula base</strong>. Para anclar, en las propiedades del texto activa <strong>Alinear a cuadrícula base</strong>.</p></div>
+</div>
+</div>
+
+<h3>Parte 5 · Tres composiciones, una sola retícula</h3>
+<p>Aquí es donde la retícula demuestra para qué sirve. Vuelve a la maestra <code>B-Ficha</code> si saliste.</p>
+
+<ol class="pasos">
+<li class="paso"><p>Primero define tus <strong>zonas fijas</strong>, las que se van a repetir en las seis fichas. Con la herramienta Texto, dibuja un marco desde la columna 1 hasta la 8, en la fila 1. Ahí va el título del proyecto.</p></li>
+<li class="paso"><p>Dibuja otro marco de la columna 1 a la 8, en la fila 2. Ahí va la línea de datos: año, asignatura, rol.</p></li>
+<li class="paso"><p>Dibuja un tercero de la columna 9 a la 12, ocupando las filas 1 a 3. Esa es la zona de técnica y herramientas, al margen.</p></li>
+<li class="paso"><p>Esos tres marcos van en la maestra porque no cambian. Lo que sí cambia es la zona de imagen y descripción, y eso lo resuelves en cada página.</p></li>
+<li class="paso"><p>Sal de la maestra y ve a la página 4, tu primera ficha.</p></li>
+<li class="paso"><p><strong>Esquema de una imagen.</strong> Dibuja un marco rectangular de la columna 1 a la 12 y de la fila 3 a la 6. Es una imagen grande a todo el ancho. Debajo, un marco de texto de la columna 1 a la 7 para la descripción.</p></li>
+<li class="paso"><p><strong>Esquema de dos imágenes.</strong> Ve a la página 5. Dos marcos de igual tamaño: uno de la columna 1 a la 6, otro de la 7 a la 12, ambos de la fila 3 a la 6. La descripción abajo, de la columna 1 a la 8.</p></li>
+<li class="paso"><p><strong>Esquema de cuatro imágenes.</strong> Ve a la página 6. Cuatro marcos en malla de dos por dos: columnas 1–6 y 7–12, cruzadas con filas 3–4 y 5–6. La descripción abajo.</p></li>
+<li class="paso"><p>Mira las tres páginas seguidas con <code>Ctrl+Alt+0</code> / <code>Cmd+Alt+0</code>. Son composiciones distintas y se ven de la misma familia. Eso lo hizo la retícula, no tú.</p></li>
+<li class="paso"><p>Coloca imágenes de prueba en los marcos con <code>Archivo &gt; Colocar</code> (<code>Ctrl+D</code> / <code>Cmd+D</code>). No importa si no son las definitivas.</p></li>
+<li class="paso"><p>Fíjate en algo importante: <strong>nunca dejaste un elemento a mitad de un medianil.</strong> Todo empieza y termina en una línea de la retícula. Esa es la única regla real de esta semana.</p></li>
+<li class="paso"><p>Cuando la retícula te quede corta, tienes permiso de romperla, pero con una condición: <span class="marcador">rómpela a propósito y una sola vez</span>. Una foto que se sale de la retícula en una sola ficha es un acento. En tres fichas ya no es un acento, es un descuido.</p></li>
+</ol>
+
+<figure>
+<svg viewBox="0 0 700 290" role="img" aria-labelledby="t7 d7">
+<title id="t7">Tres esquemas sobre la misma retícula</title>
+<desc id="d7">Tres fichas de proyecto lado a lado con las mismas zonas fijas de título y datos: la primera con una imagen a todo el ancho, la segunda con dos imágenes a la mitad, la tercera con cuatro en malla de dos por dos.</desc>
+<g>
+<rect x="30" y="40" width="190" height="190" fill="var(--superficie)" stroke="var(--tinta)" stroke-width="1.3"/>
+<rect x="44" y="54" width="110" height="9" rx="2" fill="var(--tinta)" opacity=".75"/>
+<rect x="44" y="70" width="70" height="5" rx="2" fill="var(--apoyo)" opacity=".5"/>
+<rect x="166" y="54" width="40" height="21" rx="3" fill="var(--acento-suave)" stroke="var(--acento)" stroke-width=".9"/>
+<rect x="44" y="86" width="162" height="90" rx="3" fill="var(--acento)" opacity=".25" stroke="var(--acento)" stroke-width="1.2"/>
+<rect x="44" y="186" width="100" height="4" rx="2" fill="var(--apoyo)" opacity=".4"/>
+<rect x="44" y="196" width="100" height="4" rx="2" fill="var(--apoyo)" opacity=".4"/>
+<rect x="44" y="206" width="72" height="4" rx="2" fill="var(--apoyo)" opacity=".4"/>
+<text x="125" y="252" class="s-ttl" text-anchor="middle">Una imagen</text>
+<text x="125" y="270" class="s-lbl" text-anchor="middle">Columnas 1–12</text>
+</g>
+<g>
+<rect x="255" y="40" width="190" height="190" fill="var(--superficie)" stroke="var(--tinta)" stroke-width="1.3"/>
+<rect x="269" y="54" width="110" height="9" rx="2" fill="var(--tinta)" opacity=".75"/>
+<rect x="269" y="70" width="70" height="5" rx="2" fill="var(--apoyo)" opacity=".5"/>
+<rect x="391" y="54" width="40" height="21" rx="3" fill="var(--acento-suave)" stroke="var(--acento)" stroke-width=".9"/>
+<rect x="269" y="86" width="78" height="90" rx="3" fill="var(--acento)" opacity=".25" stroke="var(--acento)" stroke-width="1.2"/>
+<rect x="353" y="86" width="78" height="90" rx="3" fill="var(--acento)" opacity=".25" stroke="var(--acento)" stroke-width="1.2"/>
+<rect x="269" y="186" width="100" height="4" rx="2" fill="var(--apoyo)" opacity=".4"/>
+<rect x="269" y="196" width="100" height="4" rx="2" fill="var(--apoyo)" opacity=".4"/>
+<rect x="269" y="206" width="72" height="4" rx="2" fill="var(--apoyo)" opacity=".4"/>
+<text x="350" y="252" class="s-ttl" text-anchor="middle">Dos imágenes</text>
+<text x="350" y="270" class="s-lbl" text-anchor="middle">1–6 y 7–12</text>
+</g>
+<g>
+<rect x="480" y="40" width="190" height="190" fill="var(--superficie)" stroke="var(--tinta)" stroke-width="1.3"/>
+<rect x="494" y="54" width="110" height="9" rx="2" fill="var(--tinta)" opacity=".75"/>
+<rect x="494" y="70" width="70" height="5" rx="2" fill="var(--apoyo)" opacity=".5"/>
+<rect x="616" y="54" width="40" height="21" rx="3" fill="var(--acento-suave)" stroke="var(--acento)" stroke-width=".9"/>
+<rect x="494" y="86" width="78" height="42" rx="3" fill="var(--acento)" opacity=".25" stroke="var(--acento)" stroke-width="1.2"/>
+<rect x="578" y="86" width="78" height="42" rx="3" fill="var(--acento)" opacity=".25" stroke="var(--acento)" stroke-width="1.2"/>
+<rect x="494" y="134" width="78" height="42" rx="3" fill="var(--acento)" opacity=".25" stroke="var(--acento)" stroke-width="1.2"/>
+<rect x="578" y="134" width="78" height="42" rx="3" fill="var(--acento)" opacity=".25" stroke="var(--acento)" stroke-width="1.2"/>
+<rect x="494" y="186" width="100" height="4" rx="2" fill="var(--apoyo)" opacity=".4"/>
+<rect x="494" y="196" width="100" height="4" rx="2" fill="var(--apoyo)" opacity=".4"/>
+<rect x="494" y="206" width="72" height="4" rx="2" fill="var(--apoyo)" opacity=".4"/>
+<text x="575" y="252" class="s-ttl" text-anchor="middle">Cuatro imágenes</text>
+<text x="575" y="270" class="s-lbl" text-anchor="middle">Malla de 2 × 2</text>
+</g>
+</svg>
+<figcaption>Las zonas de título y datos son idénticas en las tres. Eso es lo que las hace familia.</figcaption>
+</figure>
+
+<h3>Parte 6 · Guardar el trabajo</h3>
+<ol class="pasos">
+<li class="paso"><p>Guarda (<code>Ctrl+S</code> / <code>Cmd+S</code>).</p></li>
+<li class="paso"><p>Si quieres ver tu documento sin la maraña de guías, usa el modo de previsualización con la tecla <code>W</code>. Presiónala otra vez para volver.</p><p>Es el atajo más útil de InDesign y casi nadie lo conoce. Úsalo cada media hora: trabajar siempre con las guías encima te desconecta de cómo se ve el resultado.</p></li>
+</ol>
+
+<figure>
+<svg viewBox="0 0 700 250" role="img" aria-labelledby="t8 d8">
+<title id="t8">La misma ficha con y sin retícula</title>
+<desc id="d8">Dos versiones de una ficha de proyecto. A la izquierda, sin retícula, los elementos están ligeramente desalineados entre sí y se señalan los desajustes. A la derecha, con retícula, todos los bordes coinciden.</desc>
+<text x="30" y="30" class="s-err">Sin retícula</text>
+<rect x="30" y="46" width="260" height="160" fill="var(--superficie)" stroke="var(--tinta)" stroke-width="1.3"/>
+<rect x="46" y="60" width="120" height="9" rx="2" fill="var(--tinta)" opacity=".7"/>
+<rect x="52" y="78" width="70" height="5" rx="2" fill="var(--apoyo)" opacity=".5"/>
+<rect x="44" y="94" width="110" height="60" rx="3" fill="var(--alerta)" opacity=".16" stroke="var(--alerta)" stroke-width="1.1"/>
+<rect x="162" y="98" width="110" height="52" rx="3" fill="var(--alerta)" opacity=".16" stroke="var(--alerta)" stroke-width="1.1"/>
+<rect x="48" y="166" width="150" height="4" rx="2" fill="var(--apoyo)" opacity=".4"/>
+<rect x="48" y="176" width="130" height="4" rx="2" fill="var(--apoyo)" opacity=".4"/>
+<g stroke="var(--alerta)" stroke-width="1" stroke-dasharray="3 2">
+<line x1="44" y1="90" x2="44" y2="200"/><line x1="52" y1="90" x2="52" y2="200"/>
+</g>
+<circle cx="48" cy="216" r="9" fill="var(--alerta)"/>
+<path d="M44.5 212.5 l7 7 M51.5 212.5 l-7 7" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+<text x="66" y="220" class="s-err">Cuatro bordes distintos</text>
+<line x1="350" y1="20" x2="350" y2="235" stroke="var(--linea)" stroke-width="1.5" stroke-dasharray="5 5"/>
+<text x="410" y="30" class="s-acc">Con retícula</text>
+<rect x="410" y="46" width="260" height="160" fill="var(--superficie)" stroke="var(--tinta)" stroke-width="1.3"/>
+<g stroke="var(--acento-borde)" stroke-width=".8">
+<line x1="426" y1="46" x2="426" y2="206"/><line x1="546" y1="46" x2="546" y2="206"/><line x1="654" y1="46" x2="654" y2="206"/>
+</g>
+<rect x="426" y="60" width="120" height="9" rx="2" fill="var(--tinta)" opacity=".7"/>
+<rect x="426" y="78" width="70" height="5" rx="2" fill="var(--apoyo)" opacity=".5"/>
+<rect x="426" y="94" width="110" height="56" rx="3" fill="var(--acento)" opacity=".25" stroke="var(--acento)" stroke-width="1.2"/>
+<rect x="546" y="94" width="108" height="56" rx="3" fill="var(--acento)" opacity=".25" stroke="var(--acento)" stroke-width="1.2"/>
+<rect x="426" y="166" width="150" height="4" rx="2" fill="var(--apoyo)" opacity=".4"/>
+<rect x="426" y="176" width="130" height="4" rx="2" fill="var(--apoyo)" opacity=".4"/>
+<circle cx="428" cy="216" r="9" fill="var(--acento)"/>
+<path d="M424 216 l3 3 l5 -6" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="446" y="220" class="s-acc">Un solo borde para todo</text>
+</svg>
+<figcaption>Nadie va a notar la retícula. Todo el mundo nota su ausencia.</figcaption>
+</figure>
+</section>
+
+<!-- ================= 4 ================= -->
+<section class="seccion" aria-label="Lo que siempre sale mal">
+<p class="ficha-tipo"><b>Sección 4</b> · Lo que siempre sale mal<br>5 casos · Lectura estimada 5 min</p>
+<h2>Lo que siempre sale mal</h2>
+<p>Cinco cosas que le pasan a todo el mundo la primera vez que arma una retícula.</p>
+
+<div class="error">
+<h3>Las columnas quedaron dentro de la página, no de los márgenes</h3>
+<dl>
+<dt>Síntoma</dt><dd>Las guías de columna llegan hasta el borde del papel y no respetan los márgenes que definiste.</dd>
+<dt>Causa</dt><dd>En <code>Crear guías</code>, en el campo <strong>Ajustar guías a</strong>, quedó seleccionado <strong>Página</strong> en vez de <strong>Márgenes</strong>.</dd>
+<dt>Solución</dt><dd>Vuelve a <code>Maquetación &gt; Crear guías</code>, marca <strong>Eliminar guías existentes</strong>, elige <strong>Márgenes</strong> y acepta.</dd>
+</dl>
+</div>
+
+<div class="error">
+<h3>El texto salta y queda con espacios enormes</h3>
+<dl>
+<dt>Síntoma</dt><dd>Al activar la alineación con cuadrícula base, el texto se separa muchísimo entre líneas.</dd>
+<dt>Causa</dt><dd>El incremento de tu cuadrícula base es mayor que tu interlineado. El texto no tiene más remedio que saltar a la siguiente línea disponible, que queda muy lejos.</dd>
+<dt>Solución</dt><dd>Ajusta el incremento en <code>Preferencias &gt; Cuadrículas</code> para que coincida con tu interlineado, o baja el interlineado del texto. Los dos números tienen que hablarse.</dd>
+</dl>
+</div>
+
+<div class="error">
+<h3>La retícula no aparece en las páginas</h3>
+<dl>
+<dt>Síntoma</dt><dd>Creaste las guías pero al volver al documento no las ves.</dd>
+<dt>Causa</dt><dd>Las creaste estando en una página normal en vez de en la maestra, o las creaste en <code>A-Maestra</code> cuando tus fichas usan <code>B-Ficha</code>.</dd>
+<dt>Solución</dt><dd>Verifica en qué maestra estás mirando la esquina inferior izquierda. Rehaz las guías dentro de <code>B-Ficha</code>.</dd>
+</dl>
+</div>
+
+<div class="error">
+<h3>Todo se ve rígido y aburrido</h3>
+<dl>
+<dt>Síntoma</dt><dd>Las seis fichas quedaron correctas y no hay nada que mirar.</dd>
+<dt>Causa</dt><dd>Estás usando siempre la misma zona con el mismo tamaño. Una retícula da posibilidades, no las usa por ti.</dd>
+<dt>Solución</dt><dd>Varía la escala entre fichas: que una imagen ocupe seis módulos y otra doce. La retícula garantiza la coherencia; el contraste lo tienes que poner tú.</dd>
+</dl>
+</div>
+
+<div class="error">
+<h3>Un elemento no se deja alinear con la guía</h3>
+<dl>
+<dt>Síntoma</dt><dd>Arrastras un marco cerca de una línea y no se pega.</dd>
+<dt>Causa</dt><dd>El ajuste automático está desactivado.</dd>
+<dt>Solución</dt><dd>Activa <code>Ver &gt; Cuadrículas y guías &gt; Ajustar a guías</code>. Y si un objeto sigue sin obedecer, revisa que las guías no estén bloqueadas en ese mismo menú.</dd>
+</dl>
+</div>
+</section>
+
+<!-- ================= 5 ================= -->
+<section class="seccion" aria-label="Tu entrega de la semana">
+<p class="ficha-tipo"><b>Sección 5</b> · Tu entrega<br>Lectura estimada 3 min</p>
+<h2>Tu entrega de la semana</h2>
+
+<h3>Qué entregas</h3>
+<p>Tu archivo <code>portafolio_v02.indd</code> empaquetado, con:</p>
+<ul>
+<li>Retícula de 12 columnas con medianil de 4 mm, aplicada en la maestra <code>B-Ficha</code></li>
+<li>Ocho filas creadas, dando una malla de 96 módulos</li>
+<li>Retícula de línea base configurada y al menos un marco de texto anclado a ella</li>
+<li>Las zonas fijas de título, datos y técnica definidas en la maestra</li>
+<li>Tres páginas resueltas con los tres esquemas: una imagen, dos imágenes, cuatro imágenes</li>
+<li>Ningún elemento empezando o terminando a mitad de un medianil</li>
+</ul>
+
+<h3>Y además</h3>
+<p>En un archivo de texto aparte, escribe <strong>tres frases</strong> justificando tu retícula:</p>
+<ul>
+<li>Por qué doce columnas y no otro número</li>
+<li>Qué esquema le corresponde a cada uno de tus seis proyectos, según cuántas imágenes tenga</li>
+<li>Qué vas a hacer con el proyecto que no encaje en ninguno de los tres esquemas, porque casi siempre hay uno</li>
+</ul>
+
+<div class="nota">
+<p>Esto no es relleno. La semana 8 vas a tener que sustentar tus decisiones de diseño, y <span class="marcador">las decisiones que no se escriben cuando se toman se olvidan</span>.</p>
+</div>
+
+<h3>Lo que viene</h3>
+<p>La semana entrante llega la tipografía, y con ella los seis niveles jerárquicos de tu ficha dejan de ser marcos vacíos para convertirse en un sistema de estilos.</p>
+</section>
+
+<!-- ================= 6 ================= -->
+<section class="seccion" aria-label="Revisa antes de entregar">
+<p class="ficha-tipo"><b>Sección 6</b> · Revisa antes de entregar<br>12 puntos de control</p>
+<h2>Revisa antes de entregar</h2>
+<p>Márcalos tú mismo. Si alguno se queda sin marcar, ya sabes qué te falta.</p>
+
+<ul class="checklist">
+<li><label><input type="checkbox"><span>Guardé como portafolio_v02.indd y conservo la versión anterior</span></label></li>
+<li><label><input type="checkbox"><span>Mi retícula está en la maestra B-Ficha, no en una página suelta</span></label></li>
+<li><label><input type="checkbox"><span>Tengo 12 columnas con medianil de 4 mm</span></label></li>
+<li><label><input type="checkbox"><span>Tengo 8 filas con medianil de 4 mm</span></label></li>
+<li><label><input type="checkbox"><span>Las guías se ajustaron a los márgenes y no a la página</span></label></li>
+<li><label><input type="checkbox"><span>Configuré la cuadrícula base y su incremento coincide con mi interlineado</span></label></li>
+<li><label><input type="checkbox"><span>Al menos un marco de texto está anclado a la cuadrícula base</span></label></li>
+<li><label><input type="checkbox"><span>Las zonas de título, datos y técnica están en la maestra</span></label></li>
+<li><label><input type="checkbox"><span>Resolví los tres esquemas en tres páginas distintas</span></label></li>
+<li><label><input type="checkbox"><span>Ningún marco empieza o termina en la mitad de un medianil</span></label></li>
+<li><label><input type="checkbox"><span>Revisé el documento con la tecla W para verlo sin guías</span></label></li>
+<li><label><input type="checkbox"><span>Escribí las tres frases justificando mi retícula</span></label></li>
+</ul>
+
+<div class="nota">
+<p>Lo que marques se guarda solo. Si cierras y vuelves más tarde, tus marcas siguen ahí.</p>
+</div>
+</section>
+
+<!-- ================= 7 ================= -->
+<section class="seccion" aria-label="Glosario y recursos">
+<p class="ficha-tipo"><b>Sección 7</b> · Glosario y recursos<br>9 términos nuevos</p>
+<h2>Glosario y recursos</h2>
+<p>Los términos que aparecieron esta semana. Los vas a seguir usando hasta la semana 8.</p>
+
+<dl class="glosario">
+<div><dt>Columna</dt><dd>Cada una de las franjas verticales en que se divide la caja tipográfica.</dd></div>
+<div><dt>Cuadrícula base</dt><dd>Malla de líneas horizontales separadas por una distancia fija, a la que se ancla el texto para que todas las líneas de la página coincidan.</dd></div>
+<div><dt>Fila</dt><dd>Cada franja horizontal de una retícula modular.</dd></div>
+<div><dt>Medianil</dt><dd>Espacio entre dos columnas o dos filas. No se ocupa nunca.</dd></div>
+<div><dt>Módulo</dt><dd>Rectángulo que resulta de cruzar una columna con una fila. Unidad mínima de una retícula modular.</dd></div>
+<div><dt>Retícula</dt><dd>Sistema de líneas que divide el espacio de la página en unidades repetidas y define las posiciones posibles de los elementos.</dd></div>
+<div><dt>Retícula jerárquica</dt><dd>La que define sus divisiones según las necesidades del contenido, sin repetición regular.</dd></div>
+<div><dt>Retícula modular</dt><dd>La que cruza columnas con filas para producir módulos.</dd></div>
+<div><dt>Zona</dt><dd>Grupo de módulos contiguos tratado como una sola área de trabajo.</dd></div>
+</dl>
+
+<h3>Para profundizar</h3>
+<ul>
+<li>Müller-Brockmann, Josef. <em>Sistemas de retículas: un manual para diseñadores gráficos</em> — el texto de referencia sobre el tema</li>
+<li>Elam, Kimberly (2015). <em>La geometría del diseño</em>. Biblioteca CUN — proporciones y sistemas de división</li>
+<li>Poulin, Richard (2012). <em>El lenguaje del diseño gráfico</em>. Biblioteca CUN — capítulo sobre retícula</li>
+<li>Freeman, Michael (2012). <em>Composición</em>. Biblioteca CUN</li>
+<li>Ayuda oficial de Adobe InDesign, secciones Retículas y Guías y mesas de trabajo</li>
+<li>Ayuda oficial de Affinity, sección de guías y línea base</li>
+</ul>
+
+<div class="fin" id="fin" hidden>
+<h3>Terminaste la Unidad 2</h3>
+<p>Recorriste las siete secciones y tu avance quedó registrado. Nos vemos en la tipografía.</p>
+</div>
+</section>
+
+<div class="fin" id="siguiente-unidad" hidden>
+  <h3>Unidad 2 completada</h3>
+  <p style="margin:0 0 var(--s2)">Ya puedes continuar con la unidad 3.</p><a class="btn btn-p" href="u03.html">Ir a la unidad 3 →</a>
+</div>
+
+<nav class="navpie" aria-label="Navegación entre secciones">
+  <button type="button" class="btn" id="anterior">← Anterior</button>
+  <button type="button" class="btn btn-p" id="siguiente">Siguiente →</button>
+</nav>
+
+</div>
+</main>
+</div>
+
+<script src="assets/js/almacen.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

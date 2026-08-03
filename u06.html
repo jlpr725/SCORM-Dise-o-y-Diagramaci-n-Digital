@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Unidad 6 · Diseño y Diagramación Digital</title>
+<link rel="stylesheet" href="assets/css/sistema-b.css">
+</head>
+<body data-unidad="u06">
+<a class="saltar" href="#principal">Saltar al contenido</a>
+<div id="aviso" role="status" aria-live="polite" class="saltar" style="left:-9999px"></div>
+
+<div class="envoltorio">
+
+<nav class="lateral" aria-label="Índice de la unidad">
+  <a class="volver" href="index.html">← Todas las unidades</a>
+  <div class="marca">Diagramación Digital<span>Unidad 6 · Semana 6</span></div>
+
+  <ul class="indice">
+    <li><button type="button" data-titulo="Antes de empezar" aria-current="true"><span class="n">1</span> Antes de empezar</button></li>
+    <li><button type="button" data-titulo="El porqué"><span class="n">2</span> El porqué</button></li>
+    <li><button type="button" data-titulo="Manos a la obra"><span class="n">3</span> Manos a la obra</button></li>
+    <li><button type="button" data-titulo="Lo que siempre sale mal"><span class="n">4</span> Lo que siempre sale mal</button></li>
+    <li><button type="button" data-titulo="Tu entrega de la semana"><span class="n">5</span> Tu entrega</button></li>
+    <li><button type="button" data-titulo="Revisa antes de entregar"><span class="n">6</span> Revisa antes de entregar</button></li>
+    <li><button type="button" data-titulo="Glosario y recursos"><span class="n">7</span> Glosario y recursos</button></li>
+  </ul>
+
+  <div class="avance">
+    <span class="avance-texto">0 de 7 secciones</span>
+    <div class="barra"><i></i></div>
+  </div>
+
+  <p class="credito"><b>D&amp;Dd SCORM v1.0</b><br>Designed by @joselopantoja</p>
+
+  <div class="movil">
+    <div class="barra"><i></i></div>
+    <label class="saltar" for="selector-movil">Ir a la sección</label>
+    <select id="selector-movil">
+      <option>1 · Antes de empezar</option>
+      <option>2 · El porqué</option>
+      <option>3 · Manos a la obra</option>
+      <option>4 · Lo que siempre sale mal</option>
+      <option>5 · Tu entrega</option>
+      <option>6 · Revisa antes de entregar</option>
+      <option>7 · Glosario y recursos</option>
+    </select>
+  </div>
+</nav>
+
+<main class="principal" id="principal">
+<div class="contenido">
+
+<header class="portada">
+  <span class="etiqueta">Unidad 6 · Semana 6</span>
+  <h1>¿Cómo integro imagen y multimedia, y adapto el diseño a cada dispositivo?</h1>
+  <p class="bajada">Nadie va a abrir tu portafolio para leer tus descripciones. Lo van a abrir para ver tu trabajo.</p>
+</header>
+
+<!-- ================= 1 ================= -->
+<section class="seccion activa" aria-label="Antes de empezar">
+<p class="ficha-tipo"><b>Sección 1</b> · Antes de empezar<br>Lectura estimada 4 min</p>
+<h2>Antes de empezar</h2>
+
+<p>Hasta ahora tus imágenes han sido de relleno o están colocadas de cualquier manera. Esta semana pasan a ser lo que de verdad son: <span class="marcador">el contenido principal de tu portafolio</span>.</p>
+<p>Y además vas a hacer algo que casi ningún portafolio de estudiante hace: <strong>una segunda versión para pantalla vertical</strong>. Porque quien te va a contratar probablemente abra tu PDF en el celular, camino a una reunión, y un A4 en un celular es un documento al que hay que hacerle zoom.</p>
+
+<h3>Al terminar vas a poder</h3>
+<ul>
+  <li>Distinguir imagen de mapa de bits e imagen vectorial, y saber cuándo usar cada una</li>
+  <li>Entender qué es la resolución y por qué la que importa no es la del archivo</li>
+  <li>Verificar la calidad real de cada imagen de tu documento antes de exportar</li>
+  <li>Elegir el formato de archivo correcto según el caso</li>
+  <li>Recortar y encuadrar con criterio, no solo para que quepa</li>
+  <li>Crear una versión vertical de tu portafolio sin rehacerlo</li>
+  <li>Exportar un PDF interactivo con enlaces que funcionen</li>
+</ul>
+
+<h3>Qué necesitas tener listo</h3>
+<div class="tarjeta">
+  <p><strong>Uno.</strong> Tu archivo <code>portafolio_v05.indd</code> con la paleta aplicada y auditada.</p>
+  <p><strong>Dos.</strong> Los archivos originales de tus imágenes, en la mejor calidad que tengas. Si solo conservas capturas de pantalla o versiones comprimidas de redes sociales, esta semana es el momento de buscar los originales.</p>
+  <p style="margin-bottom:0"><strong>Tres.</strong> Tu celular a mano. Vas a probar en él más de una vez.</p>
+</div>
+
+<h3>Lo que sumas al portafolio esta semana</h3>
+<p>Todas las imágenes con calidad verificada, un encuadre decidido y no accidental, y una segunda maquetación en formato vertical para lectura en pantalla.</p>
+</section>
+
+<!-- ================= 2 ================= -->
+<section class="seccion" aria-label="El porqué">
+<p class="ficha-tipo"><b>Sección 2</b> · El porqué<br>Lectura estimada 14 min</p>
+<h2>El porqué</h2>
+
+<h3>Dos maneras de guardar una imagen</h3>
+<p><strong>Mapa de bits.</strong> Una cuadrícula de puntos de color. Una fotografía, una captura de pantalla, una ilustración pintada digitalmente. Tiene un número fijo de puntos, y si la agrandas más allá de ese número, el programa tiene que inventarse los que faltan. De ahí el pixelado.</p>
+<p><strong>Vectorial.</strong> Una descripción matemática: líneas, curvas, rellenos. Un logotipo, un icono, un diagrama. No tiene tamaño propio, así que se puede escalar hasta el infinito sin perder un ápice de calidad.</p>
+
+<div class="margen">
+<p class="rotulo">La regla</p>
+<p>Si es una foto, es mapa de bits y punto. Si es algo que dibujaste con formas —un logo, un icono, un diagrama— guárdalo en vectorial mientras puedas. En el momento en que lo exportas a JPG, la ventaja se pierde para siempre.</p>
+</div>
+
+<figure>
+<svg viewBox="0 0 700 280" role="img" aria-labelledby="t1 d1">
+<title id="t1">Mapa de bits frente a vectorial</title>
+<desc id="d1">La misma forma ampliada al ochocientos por ciento: la versión de mapa de bits muestra una cuadrícula de píxeles con bordes escalonados, la vectorial mantiene el borde perfectamente limpio.</desc>
+<text x="30" y="28" class="s-err">Mapa de bits al 800 %</text>
+<rect x="30" y="42" width="280" height="180" rx="6" fill="var(--superficie)" stroke="var(--linea)"/>
+<g fill="var(--acento)" opacity=".8">
+<rect x="130" y="72" width="20" height="20"/><rect x="150" y="72" width="20" height="20"/><rect x="170" y="72" width="20" height="20"/>
+<rect x="110" y="92" width="20" height="20"/><rect x="130" y="92" width="20" height="20"/><rect x="150" y="92" width="20" height="20"/><rect x="170" y="92" width="20" height="20"/><rect x="190" y="92" width="20" height="20"/>
+<rect x="90" y="112" width="20" height="20"/><rect x="110" y="112" width="20" height="20"/><rect x="130" y="112" width="20" height="20"/><rect x="150" y="112" width="20" height="20"/><rect x="170" y="112" width="20" height="20"/><rect x="190" y="112" width="20" height="20"/><rect x="210" y="112" width="20" height="20"/>
+<rect x="90" y="132" width="20" height="20"/><rect x="110" y="132" width="20" height="20"/><rect x="130" y="132" width="20" height="20"/><rect x="150" y="132" width="20" height="20"/><rect x="170" y="132" width="20" height="20"/><rect x="190" y="132" width="20" height="20"/><rect x="210" y="132" width="20" height="20"/>
+<rect x="110" y="152" width="20" height="20"/><rect x="130" y="152" width="20" height="20"/><rect x="150" y="152" width="20" height="20"/><rect x="170" y="152" width="20" height="20"/><rect x="190" y="152" width="20" height="20"/>
+<rect x="130" y="172" width="20" height="20"/><rect x="150" y="172" width="20" height="20"/><rect x="170" y="172" width="20" height="20"/>
+</g>
+<g stroke="var(--superficie)" stroke-width="1" opacity=".55">
+<line x1="110" y1="72" x2="110" y2="192"/><line x1="130" y1="72" x2="130" y2="192"/><line x1="150" y1="72" x2="150" y2="192"/><line x1="170" y1="72" x2="170" y2="192"/><line x1="190" y1="72" x2="190" y2="192"/><line x1="210" y1="72" x2="210" y2="192"/>
+<line x1="90" y1="92" x2="230" y2="92"/><line x1="90" y1="112" x2="230" y2="112"/><line x1="90" y1="132" x2="230" y2="132"/><line x1="90" y1="152" x2="230" y2="152"/><line x1="90" y1="172" x2="230" y2="172"/>
+</g>
+<text x="170" y="248" class="s-err" text-anchor="middle">El programa inventó los puntos</text>
+<text x="170" y="266" class="s-lbl" text-anchor="middle">que no existían en el archivo</text>
+<line x1="350" y1="20" x2="350" y2="270" stroke="var(--linea)" stroke-width="1.5" stroke-dasharray="5 5"/>
+<text x="390" y="28" class="s-acc">Vectorial al 800 %</text>
+<rect x="390" y="42" width="280" height="180" rx="6" fill="var(--superficie)" stroke="var(--linea)"/>
+<circle cx="530" cy="132" r="72" fill="var(--acento)" opacity=".8"/>
+<text x="530" y="248" class="s-acc" text-anchor="middle">El borde se recalcula</text>
+<text x="530" y="266" class="s-lbl" text-anchor="middle">a cualquier tamaño</text>
+</svg>
+<figcaption>Un logotipo vectorial ocupa lo mismo en una tarjeta de visita que en una valla publicitaria.</figcaption>
+</figure>
+
+<aside class="dato">
+<p class="rotulo">Dato curioso</p>
+<h4>«Píxel» significa «elemento de imagen»</h4>
+<p>Es una contracción de <em>picture element</em>, y su primer uso publicado se atribuye a un investigador del laboratorio de propulsión a chorro de la NASA, a mediados de los años sesenta, trabajando con imágenes enviadas por sondas espaciales. La palabra nació describiendo fotos de la Luna y de Marte.</p>
+</aside>
+
+<h3>La resolución que importa no es la del archivo</h3>
+<p>Aquí está la confusión que más problemas causa.</p>
+<p>Cuando abres una foto y ves que dice «300 ppp», ese número <strong>no significa casi nada por sí solo</strong>. Es una etiqueta guardada dentro del archivo que dice a qué tamaño pensaba imprimirse. Lo que de verdad determina la calidad es cuántos puntos tiene la imagen y en cuántos centímetros la vas a estirar.</p>
+<p><strong>Resolución efectiva</strong> es ese cálculo: los puntos reales de la imagen divididos por el tamaño al que la colocaste.</p>
+
+<figure>
+<svg viewBox="0 0 700 300" role="img" aria-labelledby="t2 d2">
+<title id="t2">La resolución efectiva</title>
+<desc id="d2">La misma fotografía de dos mil por mil quinientos puntos colocada a tres tamaños distintos, con el cálculo de resolución efectiva bajo cada una: quinientos, doscientos y ciento veinticinco puntos por pulgada.</desc>
+<text x="30" y="28" class="s-ttl">Una foto de 2000 × 1500 puntos, colocada a tres tamaños</text>
+<g>
+<rect x="40" y="48" width="120" height="90" rx="4" fill="var(--acento)" opacity=".28" stroke="var(--acento)" stroke-width="1.3"/>
+<text x="100" y="100" class="s-acc" text-anchor="middle" style="font-size:11px">10 cm</text>
+<text x="100" y="164" class="s-mono" text-anchor="middle" style="font-size:15px">500 ppp</text>
+<rect x="52" y="178" width="96" height="22" rx="11" fill="#E3F1EA"/>
+<text x="100" y="193" style="font-size:11px;fill:#155C3D;font-family:var(--mono)" text-anchor="middle">de sobra</text>
+</g>
+<g>
+<rect x="200" y="48" width="180" height="135" rx="4" fill="var(--acento)" opacity=".22" stroke="var(--acento)" stroke-width="1.3"/>
+<text x="290" y="120" class="s-acc" text-anchor="middle" style="font-size:11px">25 cm</text>
+<text x="290" y="212" class="s-mono" text-anchor="middle" style="font-size:15px">200 ppp</text>
+<rect x="242" y="226" width="96" height="22" rx="11" fill="#FBF0D8"/>
+<text x="290" y="241" style="font-size:11px;fill:#8A5D08;font-family:var(--mono)" text-anchor="middle">justa</text>
+</g>
+<g>
+<rect x="420" y="48" width="240" height="180" rx="4" fill="var(--acento)" opacity=".16" stroke="var(--acento)" stroke-width="1.3"/>
+<text x="540" y="142" class="s-lbl" text-anchor="middle" style="font-size:11px">40 cm</text>
+<text x="540" y="258" class="s-mono" text-anchor="middle" style="font-size:15px">125 ppp</text>
+<rect x="492" y="270" width="96" height="22" rx="11" fill="#FBEFE9"/>
+<text x="540" y="285" style="font-size:11px;fill:#A8461C;font-family:var(--mono)" text-anchor="middle">se ve blanda</text>
+</g>
+<text x="30" y="290" class="s-acc">La misma imagen, tres calidades. Lo que cambió fue cuánto la estiraste.</text>
+</svg>
+<figcaption>InDesign te muestra los dos números en el panel Vínculos. La que tienes que mirar es la efectiva.</figcaption>
+</figure>
+
+<h3>Cuánta resolución necesitas de verdad</h3>
+<p>Todo el mundo repite la cifra de 300 sin saber de dónde sale, así que aquí va.</p>
+<p>La imprenta tradicional no puede imprimir grises: solo pone tinta o no la pone. Para simular tonos intermedios descompone la imagen en una <strong>trama</strong> de puntos de distinto tamaño, y la finura de esa trama se mide en líneas por pulgada. Una revista de buena calidad usa alrededor de <strong>150 líneas por pulgada</strong>.</p>
+<p>La regla del oficio dice que hay que darle al archivo <strong>el doble</strong> de la finura de la trama, para que el sistema tenga información de sobra al construir cada punto. De ahí salen los 300. <span class="marcador">No es un número mágico: es 150 por dos.</span></p>
+
+<div class="tabla">
+<table>
+<thead><tr><th scope="col">Destino</th><th scope="col">Resolución efectiva mínima</th></tr></thead>
+<tbody>
+<tr><td>Imprenta profesional</td><td>300 ppp</td></tr>
+<tr><td>Impresión de oficina</td><td>200 ppp</td></tr>
+<tr><td>Pantalla estándar</td><td>72 a 96 ppp</td></tr>
+<tr><td>Pantalla de alta densidad</td><td>144 a 192 ppp</td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Tu portafolio va a ser un PDF que se verá sobre todo en pantalla, pero que alguien podría imprimir. <strong>Apunta a 300 ppp efectivos.</strong></p>
+
+<div class="nota">
+<p><strong>Si una imagen no da la resolución:</strong> no la agrandes con el programa. Agrandar no crea información que no existe. Las opciones reales son buscar el original, volver a fotografiar el trabajo, o usarla más pequeña en la página. La tercera es casi siempre la mejor.</p>
+</div>
+
+<h3>Los formatos, y cuál usar</h3>
+
+<div class="tabla">
+<table>
+<thead><tr><th scope="col">Formato</th><th scope="col">Tipo</th><th scope="col">Cuándo usarlo</th></tr></thead>
+<tbody>
+<tr><td><strong>JPG</strong></td><td>Mapa de bits, con pérdida</td><td>Fotografías. El más común y el más peligroso</td></tr>
+<tr><td><strong>PNG</strong></td><td>Mapa de bits, sin pérdida</td><td>Capturas, gráficos con transparencia, bordes nítidos</td></tr>
+<tr><td><strong>TIFF</strong></td><td>Mapa de bits, sin pérdida</td><td>Imágenes para imprenta. Pesa mucho</td></tr>
+<tr><td><strong>PSD</strong></td><td>Mapa de bits en capas</td><td>Cuando necesitas conservar el trabajo editable</td></tr>
+<tr><td><strong>AI / EPS / SVG</strong></td><td>Vectorial</td><td>Logos, iconos, diagramas</td></tr>
+<tr><td><strong>PDF</strong></td><td>Mixto</td><td>Un documento entero colocado como imagen</td></tr>
+</tbody>
+</table>
+</div>
+
+<p><strong>El peligro del JPG.</strong> Comprime descartando información, y lo hace <strong>cada vez que lo guardas</strong>. Abrir un JPG, hacerle un ajuste mínimo y volver a guardarlo lo degrada un poco más. Repítelo diez veces y la imagen se convierte en un mosaico de bloques.</p>
+<p>Si vas a editar una imagen varias veces, trabaja en PSD o TIFF y exporta a JPG solo al final, una vez.</p>
+
+<aside class="dato">
+<p class="rotulo">Dato curioso</p>
+<h4>PNG existe por un pleito de patentes</h4>
+<p>A finales de 1994, la empresa dueña de la patente del algoritmo de compresión que usaba el formato GIF anunció que empezaría a cobrar por su uso. La comunidad técnica reaccionó diseñando en pocos meses un formato libre y sin pérdida que hiciera lo mismo y mejor. Ese formato es el PNG, y le debe su existencia a un problema legal.</p>
+</aside>
+
+<figure>
+<svg viewBox="0 0 700 300" role="img" aria-labelledby="t3 d3">
+<title id="t3">Árbol de decisión de formatos</title>
+<desc id="d3">Tres preguntas encadenadas: si es una fotografía, si necesita transparencia y si la vas a seguir editando, que conducen a los formatos JPG, PNG, TIFF, PSD o vectorial.</desc>
+<rect x="270" y="26" width="160" height="40" rx="20" fill="var(--acento-suave)" stroke="var(--acento)" stroke-width="1.5"/>
+<text x="350" y="51" class="s-acc" text-anchor="middle">¿Es una fotografía?</text>
+<path d="M270 46 L170 46 L170 92" stroke="var(--acento-borde)" stroke-width="1.6" fill="none"/>
+<path d="M430 46 L530 46 L530 92" stroke="var(--acento-borde)" stroke-width="1.6" fill="none"/>
+<text x="196" y="40" class="s-lbl">sí</text>
+<text x="496" y="40" class="s-lbl">no</text>
+<rect x="90" y="92" width="160" height="40" rx="20" fill="var(--superficie)" stroke="var(--linea)" stroke-width="1.4"/>
+<text x="170" y="117" class="s-ttl" text-anchor="middle" style="font-size:12px">¿La vas a editar más?</text>
+<path d="M90 112 L48 112 L48 176" stroke="var(--linea)" stroke-width="1.6" fill="none"/>
+<path d="M250 112 L292 112 L292 176" stroke="var(--linea)" stroke-width="1.6" fill="none"/>
+<text x="60" y="106" class="s-lbl">sí</text>
+<text x="264" y="106" class="s-lbl">no</text>
+<rect x="440" y="92" width="180" height="40" rx="20" fill="var(--superficie)" stroke="var(--linea)" stroke-width="1.4"/>
+<text x="530" y="117" class="s-ttl" text-anchor="middle" style="font-size:12px">¿La dibujaste con formas?</text>
+<path d="M440 112 L400 112 L400 176" stroke="var(--linea)" stroke-width="1.6" fill="none"/>
+<path d="M620 112 L656 112 L656 176" stroke="var(--linea)" stroke-width="1.6" fill="none"/>
+<text x="412" y="106" class="s-lbl">sí</text>
+<text x="628" y="106" class="s-lbl">no</text>
+<g>
+<rect x="20" y="176" width="80" height="50" rx="12" fill="var(--acento)"/>
+<text x="60" y="199" style="font-size:14px;font-weight:700;fill:#fff;font-family:var(--display)" text-anchor="middle">PSD</text>
+<text x="60" y="216" style="font-size:10px;fill:#fff;font-family:var(--texto);opacity:.85" text-anchor="middle">o TIFF</text>
+<text x="60" y="248" class="s-lbl" text-anchor="middle" style="font-size:10.5px">conserva capas</text>
+</g>
+<g>
+<rect x="252" y="176" width="80" height="50" rx="12" fill="var(--acento)"/>
+<text x="292" y="206" style="font-size:14px;font-weight:700;fill:#fff;font-family:var(--display)" text-anchor="middle">JPG</text>
+<text x="292" y="248" class="s-lbl" text-anchor="middle" style="font-size:10.5px">calidad 80–90 %</text>
+<text x="292" y="264" class="s-lbl" text-anchor="middle" style="font-size:10.5px">exporta una sola vez</text>
+</g>
+<g>
+<rect x="360" y="176" width="80" height="50" rx="12" fill="var(--acento)"/>
+<text x="400" y="206" style="font-size:13px;font-weight:700;fill:#fff;font-family:var(--display)" text-anchor="middle">AI · SVG</text>
+<text x="400" y="248" class="s-lbl" text-anchor="middle" style="font-size:10.5px">nunca lo pases</text>
+<text x="400" y="264" class="s-lbl" text-anchor="middle" style="font-size:10.5px">a mapa de bits</text>
+</g>
+<g>
+<rect x="616" y="176" width="80" height="50" rx="12" fill="var(--acento)"/>
+<text x="656" y="206" style="font-size:14px;font-weight:700;fill:#fff;font-family:var(--display)" text-anchor="middle">PNG</text>
+<text x="656" y="248" class="s-lbl" text-anchor="middle" style="font-size:10.5px">capturas y</text>
+<text x="656" y="264" class="s-lbl" text-anchor="middle" style="font-size:10.5px">transparencia</text>
+</g>
+<text x="350" y="292" class="s-lbl" text-anchor="middle">Tres preguntas y ya sabes en qué guardarla.</text>
+</svg>
+<figcaption>El error más caro es exportar un vector a mapa de bits: esa ventaja no se recupera.</figcaption>
+</figure>
+
+<h3>Encuadrar es decidir</h3>
+<p>Un recorte no es «hacer que quepa». Es una decisión de contenido tan fuerte como cualquier otra que hayas tomado.</p>
+<ul>
+<li><strong>Elimina lo que no aporta.</strong> El fondo del escritorio, el borde del papel, la mano que sostiene la pieza.</li>
+<li><strong>Cambia el énfasis.</strong> Un plano general muestra el conjunto; un detalle muy cerrado muestra la calidad de ejecución.</li>
+<li><strong>Crea ritmo.</strong> Seis fichas con seis planos generales son monótonas. Meter un detalle cerrado entre ellas rompe la repetición.</li>
+</ul>
+
+<div class="margen">
+<p class="rotulo">Un consejo concreto</p>
+<p>Si un proyecto tiene varias imágenes, que <strong>una sea un plano general y otra un detalle</strong>. El general dice qué es; el detalle dice qué tan bien lo hiciste. Los dos hacen falta.</p>
+</div>
+
+<figure>
+<svg viewBox="0 0 700 250" role="img" aria-labelledby="t4 d4">
+<title id="t4">Tres encuadres del mismo original</title>
+<desc id="d4">La misma pieza fotografiada en plano general con entorno visible, plano medio centrado en el objeto, y detalle cerrado que muestra la textura y la ejecución.</desc>
+<g>
+<rect x="40" y="40" width="180" height="130" rx="4" fill="#EEF0EC" stroke="var(--linea)"/>
+<rect x="88" y="76" width="84" height="60" rx="3" fill="var(--acento)" opacity=".55"/>
+<rect x="52" y="150" width="30" height="12" rx="2" fill="var(--apoyo)" opacity=".28"/>
+<rect x="186" y="52" width="24" height="20" rx="2" fill="var(--apoyo)" opacity=".28"/>
+<text x="130" y="196" class="s-ttl" text-anchor="middle">Plano general</text>
+<text x="130" y="214" class="s-lbl" text-anchor="middle">Qué es la pieza</text>
+<text x="130" y="232" class="s-lbl" text-anchor="middle">y dónde vive</text>
+</g>
+<g>
+<rect x="260" y="40" width="180" height="130" rx="4" fill="#EEF0EC" stroke="var(--linea)"/>
+<rect x="278" y="58" width="144" height="94" rx="3" fill="var(--acento)" opacity=".55"/>
+<text x="350" y="196" class="s-ttl" text-anchor="middle">Plano medio</text>
+<text x="350" y="214" class="s-lbl" text-anchor="middle">La pieza completa,</text>
+<text x="350" y="232" class="s-lbl" text-anchor="middle">sin distracciones</text>
+</g>
+<g>
+<rect x="480" y="40" width="180" height="130" rx="4" fill="var(--acento)" opacity=".55" stroke="var(--linea)"/>
+<g stroke="var(--acento)" stroke-width="2" opacity=".9" fill="none">
+<line x1="504" y1="70" x2="636" y2="70"/><line x1="504" y1="100" x2="636" y2="100"/><line x1="504" y1="130" x2="590" y2="130"/>
+</g>
+<text x="570" y="196" class="s-acc" text-anchor="middle">Detalle cerrado</text>
+<text x="570" y="214" class="s-lbl" text-anchor="middle">Qué tan bien</text>
+<text x="570" y="232" class="s-lbl" text-anchor="middle">está ejecutada</text>
+</g>
+</svg>
+<figcaption>Deformar nunca. Si la imagen no encaja en el marco, se recorta, no se estira.</figcaption>
+</figure>
+
+<h3>La página que no controlas</h3>
+<p>Tu portafolio es A4 vertical: proporción 1:1,41. Una pantalla de celular común está en torno a 1:2. <strong>No son el mismo formato ni de lejos.</strong></p>
+<p>Cuando alguien abre tu A4 en un celular, ocurre una de dos cosas: o la página entra completa y el texto queda diminuto, o llena el ancho y toca desplazarse verticalmente para ver una sola página.</p>
+<p>Eso no es culpa tuya ni tiene arreglo dentro del A4. La solución del oficio es otra: <strong>producir una segunda versión</strong> pensada para ese formato.</p>
+<p>Aquí es donde aparece la idea que anunciamos en la semana 1: la página dejó de ser un tamaño y se volvió un sistema. Tu sistema —retícula, estilos, paleta— sirve para las dos versiones. <span class="marcador">Lo único que cambia es el envase.</span></p>
+
+<figure>
+<svg viewBox="0 0 700 300" role="img" aria-labelledby="t5 d5">
+<title id="t5">Proporciones comparadas</title>
+<desc id="d5">La proporción del A4 frente a la de una pantalla vertical de celular, dibujadas a la misma altura, mostrando cuánto más estrecha y alargada es la segunda.</desc>
+<rect x="90" y="40" width="170" height="240" rx="4" fill="var(--superficie)" stroke="var(--tinta)" stroke-width="1.6"/>
+<rect x="104" y="54" width="142" height="212" rx="2" fill="none" stroke="var(--acento-borde)" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="175" y="150" class="s-ttl" text-anchor="middle">A4</text>
+<text x="175" y="172" class="s-lbl" text-anchor="middle">1 : 1,41</text>
+<text x="175" y="300" class="s-lbl" text-anchor="middle">210 × 297 mm</text>
+<rect x="400" y="40" width="120" height="240" rx="12" fill="var(--superficie)" stroke="var(--tinta)" stroke-width="1.6"/>
+<rect x="410" y="56" width="100" height="208" rx="3" fill="none" stroke="var(--acento-borde)" stroke-width="1" stroke-dasharray="4 3"/>
+<rect x="440" y="46" width="40" height="4" rx="2" fill="var(--apoyo)" opacity=".4"/>
+<text x="460" y="150" class="s-ttl" text-anchor="middle">Celular</text>
+<text x="460" y="172" class="s-lbl" text-anchor="middle">≈ 1 : 2</text>
+<text x="460" y="300" class="s-lbl" text-anchor="middle">mucho más estrecho</text>
+<path d="M290 160 L380 160" stroke="var(--acento)" stroke-width="1.6" stroke-dasharray="5 4" fill="none"/>
+<path d="M372 154 L382 160 L372 166" fill="none" stroke="var(--acento)" stroke-width="1.6"/>
+<text x="335" y="146" class="s-acc" text-anchor="middle">no cabe</text>
+<text x="335" y="192" class="s-lbl" text-anchor="middle">sin recomponer</text>
+<text x="600" y="120" class="s-lbl">Doce columnas</text>
+<text x="600" y="138" class="s-lbl">aquí no sirven.</text>
+<text x="600" y="164" class="s-acc">Baja a seis.</text>
+</svg>
+<figcaption>No se trata de encoger el A4. Se trata de repensar la retícula, la jerarquía y los tamaños.</figcaption>
+</figure>
+
+<h3>Qué cambia al pasar a vertical</h3>
+<p><strong>La retícula se estrecha.</strong> Doce columnas en el ancho de un celular no sirven de nada. Lo razonable es reducir a cuatro o seis, y que la mayoría del contenido ocupe el ancho completo.</p>
+<p><strong>La jerarquía se vuelve más vertical.</strong> En A4 puedes poner el título a la izquierda y la técnica a la derecha. En vertical, todo va uno debajo de otro. El orden de lectura pasa a ser estrictamente de arriba abajo.</p>
+<p><strong>Los tamaños suben.</strong> Un cuerpo de 10 puntos en un A4 visto de cerca funciona. En una pantalla pequeña conviene subir a 12 o 14, y los pies de imagen de 8 a 10. Es el único caso del curso en que agrandar es lo correcto.</p>
+<p><strong>Lo que no cambia:</strong> tu paleta, tu tipografía, tus proporciones. Ese es justo el punto de haber construido un sistema.</p>
+
+<h3>Multimedia: lo que se puede y lo que no</h3>
+<p>Un PDF interactivo admite más de lo que la gente cree, pero menos de lo que promete.</p>
+<ul>
+<li><strong>Funciona bien:</strong> enlaces que abren páginas web, marcadores de navegación interna, botones que llevan a otra página del documento.</li>
+<li><strong>Funciona a medias:</strong> el video incrustado. Se puede insertar, pero solo se reproduce en algunos lectores de PDF y no en los visores de navegador ni en la mayoría de los móviles. Además dispara el peso del archivo.</li>
+</ul>
+
+<div class="nota">
+<p><strong>La recomendación práctica:</strong> para un portafolio, enlaza en vez de incrustar. Un botón que dice «ver el proyecto en video» funciona en todas partes y no le suma treinta megabytes a tu archivo. Un video incrustado funciona en un lector de cada cuatro.</p>
+</div>
+
+<p>Y algo que sí importa mucho: pon tus datos de contacto como <strong>enlaces reales</strong>. Que alguien pueda escribirte con un clic desde la última página, en vez de tener que copiar tu dirección a mano.</p>
+
+<aside class="dato">
+<p class="rotulo">Dato curioso</p>
+<h4>«Retina» fue un nombre comercial</h4>
+<p>Cuando aparecieron las pantallas de alta densidad, la industria necesitaba venderle al público la idea de que ya no se distinguían los píxeles a distancia normal de lectura. El nombre no describe una tecnología: describe un umbral de percepción. Para ti significa que una imagen que se veía bien en 2010 puede verse blanda hoy.</p>
+</aside>
+</section>
+
+<!-- ================= 3 ================= -->
+<section class="seccion" aria-label="Manos a la obra">
+<p class="ficha-tipo"><b>Sección 3</b> · Manos a la obra<br>44 pasos · Lectura estimada 20 min</p>
+<h2>Manos a la obra</h2>
+<p>Vas a auditar tus imágenes, encuadrarlas con criterio y crear la versión vertical. Los atajos van entre paréntesis: primero Windows, después Mac.</p>
+
+<h3>Parte 1 · Auditar lo que tienes</h3>
+<ol class="pasos">
+<li class="paso"><p>Abre <code>portafolio_v05.indd</code> y guárdalo como <code>portafolio_v06.indd</code>.</p></li>
+<li class="paso"><p>Abre el panel <code>Ventana &gt; Vínculos</code> (<code>Ctrl+Shift+D</code> / <code>Cmd+Shift+D</code>).</p></li>
+<li class="paso"><p>En el menú del panel, elige <strong>Opciones de panel</strong>. En la columna de información, activa <strong>ppp reales</strong> y <strong>ppp efectivos</strong>.</p></li>
+<li class="paso"><p>Amplía el panel arrastrando su borde. Ahora ves la lista completa de tus imágenes con las dos resoluciones.</p></li>
+<li class="paso"><p>Recorre la lista y anota cuáles tienen <strong>menos de 300 ppp efectivos</strong>. Esas son las que hay que arreglar.</p></li>
+<li class="paso"><p>Si alguna aparece en rojo o con un triángulo amarillo, es un vínculo roto o modificado. Arréglalo ahora con <strong>Volver a vincular</strong> o <strong>Actualizar vínculo</strong>.</p></li>
+<li class="paso"><p>Para cada imagen por debajo de 300: busca el original en mejor calidad, o redúcela de tamaño en la página hasta que suba. <strong>No la agrandes con el programa.</strong></p></li>
+</ol>
+
+<figure>
+<svg viewBox="0 0 700 260" role="img" aria-labelledby="t6 d6">
+<title id="t6">El panel de vínculos</title>
+<desc id="d6">Esquema del panel Vínculos con las columnas de nombre, ppp reales, escala y ppp efectivos, mostrando tres filas de ejemplo: una correcta, una justa y una insuficiente.</desc>
+<rect x="60" y="30" width="580" height="180" rx="10" fill="var(--superficie)" stroke="var(--linea)" stroke-width="1.4"/>
+<rect x="60" y="30" width="580" height="36" rx="10" fill="var(--fondo)"/>
+<rect x="60" y="56" width="580" height="10" fill="var(--fondo)"/>
+<text x="80" y="53" class="s-ttl" style="font-size:12px">Vínculos</text>
+<line x1="60" y1="66" x2="640" y2="66" stroke="var(--linea)"/>
+<g class="s-lbl" style="font-size:10.5px">
+<text x="80" y="86">Nombre</text>
+<text x="300" y="86">ppp reales</text>
+<text x="400" y="86">escala</text>
+<text x="490" y="86">ppp efectivos</text>
+</g>
+<line x1="70" y1="94" x2="630" y2="94" stroke="var(--linea)"/>
+<g>
+<rect x="76" y="104" width="16" height="16" rx="3" fill="var(--acento)" opacity=".35"/>
+<text x="100" y="117" class="s-lbl" style="font-size:11px">p01_afiche_01.jpg</text>
+<text x="300" y="117" class="s-mono" style="font-size:11px">300</text>
+<text x="400" y="117" class="s-mono" style="font-size:11px">62 %</text>
+<text x="490" y="117" class="s-mono" style="font-size:12px;fill:#1E6B4B">484</text>
+<rect x="546" y="105" width="70" height="18" rx="9" fill="#E3F1EA"/>
+<text x="581" y="118" style="font-size:10px;fill:#155C3D;font-family:var(--mono)" text-anchor="middle">correcta</text>
+</g>
+<line x1="70" y1="130" x2="630" y2="130" stroke="var(--linea)" opacity=".6"/>
+<g>
+<rect x="76" y="140" width="16" height="16" rx="3" fill="var(--acento)" opacity=".35"/>
+<text x="100" y="153" class="s-lbl" style="font-size:11px">p02_empaque_01.jpg</text>
+<text x="300" y="153" class="s-mono" style="font-size:11px">300</text>
+<text x="400" y="153" class="s-mono" style="font-size:11px">96 %</text>
+<text x="490" y="153" class="s-mono" style="font-size:12px;fill:#8A5D08">312</text>
+<rect x="546" y="141" width="70" height="18" rx="9" fill="#FBF0D8"/>
+<text x="581" y="154" style="font-size:10px;fill:#8A5D08;font-family:var(--mono)" text-anchor="middle">justa</text>
+</g>
+<line x1="70" y1="166" x2="630" y2="166" stroke="var(--linea)" opacity=".6"/>
+<g>
+<rect x="76" y="176" width="16" height="16" rx="3" fill="var(--alerta)" opacity=".3"/>
+<text x="100" y="189" class="s-lbl" style="font-size:11px">p03_marca_01.jpg</text>
+<text x="300" y="189" class="s-mono" style="font-size:11px">300</text>
+<text x="400" y="189" class="s-mono" style="font-size:11px;fill:#A8461C">215 %</text>
+<text x="490" y="189" class="s-mono" style="font-size:12px;fill:#A8461C">140</text>
+<rect x="546" y="177" width="70" height="18" rx="9" fill="#FBEFE9"/>
+<text x="581" y="190" style="font-size:10px;fill:#A8461C;font-family:var(--mono)" text-anchor="middle">arréglala</text>
+</g>
+<text x="350" y="238" class="s-acc" text-anchor="middle">Las tres tienen 300 ppp reales. Solo una sirve.</text>
+<text x="350" y="256" class="s-lbl" text-anchor="middle">La tercera está escalada al 215 %: se agrandó y perdió calidad.</text>
+</svg>
+<figcaption>Cualquier imagen escalada por encima del 100 % es candidata directa a problemas.</figcaption>
+</figure>
+
+<div class="sinadobe">
+<h4>Sin Adobe</h4>
+<p class="sub">Verificar la calidad de las imágenes</p>
+<div class="equiv">
+<div><h5>Affinity</h5><p>El panel <strong>Recursos</strong> lista las imágenes colocadas y su estado. La resolución efectiva se deduce del tamaño de colocación en el panel de transformación.</p></div>
+<div><h5>Figma</h5><p>No calcula resolución efectiva. Como trabaja en píxeles, la referencia es exportar a 2× y comprobar que la imagen original tenga al menos ese tamaño.</p></div>
+<div><h5>Scribus</h5><p>El <strong>Gestor de imágenes</strong> muestra las imágenes del documento y su ppp efectivo tras el escalado.</p></div>
+</div>
+</div>
+
+<h3>Parte 2 · Colocar bien</h3>
+<ol class="pasos">
+<li class="paso"><p>Selecciona un marco de imagen y abre <code>Objeto &gt; Ajuste &gt; Opciones de ajuste de marco</code>.</p></li>
+<li class="paso"><p>Marca <strong>Llenar marco proporcionalmente</strong> y activa la casilla de aplicarlo automáticamente.</p></li>
+<li class="paso"><p>En el mismo cuadro, fija el <strong>punto de referencia</strong> del ajuste. El centro es lo habitual, pero si tus piezas tienen el contenido importante arriba, elige el borde superior.</p></li>
+<li class="paso"><p>Con eso, cada imagen nueva que coloques entra ya ajustada, sin deformarse y sin que tengas que arreglarla a mano.</p></li>
+<li class="paso"><p>Si necesitas mover la imagen dentro de su marco, usa el círculo del centro del marco, como aprendiste en la semana 1.</p></li>
+<li class="paso"><p>Repasa las seis fichas. Ninguna imagen debe verse estirada ni con franjas blancas dentro del marco.</p></li>
+</ol>
+
+<h3>Parte 3 · Encuadrar con criterio</h3>
+<ol class="pasos">
+<li class="paso"><p>Elige tu proyecto más fuerte y mira su imagen principal. Pregúntate qué parte sobra.</p></li>
+<li class="paso"><p>Recorta lo que no aporte: fondos vacíos, bordes de mesa, espacio muerto.</p></li>
+<li class="paso"><p>En al menos dos de tus seis proyectos, agrega o sustituye una imagen por un <strong>detalle cerrado</strong>: un fragmento a gran escala que muestre la calidad de ejecución.</p></li>
+<li class="paso"><p>Mira las seis fichas seguidas. Si las seis tienen el mismo tipo de plano, cambia dos.</p><p>El ritmo entre planos generales y detalles es lo que hace que un portafolio no se sienta monótono.</p></li>
+<li class="paso"><p>Verifica que ningún recorte haya bajado la resolución efectiva por debajo de 300. Recortar y luego agrandar es la forma más rápida de perder calidad.</p></li>
+</ol>
+
+<h3>Parte 4 · Enlaces y contacto</h3>
+<ol class="pasos">
+<li class="paso"><p>Ve a la página 10, la de cierre y contacto.</p></li>
+<li class="paso"><p>Escribe tu correo electrónico y selecciónalo.</p></li>
+<li class="paso"><p>Abre <code>Ventana &gt; Interactivo &gt; Hipervínculos</code>. En el menú del panel, <strong>Nuevo hipervínculo</strong>.</p></li>
+<li class="paso"><p>En <strong>Vincular a</strong>, elige <strong>Correo electrónico</strong>. Escribe tu dirección y un asunto si quieres.</p></li>
+<li class="paso"><p>Repite con tus perfiles: en <strong>Vincular a</strong> elige <strong>URL</strong> y pega la dirección completa, incluyendo <code>https://</code>.</p></li>
+<li class="paso"><p>En <strong>Estilo de carácter</strong>, aplica uno si lo tienes, o déjalo sin estilo. <strong>No subrayes ni pongas azul</strong>: en un portafolio, un enlace que se ve como enlace de página web se ve mal.</p></li>
+<li class="paso"><p>Si algún proyecto tiene video o sitio en línea, agrega en su ficha una línea de texto con enlace: <code>Ver el proyecto en línea</code>. Enlaza, no incrustes.</p></li>
+</ol>
+
+<h3>Parte 5 · La versión vertical</h3>
+<p>Ahora la parte nueva. InDesign puede generar una segunda maquetación dentro del mismo archivo.</p>
+
+<ol class="pasos">
+<li class="paso"><p>Ve a <code>Maquetación &gt; Crear maquetación alternativa</code>.</p></li>
+<li class="paso"><p>En <strong>Nombre</strong>, escribe <code>Vertical pantalla</code>.</p></li>
+<li class="paso"><p>En las dimensiones, define un formato vertical de pantalla. Una medida cómoda es <code>180 × 320</code> mm, que se acerca a la proporción de un celular sin ser un tamaño extraño.</p></li>
+<li class="paso"><p>En <strong>Regla de maquetación líquida</strong>, elige <strong>Redimensionar objeto</strong>.</p><p>No es perfecta, pero deja los elementos escalados en vez de descolocados, y es mejor punto de partida que empezar de cero.</p></li>
+<li class="paso"><p>Marca <strong>Vincular textos</strong>. Esto hace que si corriges una errata en la versión A4, se corrija también en la vertical. Es la razón principal de usar esta función en vez de crear otro documento.</p></li>
+<li class="paso"><p>Acepta. InDesign genera las páginas nuevas dentro del mismo archivo. En el panel Páginas las vas a ver en una segunda columna.</p></li>
+<li class="paso"><p>Ahora hay que arreglarlas, porque <strong>la conversión automática nunca queda bien.</strong> Empieza por la página 4.</p></li>
+<li class="paso"><p><strong>Reduce la retícula.</strong> Ve a <code>Maquetación &gt; Márgenes y columnas</code> y baja a <code>6</code> columnas con medianil de 4 mm.</p></li>
+<li class="paso"><p><strong>Reordena en vertical.</strong> El título arriba, la línea de datos debajo, la imagen a todo el ancho, la descripción debajo, y la técnica al final. Todo apilado, sin nada al margen.</p></li>
+<li class="paso"><p><strong>Sube los tamaños.</strong> El cuerpo pasa a 12 pt con interlineado 17; los pies, a 10. Es el único caso del curso en que agrandar es lo correcto.</p></li>
+<li class="paso"><p>Repite en las demás fichas. Van a salir mucho más rápido que la primera porque ya definiste el patrón.</p></li>
+<li class="paso"><p>No hace falta que la versión vertical tenga las diez páginas. Puede tener portada, una página por proyecto y contacto. <span class="marcador">Menos páginas y mejor resueltas.</span></p></li>
+</ol>
+
+<figure>
+<svg viewBox="0 0 700 300" role="img" aria-labelledby="t7 d7">
+<title id="t7">La misma ficha en A4 y en vertical</title>
+<desc id="d7">A la izquierda la ficha en A4 con la técnica al margen derecho y la descripción en columna estrecha. A la derecha la versión vertical con todos los elementos apilados a ancho completo y tamaños mayores.</desc>
+<text x="40" y="28" class="s-ttl">A4 · doce columnas</text>
+<rect x="40" y="42" width="230" height="200" rx="4" fill="var(--superficie)" stroke="var(--tinta)" stroke-width="1.4"/>
+<rect x="56" y="58" width="120" height="11" rx="2" fill="var(--tinta)" opacity=".8"/>
+<rect x="56" y="76" width="70" height="4" rx="2" fill="var(--apoyo)" opacity=".5"/>
+<rect x="196" y="58" width="58" height="34" rx="3" fill="var(--fondo)" stroke="var(--linea)"/>
+<text x="225" y="79" class="s-lbl" style="font-size:8px" text-anchor="middle">técnica</text>
+<rect x="56" y="90" width="198" height="76" rx="3" fill="var(--acento)" opacity=".25" stroke="var(--acento)" stroke-width="1.1"/>
+<g fill="var(--apoyo)" opacity=".4">
+<rect x="56" y="180" width="120" height="3.5" rx="2"/><rect x="56" y="190" width="120" height="3.5" rx="2"/>
+<rect x="56" y="200" width="120" height="3.5" rx="2"/><rect x="56" y="210" width="86" height="3.5" rx="2"/>
+</g>
+<text x="155" y="266" class="s-lbl" text-anchor="middle">Cuerpo 10 pt · técnica al margen</text>
+<path d="M300 140 L360 140" stroke="var(--acento)" stroke-width="2" fill="none"/>
+<path d="M352 133 L362 140 L352 147" fill="none" stroke="var(--acento)" stroke-width="2"/>
+<text x="330" y="126" class="s-acc" text-anchor="middle">se apila</text>
+<text x="410" y="28" class="s-acc">Vertical · seis columnas</text>
+<rect x="410" y="42" width="150" height="245" rx="10" fill="var(--superficie)" stroke="var(--tinta)" stroke-width="1.4"/>
+<rect x="426" y="60" width="118" height="14" rx="2" fill="var(--tinta)" opacity=".8"/>
+<rect x="426" y="82" width="76" height="5" rx="2" fill="var(--apoyo)" opacity=".5"/>
+<rect x="426" y="96" width="118" height="70" rx="3" fill="var(--acento)" opacity=".25" stroke="var(--acento)" stroke-width="1.1"/>
+<g fill="var(--apoyo)" opacity=".45">
+<rect x="426" y="180" width="118" height="4.5" rx="2"/><rect x="426" y="192" width="118" height="4.5" rx="2"/>
+<rect x="426" y="204" width="118" height="4.5" rx="2"/><rect x="426" y="216" width="90" height="4.5" rx="2"/>
+</g>
+<rect x="426" y="238" width="118" height="30" rx="3" fill="var(--fondo)" stroke="var(--linea)"/>
+<text x="485" y="257" class="s-lbl" style="font-size:8px" text-anchor="middle">técnica, al final</text>
+<text x="600" y="110" class="s-acc">Todo a ancho</text>
+<text x="600" y="128" class="s-acc">completo</text>
+<text x="600" y="160" class="s-lbl">Cuerpo 12 pt</text>
+<text x="600" y="178" class="s-lbl">Pies 10 pt</text>
+<text x="600" y="210" class="s-lbl">Nada al margen:</text>
+<text x="600" y="228" class="s-lbl">no hay margen.</text>
+</svg>
+<figcaption>Tu paleta, tu tipografía y tus proporciones no cambian. Solo cambia el envase.</figcaption>
+</figure>
+
+<div class="sinadobe">
+<h4>Sin Adobe</h4>
+<p class="sub">Versión alternativa</p>
+<div class="equiv">
+<div><h5>Affinity</h5><p>No tiene maquetación alternativa vinculada. Se resuelve duplicando el documento y ajustando, o usando secciones con distinto tamaño de página.</p></div>
+<div><h5>Figma</h5><p>Es su terreno natural: crea un frame nuevo con las medidas del móvil y reutiliza los componentes. Con auto layout, los bloques se reordenan solos.</p></div>
+<div><h5>Scribus</h5><p>No tiene equivalente. Hay que crear un documento nuevo y volver a colocar el contenido.</p></div>
+</div>
+</div>
+
+<h3>Parte 6 · Exportar y probar</h3>
+<ol class="pasos">
+<li class="paso"><p>Ve a <code>Archivo &gt; Exportar</code> (<code>Ctrl+E</code> / <code>Cmd+E</code>) y elige <strong>Adobe PDF (interactivo)</strong>.</p></li>
+<li class="paso"><p>En el cuadro de exportación, selecciona qué maquetación exportar. Exporta primero la A4.</p></li>
+<li class="paso"><p>Activa <strong>Incluir hipervínculos</strong> y <strong>Crear etiquetas PDF</strong>.</p><p>Lo segundo es lo que permite que un lector de pantalla entienda tu documento: es la continuación natural de lo que hiciste la semana pasada con el contraste.</p></li>
+<li class="paso"><p>Exporta la segunda versión con otro nombre: <code>portafolio_vertical.pdf</code>.</p></li>
+<li class="paso"><p>Pásate los dos PDF al celular y ábrelos. Compara. La diferencia va a ser evidente.</p></li>
+<li class="paso"><p>Verifica que los enlaces funcionen tocándolos. Guarda y empaqueta.</p></li>
+</ol>
+</section>
+
+<!-- ================= 4 ================= -->
+<section class="seccion" aria-label="Lo que siempre sale mal">
+<p class="ficha-tipo"><b>Sección 4</b> · Lo que siempre sale mal<br>5 casos · Lectura estimada 5 min</p>
+<h2>Lo que siempre sale mal</h2>
+<p>Cinco cosas que le pasan a todo el mundo al llevar el trabajo a la pantalla.</p>
+
+<div class="error">
+<h3>La imagen se ve bien en pantalla y borrosa al imprimir</h3>
+<dl>
+<dt>Síntoma</dt><dd>En InDesign todo parece correcto, pero el PDF impreso muestra una foto blanda.</dd>
+<dt>Causa</dt><dd>Su resolución efectiva está por debajo de 300 ppp. La vista previa no te lo revela porque la pantalla tiene mucha menos resolución que el papel.</dd>
+<dt>Solución</dt><dd>Revisa el panel de vínculos y corrige. Y no confíes nunca en cómo se ve en pantalla para juzgar la calidad de impresión.</dd>
+</dl>
+</div>
+
+<div class="error">
+<h3>El logotipo tiene un rectángulo blanco alrededor</h3>
+<dl>
+<dt>Síntoma</dt><dd>Colocas un logotipo sobre un fondo de color y aparece su caja blanca.</dd>
+<dt>Causa</dt><dd>Está en JPG, que no puede guardar transparencia.</dd>
+<dt>Solución</dt><dd>Consigue el original en PNG o vectorial. Si no lo tienes, hay que recortarle el fondo en un editor y guardarlo en PNG.</dd>
+</dl>
+</div>
+
+<div class="error">
+<h3>El PDF pesa cuarenta megabytes</h3>
+<dl>
+<dt>Síntoma</dt><dd>El archivo final es enorme y no se puede mandar por correo.</dd>
+<dt>Causa</dt><dd>Casi siempre son imágenes con resolución muy por encima de lo necesario.</dd>
+<dt>Solución</dt><dd>Revisa cuáles superan los 600 ppp efectivos y redúcelas al tamaño real de uso. Corregir el origen es mejor que comprimir al final.</dd>
+</dl>
+</div>
+
+<div class="error">
+<h3>La maquetación alternativa quedó descuadrada</h3>
+<dl>
+<dt>Síntoma</dt><dd>Creaste la versión vertical y todo está fuera de sitio o desproporcionado.</dd>
+<dt>Causa</dt><dd>Es lo esperado. La regla líquida hace un ajuste automático, y el cambio de proporción es demasiado grande.</dd>
+<dt>Solución</dt><dd>No pelees con el automático. Recorre página por página y recoloca a mano. Es media hora de trabajo, no un día.</dd>
+</dl>
+</div>
+
+<div class="error">
+<h3>Cambié un texto y solo se actualizó en una versión</h3>
+<dl>
+<dt>Síntoma</dt><dd>Corregiste una descripción en el A4 y en la vertical sigue la vieja.</dd>
+<dt>Causa</dt><dd>No activaste <strong>Vincular textos</strong> al crear la maquetación alternativa.</dd>
+<dt>Solución</dt><dd>Se puede vincular después desde el panel de artículos, pero es engorroso. Si estás empezando, es más rápido borrar la maquetación alternativa y volverla a crear con la opción activada.</dd>
+</dl>
+</div>
+
+<aside class="dato">
+<p class="rotulo">Dato curioso</p>
+<h4>El JPG se degrada al guardarlo, no al abrirlo</h4>
+<p>Cada ciclo de compresión trabaja sobre una imagen que ya perdió información, así que los errores se acumulan. Abrirlo cien veces no le hace nada; guardarlo diez lo convierte en un mosaico. Los formatos sin pérdida como PNG y TIFF no tienen ese problema.</p>
+</aside>
+</section>
+
+<!-- ================= 5 ================= -->
+<section class="seccion" aria-label="Tu entrega de la semana">
+<p class="ficha-tipo"><b>Sección 5</b> · Tu entrega<br>Lectura estimada 3 min</p>
+<h2>Tu entrega de la semana</h2>
+
+<h3>Qué entregas</h3>
+<p>Tu archivo <code>portafolio_v06.indd</code> empaquetado, más dos PDF exportados:</p>
+<ul>
+<li><code>portafolio_A4.pdf</code> — la versión de impresión</li>
+<li><code>portafolio_vertical.pdf</code> — la versión de pantalla</li>
+</ul>
+
+<p>Con estas condiciones:</p>
+<ul>
+<li>Todas las imágenes con al menos 300 ppp efectivos</li>
+<li>Ninguna imagen escalada por encima del 100 %</li>
+<li>Fotografías en JPG, gráficos con transparencia en PNG, vectores en formato vectorial</li>
+<li>Al menos dos proyectos con un detalle cerrado además del plano general</li>
+<li>Tu correo y tus perfiles como enlaces reales que funcionen</li>
+<li>La versión vertical con la retícula reducida y los tamaños subidos</li>
+</ul>
+
+<h3>Y además, la tabla de auditoría</h3>
+<div class="tabla">
+<table>
+<thead><tr><th scope="col">Imagen</th><th scope="col">Formato</th><th scope="col">ppp reales</th><th scope="col">Escala</th><th scope="col">ppp efectivos</th><th scope="col">¿Corregida?</th></tr></thead>
+<tbody><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody>
+</table>
+</div>
+
+<div class="nota">
+<p>Una fila por imagen. Es tediosa y es exactamente lo que se hace en un estudio antes de mandar algo a producción.</p>
+</div>
+
+<h3>Lo que viene</h3>
+<p>La semana entrante preparas tu archivo para que otra persona lo pueda tomar y continuar, y publicas tu portafolio para recibir comentarios de tus compañeros.</p>
+</section>
+
+<!-- ================= 6 ================= -->
+<section class="seccion" aria-label="Revisa antes de entregar">
+<p class="ficha-tipo"><b>Sección 6</b> · Revisa antes de entregar<br>14 puntos de control</p>
+<h2>Revisa antes de entregar</h2>
+<p>Márcalos tú mismo. Si alguno se queda sin marcar, ya sabes qué te falta.</p>
+
+<ul class="checklist">
+<li><label><input type="checkbox"><span>Guardé como portafolio_v06.indd</span></label></li>
+<li><label><input type="checkbox"><span>Configuré el panel de vínculos para ver los ppp efectivos</span></label></li>
+<li><label><input type="checkbox"><span>Ninguna imagen está por debajo de 300 ppp efectivos</span></label></li>
+<li><label><input type="checkbox"><span>Ninguna imagen está escalada por encima del 100 %</span></label></li>
+<li><label><input type="checkbox"><span>No hay vínculos rotos ni desactualizados</span></label></li>
+<li><label><input type="checkbox"><span>Mis fotografías están en JPG y mis gráficos con transparencia en PNG</span></label></li>
+<li><label><input type="checkbox"><span>Ningún logotipo vectorial quedó convertido a mapa de bits</span></label></li>
+<li><label><input type="checkbox"><span>Al menos dos proyectos tienen un detalle cerrado</span></label></li>
+<li><label><input type="checkbox"><span>Ninguna imagen está deformada</span></label></li>
+<li><label><input type="checkbox"><span>Mi correo y mis perfiles son enlaces que funcionan</span></label></li>
+<li><label><input type="checkbox"><span>Creé la maquetación vertical con los textos vinculados</span></label></li>
+<li><label><input type="checkbox"><span>En la versión vertical reduje la retícula y subí los tamaños</span></label></li>
+<li><label><input type="checkbox"><span>Probé los dos PDF en un celular</span></label></li>
+<li><label><input type="checkbox"><span>Empaqueté el documento</span></label></li>
+</ul>
+
+<div class="nota">
+<p>Lo que marques se guarda solo. Si cierras y vuelves más tarde, tus marcas siguen ahí.</p>
+</div>
+</section>
+
+<!-- ================= 7 ================= -->
+<section class="seccion" aria-label="Glosario y recursos">
+<p class="ficha-tipo"><b>Sección 7</b> · Glosario y recursos<br>12 términos nuevos</p>
+<h2>Glosario y recursos</h2>
+<p>Los términos que aparecieron esta semana. Los vas a seguir usando hasta la semana 8.</p>
+
+<dl class="glosario">
+<div><dt>Canal alfa</dt><dd>Información de opacidad que guardan algunos formatos y que permite la transparencia. JPG no lo tiene.</dd></div>
+<div><dt>Compresión con pérdida</dt><dd>Método que reduce el peso descartando información. Su efecto se acumula con cada guardado.</dd></div>
+<div><dt>Compresión sin pérdida</dt><dd>Método que reduce el peso sin descartar información.</dd></div>
+<div><dt>Maquetación alternativa</dt><dd>Segunda maquetación del mismo contenido dentro de un mismo documento, con otro tamaño de página.</dd></div>
+<div><dt>Maquetación líquida</dt><dd>Regla que define cómo se reacomodan los objetos cuando cambia el tamaño de página.</dd></div>
+<div><dt>Mapa de bits</dt><dd>Imagen formada por una cuadrícula de puntos de color. Tiene un tamaño fijo y se degrada al ampliarla.</dd></div>
+<div><dt>Puntos por pulgada (ppp)</dt><dd>Cantidad de puntos de una imagen que caben en una pulgada de soporte. Depende del tamaño de uso.</dd></div>
+<div><dt>Resolución efectiva</dt><dd>Resolución resultante después de escalar una imagen dentro de su marco. Es el valor que hay que vigilar.</dd></div>
+<div><dt>Resolución real</dt><dd>Resolución que trae el archivo antes de escalarlo.</dd></div>
+<div><dt>Trama</dt><dd>Retícula de puntos con que la impresión simula tonos continuos. Su finura se mide en líneas por pulgada.</dd></div>
+<div><dt>Vectorial</dt><dd>Imagen definida por instrucciones matemáticas. No tiene resolución y escala sin pérdida.</dd></div>
+<div><dt>Vínculo</dt><dd>Referencia a la ubicación de una imagen. InDesign guarda la dirección, no la imagen.</dd></div>
+</dl>
+
+<h3>Para profundizar</h3>
+<ul>
+<li>Freeman, Michael (2012). <em>Composición</em>. Biblioteca CUN — encuadre y tratamiento de la imagen</li>
+<li>Poulin, Richard (2012). <em>El lenguaje del diseño gráfico</em>. Biblioteca CUN — imagen en el sistema gráfico</li>
+<li>Rendgen, Sandra (2012). <em>Information graphics</em>. Biblioteca CUN — imagen aplicada a información</li>
+<li>Gómez-Palacio, Bryony (2011). <em>Guía completa del diseño gráfico</em>. Biblioteca CUN — producción y formatos</li>
+<li>Ayuda oficial de Adobe InDesign, secciones Gráficos y Maquetaciones alternativas</li>
+</ul>
+
+<div class="fin" id="fin" hidden>
+<h3>Terminaste la Unidad 6</h3>
+<p>Recorriste las siete secciones y tu avance quedó registrado. Nos vemos en el trabajo con otras manos.</p>
+</div>
+</section>
+
+<div class="fin" id="siguiente-unidad" hidden>
+  <h3>Unidad 6 completada</h3>
+  <p style="margin:0 0 var(--s2)">Ya puedes continuar con la unidad 7.</p><a class="btn btn-p" href="u07.html">Ir a la unidad 7 →</a>
+</div>
+
+<nav class="navpie" aria-label="Navegación entre secciones">
+  <button type="button" class="btn" id="anterior">← Anterior</button>
+  <button type="button" class="btn btn-p" id="siguiente">Siguiente →</button>
+</nav>
+
+</div>
+</main>
+</div>
+
+<script src="assets/js/almacen.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

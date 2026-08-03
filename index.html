@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Diseño y Diagramación Digital · Material de estudio</title>
+<meta name="description" content="Material de estudio en ocho unidades para la asignatura Diseño y Diagramación Digital de la Escuela de Diseño y Comunicación de la CUN.">
+<link rel="stylesheet" href="assets/css/portal.css">
+</head>
+<body>
+<a class="saltar" href="#principal">Saltar al contenido</a>
+
+<div class="marco">
+
+  <!-- ========== Portada ========== -->
+  <div class="marco-scroll" id="pantalla-portada">
+    <div class="portada-full">
+      <p class="sello">Versión de revisión. Al final del recorrido podrás dejar tu retroalimentación.</p>
+      <h1>Diseño y Diagramación Digital</h1>
+      <p class="sub">Ocho unidades que van del documento en blanco a un portafolio cerrado, publicado y defendido. Cada una combina fundamento teórico, tutorial paso a paso y los errores que le pasan a todo el mundo la primera vez.</p>
+
+      <div class="meta">
+        <div><b>8</b> unidades</div>
+        <div><b>~340</b> pasos de tutorial</div>
+        <div><b>65</b> ilustraciones</div>
+        <div><b>4</b> simulaciones</div>
+      </div>
+
+      <button type="button" class="btn-grande" id="btn-iniciar">
+        Iniciar recorrido
+        <span aria-hidden="true">→</span>
+      </button>
+
+      <p class="pie">D&amp;Dd SCORM v1.0 · Designed by @joselopantoja</p>
+    </div>
+  </div>
+
+  <!-- ========== Índice de unidades ========== -->
+  <div class="marco-scroll" id="pantalla-indice" hidden>
+    <header class="cab">
+      <div>
+        <p class="rot">Diseño y Diagramación Digital</p>
+        <h1>Las ocho unidades</h1>
+      </div>
+      <div class="prog">
+        <span id="prog-txt">0 de 8 completadas</span>
+        <div class="barra"><i id="prog-barra"></i></div>
+      </div>
+    </header>
+
+    <main id="principal">
+      <div class="rejilla" id="rejilla"></div>
+
+      <div class="aviso-final" id="aviso-final" hidden>
+        <p>
+          <b>Recorrido completo</b>
+          Revisaste las ocho unidades. Tu retroalimentación es lo que nos permite mejorar el material.
+        </p>
+        <a class="btn" href="retroalimentacion.html">Dar mi retroalimentación →</a>
+      </div>
+    </main>
+
+    <footer class="pie-portal">
+      <button type="button" id="btn-reiniciar">Reiniciar progreso</button>
+      <span class="der">D&amp;Dd SCORM v1.0 · @joselopantoja</span>
+    </footer>
+  </div>
+
+</div>
+
+<script src="assets/js/almacen.js"></script>
+<script>
+(function () {
+  'use strict';
+
+  var portada = document.getElementById('pantalla-portada');
+  var indice  = document.getElementById('pantalla-indice');
+  var rejilla = document.getElementById('rejilla');
+
+  /* Si ya empezó antes, entra directo al índice */
+  var yaEmpezo = Object.keys(CURSO.leer()).length > 0 || CURSO.modoLibre;
+  if (yaEmpezo) mostrarIndice(false);
+
+  document.getElementById('btn-iniciar').addEventListener('click', function () {
+    mostrarIndice(true);
+  });
+
+  function mostrarIndice(foco) {
+    portada.hidden = true;
+    indice.hidden = false;
+    pintar();
+    if (foco) {
+      var h = indice.querySelector('h1');
+      if (h) { h.setAttribute('tabindex', '-1'); h.focus({ preventScroll: true }); }
+    }
+  }
+
+  function pintar() {
+    rejilla.innerHTML = '';
+    var hechas = 0;
+
+    CURSO.unidades.forEach(function (u, i) {
+      var completa = CURSO.estaCompleta(u.id);
+      var abierta  = CURSO.modoLibre || CURSO.desbloqueada(i);
+      if (completa) hechas++;
+
+      var esActual = abierta && !completa;
+      var clase = 'uni' + (completa ? ' hecha' : '') + (!abierta ? ' bloqueada' : '') + (esActual ? ' actual' : '');
+      var marca = completa ? 'Revisada' : (abierta ? 'Disponible' : 'Bloqueada');
+
+      var el;
+      if (abierta) {
+        el = document.createElement('a');
+        el.href = u.id + '.html';
+      } else {
+        el = document.createElement('div');
+        el.setAttribute('aria-disabled', 'true');
+      }
+      el.className = clase;
+
+      el.innerHTML =
+        '<span class="marca">' + marca + '</span>' +
+        '<div class="fila1">' +
+          '<span class="num" aria-hidden="true">' + (completa ? '\u2713' : u.n) + '</span>' +
+          '<span class="tema">' + u.tema + '</span>' +
+        '</div>' +
+        '<p class="pregunta">' + u.titulo + '</p>';
+
+      if (!abierta) {
+        el.setAttribute('title', 'Se abre al completar la unidad ' + i + '.');
+      }
+
+      rejilla.appendChild(el);
+    });
+
+    document.getElementById('prog-txt').textContent = hechas + ' de 8 completadas';
+    document.getElementById('prog-barra').style.width = Math.round(hechas / 8 * 100) + '%';
+    document.getElementById('aviso-final').hidden = hechas < 8;
+  }
+
+  document.getElementById('btn-reiniciar').addEventListener('click', function () {
+    if (window.confirm('Se va a borrar tu avance y volverás a empezar por la unidad 1. ¿Continuar?')) {
+      CURSO.reiniciar();
+      pintar();
+    }
+  });
+
+  /* Repinta al volver de una unidad usando el botón atrás del navegador */
+  window.addEventListener('pageshow', function () {
+    if (!indice.hidden) pintar();
+  });
+})();
+</script>
+</body>
+</html>
