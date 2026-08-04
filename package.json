@@ -1,0 +1,15 @@
+{
+  "name": "scorm-diseno-y-diagramacion-digital",
+  "version": "1.0.0",
+  "description": "Material de estudio para la asignatura Diseño y Diagramación Digital",
+  "private": true,
+  "scripts": {
+    "test": "echo \"No tests specified\""
+  },
+  "keywords": [],
+  "author": "@joselopantoja",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  }
+}
