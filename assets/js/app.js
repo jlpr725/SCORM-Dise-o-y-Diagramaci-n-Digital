@@ -89,8 +89,17 @@
     if (selector) selector.selectedIndex = indice;
 
     btnPrev.disabled = indice === 0;
-    btnNext.disabled = indice === secciones.length - 1;
-    btnNext.textContent = indice === secciones.length - 2 ? 'Última sección →' : 'Siguiente →';
+    var esUnidad8 = document.body.dataset.unidad === 'u08';
+    var esUltimaSeccion = indice === secciones.length - 1;
+
+    // Si es la última sección de la Unidad 8, mantenemos el botón activo
+    if (esUnidad8 && esUltimaSeccion) {
+      btnNext.disabled = false;
+      btnNext.textContent = 'Ir al Proyecto →'; // Puedes personalizar este texto
+    } else {
+      btnNext.disabled = esUltimaSeccion;
+      btnNext.textContent = indice === secciones.length - 2 ? 'Última sección →' : 'Siguiente →';
+    }
 
     if (mover !== false) {
       var caja = document.querySelector('.principal');
@@ -113,7 +122,16 @@
   botones.forEach(function (b, i) { b.addEventListener('click', function () { ir(i); }); });
   if (selector) selector.addEventListener('change', function () { ir(selector.selectedIndex); });
   btnPrev.addEventListener('click', function () { ir(actual - 1); });
-  btnNext.addEventListener('click', function () { ir(actual + 1); });
+ btnNext.addEventListener('click', function () {
+    var esUnidad8 = document.body.dataset.unidad === 'u08';
+    var esUltimaSeccion = actual === secciones.length - 1;
+
+    if (esUnidad8 && esUltimaSeccion) {
+      window.location.href = 'proyecto.html'; // Usa '../proyecto.html' si el HTML actual está en una subcarpeta
+    } else {
+      ir(actual + 1);
+    }
+  });
 
   document.addEventListener('change', function (e) {
     if (e.target.matches('.checklist input')) persistir();
