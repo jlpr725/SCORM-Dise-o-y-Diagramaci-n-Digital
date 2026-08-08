@@ -127,7 +127,7 @@
     var esUltimaSeccion = actual === secciones.length - 1;
 
     if (esUnidad8 && esUltimaSeccion) {
-      window.location.href = 'proyecto.html'; // Usa '../proyecto.html' si el HTML actual está en una subcarpeta
+      window.location.href = 'proyectos.html'; // Usa '../proyecto.html' si el HTML actual está en una subcarpeta
     } else {
       ir(actual + 1);
     }
