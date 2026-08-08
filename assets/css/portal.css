@@ -112,8 +112,10 @@ body{
 }
 .cab h1{font-family:var(--display);font-size:17px;font-weight:700;margin:0;letter-spacing:-.01em}
 .cab .rot{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--apoyo);margin:0 0 3px}
-.cab .prog{margin-left:auto;min-width:150px;font-family:var(--mono);font-size:11px;color:var(--apoyo)}
-.cab .barra{height:6px;background:var(--linea);border-radius:99px;overflow:hidden;margin-top:6px}
+.cab .prog{flex:1;text-align:center;font-family:var(--mono);font-size:11px;color:var(--apoyo)}
+.cab .prog .barra{max-width:220px;margin:6px auto 0}
+.cab > .btn{margin-left:auto;flex:0 0 auto;white-space:nowrap}
+.cab .barra{height:6px;background:var(--linea);border-radius:99px;overflow:hidden}
 .cab .barra i{display:block;height:100%;width:0;background:var(--acento);transition:width .4s ease}
 
 /* ---------- Tarjetas de unidad ---------- */
@@ -197,5 +199,61 @@ body{
   .rejilla{grid-template-columns:1fr;padding:var(--s2)}
   .portada-full{padding:var(--s4) var(--s3)}
   .cab{padding:14px var(--s2)}
-  .cab .prog{margin-left:0;width:100%}
+  .cab .prog{width:100%;order:3}
+  .cab .prog .barra{margin-left:0}
+  .cab > .btn{margin-left:0;order:2}
+}
+/* ---------- Página de ideas de proyectos ---------- */
+.proy-cuerpo{padding:var(--s3) var(--s4) var(--s5);max-width:760px;margin:0 auto}
+.proy-cuerpo h2{font-family:var(--display);font-size:18px;font-weight:700;margin:var(--s4) 0 var(--s2);letter-spacing:-.01em}
+.proy-intro{font-size:15px;color:var(--apoyo);margin:0 0 var(--s3);max-width:62ch;line-height:1.6}
+.proy-ayuda{font-size:13px;color:var(--apoyo);margin:0 0 var(--s2)}
+
+.proy-roles{
+  background:var(--acento-suave);border:1px solid var(--acento-borde);
+  border-radius:var(--radio);padding:16px 20px;margin:0 0 var(--s4);font-size:13.5px;
+}
+.proy-roles .mini{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--acento);margin:0 0 6px;font-weight:600;
+}
+.proy-roles p{margin:0;color:#2E2CA8}
+
+.proy-grid{display:grid;gap:14px;margin:0 0 var(--s4)}
+.proy-idea{
+  background:var(--superficie);border:1px solid var(--linea);
+  border-radius:var(--radio);padding:20px 22px;
+}
+.proy-idea h3{font-family:var(--display);font-size:16px;font-weight:700;margin:0 0 8px}
+.proy-idea p{font-size:14px;color:var(--apoyo);margin:0 0 10px;line-height:1.55}
+.proy-idea .entrega{
+  font-size:12px;color:var(--acento);background:var(--acento-suave);
+  display:inline-block;padding:5px 12px;border-radius:99px;font-weight:600;
+}
+
+.ruta{list-style:none;margin:0 0 var(--s4);padding:0}
+.ruta li{display:flex;gap:14px;padding:13px 0;border-bottom:1px solid var(--linea);font-size:14px}
+.ruta li:last-child{border-bottom:0}
+.ruta .sem{
+  flex:0 0 96px;font-family:var(--mono);font-size:10px;letter-spacing:.08em;
+  text-transform:uppercase;font-weight:600;color:var(--acento);padding-top:2px;line-height:1.5;
+}
+.ruta li.actual{background:var(--acento-suave);margin:0 -18px;padding:14px 18px;border-radius:var(--radio-sm);border-bottom:none}
+.ruta li.actual .sem{color:var(--acento)}
+.ruta li.hecha{opacity:.5;text-decoration:line-through}
+.ruta li.futura{opacity:.75}
+
+.proy-nota{
+  background:var(--ocre-suave);border-left:4px solid #E6C98A;
+  border-radius:0 var(--radio-sm) var(--radio-sm) 0;padding:16px 20px;margin-top:var(--s3);
+}
+.proy-nota .mini{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ocre);margin:0 0 6px;font-weight:600;
+}
+.proy-nota p{margin:0;font-size:13.5px;color:#4A3C1E;line-height:1.6}
+
+@media (max-width:720px){
+  .proy-cuerpo{padding:var(--s2)}
+  .ruta li.actual{margin:0 -8px;padding:14px 8px}
 }

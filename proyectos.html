@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ideas de proyecto · Diseño y Diagramación Digital</title>
+<meta name="description" content="Seis proyectos posibles y la ruta de avance semana a semana para el curso de Diseño y Diagramación Digital.">
+<link rel="stylesheet" href="assets/css/portal.css">
+</head>
+<body>
+<a class="saltar" href="#principal">Saltar al contenido</a>
+
+<div class="marco">
+  <div class="marco-scroll" id="pantalla-indice">
+    <header class="cab">
+      <div>
+        <a class="volver" href="index.html">← Volver a las unidades</a>
+        <p class="rot">Diseño y Diagramación Digital</p>
+        <h1>Ideas de proyecto</h1>
+      </div>
+    </header>
+
+    <main id="principal">
+      <div class="proy-cuerpo">
+
+        <p class="proy-intro">Ocho encargos, ocho roles, una sola pieza. Cada semana el estudio te asigna una función distinta y una capa nueva del mismo producto. Esto es lo que puedes elegir y lo que debes tener listo cada semana.</p>
+
+        <div class="proy-roles">
+          <p class="mini">Tu ruta de roles en el estudio</p>
+          <p>01 Arquitecto de la información · 02 Tipógrafo editorial · 03 Director de arte · 04 Diseñador interactivo · 05 Maquetador profesional · 06 Especialista en publicaciones digitales · 07 Diseñador UX editorial · 08 Director de proyecto</p>
+        </div>
+
+        <h2>Seis proyectos posibles</h2>
+
+        <div class="proy-grid">
+          <article class="proy-idea">
+            <h3>01 · Revista digital temática interactiva</h3>
+            <p>Una revista de 16 a 24 páginas sobre un tema que domines (música, deporte urbano, gastronomía local, cine). Debe incluir portada, sumario navegable, al menos tres artículos con jerarquías distintas, una entrevista a doble página y una sección visual. Es el proyecto más completo en variedad compositiva: te obliga a resolver retículas distintas dentro de un mismo sistema.</p>
+            <span class="entrega">Entrega final: EPUB de maquetación fija + PDF interactivo + prototipo Figma</span>
+          </article>
+          <article class="proy-idea">
+            <h3>02 · Memoria o informe anual de una organización real</h3>
+            <p>Toma una fundación, cooperativa o empresa local y rediseña su informe anual como pieza digital. El reto principal es la información densa: tablas, cifras, gráficos y texto corrido conviviendo en una retícula modular. Es el proyecto que más se parece a un encargo profesional pagado y el que mejor luce en un portafolio dirigido a comunicación corporativa.</p>
+            <span class="entrega">Entrega final: PDF interactivo con índice navegable + versión web responsive</span>
+          </article>
+          <article class="proy-idea">
+            <h3>03 · Manual o guía práctica ilustrada</h3>
+            <p>Un manual instruccional: cocina, primeros auxilios, cuidado de plantas, iniciación a un oficio. Exige secuencias claras, pasos numerados, ilustración y texto integrados, y microtipografía impecable. Su valor está en la accesibilidad: es el proyecto donde el contraste, el tamaño mínimo y la navegación importan más porque alguien va a usarlo mientras hace algo con las manos.</p>
+            <span class="entrega">Entrega final: EPUB + prototipo móvil interactivo</span>
+          </article>
+          <article class="proy-idea">
+            <h3>04 · Catálogo comercial o de colección</h3>
+            <p>Catálogo de producto, portafolio de artesanos o colección de un museo. El contenido es homogéneo y repetitivo, lo que lo convierte en el terreno ideal para dominar retícula modular y sistemas de componentes reutilizables. Es el proyecto más rápido de escalar y el mejor para practicar librerías compartidas en Figma.</p>
+            <span class="entrega">Entrega final: prototipo Figma con componentes + PDF interactivo</span>
+          </article>
+          <article class="proy-idea">
+            <h3>05 · Publicación de divulgación científica o periodística</h3>
+            <p>Un reportaje largo con datos: crisis climática, movilidad urbana, salud pública. Combina texto extenso, infografía, cita destacada y multimedia. Es el proyecto con mayor exigencia narrativa y el que mejor aprovecha el encargo de la Unidad 6, porque obliga a diseñar el ritmo de lectura, no solo la página.</p>
+            <span class="entrega">Entrega final: publicación web responsive + PDF interactivo</span>
+          </article>
+          <article class="proy-idea">
+            <h3>06 · Fanzine o pieza editorial de autor</h3>
+            <p>Publicación experimental con voz propia, donde la retícula existe para ser tensionada de forma consciente. Es el proyecto de mayor libertad y mayor riesgo: solo funciona si puedes justificar técnicamente cada ruptura. Recomendado si ya tienes soltura compositiva y quieres un portafolio con carácter.</p>
+            <span class="entrega">Entrega final: EPUB o web + bitácora de decisiones proyectuales</span>
+          </article>
+        </div>
+
+        <h2>Ruta de avance semana a semana</h2>
+        <p class="proy-ayuda">Esta ruta se marca sola con tu avance real: las semanas de las unidades que ya completaste aparecen tachadas.</p>
+        <ul class="ruta" id="ruta-semanas">
+          <!-- Se llena por JavaScript según CURSO.estaCompleta() -->
+        </ul>
+
+        <div class="proy-nota">
+          <p class="mini">Criterio de calidad del estudio</p>
+          <p>El proyecto no se evalúa por lo bonito que quede, sino por tu capacidad de explicar cada decisión: por qué esa retícula, esa familia tipográfica, ese contraste y esa jerarquía. Empieza hoy una bitácora: cada vez que decidas algo, escribe una línea con la razón. En la Semana 8, como director de proyecto, esa bitácora es parte de la entrega.</p>
+        </div>
+
+      </div>
+    </main>
+
+    <footer class="pie-portal">
+      <span class="der">D&amp;Dd SCORM v1.0 · @joselopantoja</span>
+    </footer>
+  </div>
+</div>
+
+<script src="assets/js/estudiantes.js"></script>
+<script src="assets/js/almacen.js"></script>
+<script>
+(function () {
+  'use strict';
+
+  var ROLES = ['Arquitecto', 'Tipógrafo', 'Dir. de arte', 'Interactivo', 'Maquetador', 'Especialista', 'UX editorial', 'Director'];
+
+  var ENTREGAS = [
+    'Tema y proyecto elegidos, formato y número de páginas definidos, referente analizado y deconstruido gráficamente, y documento de InDesign creado con márgenes, columnas, medianil y rejilla de línea base configurados.',
+    'Sistema tipográfico definido: familias, escala, estilos de párrafo y carácter creados en InDesign. Páginas maestras con folios automáticos.',
+    'Paleta cromática validada bajo WCAG, imágenes importadas de forma vinculada y primeras cuatro páginas maquetadas. Hito: Corte 1.',
+    'Índice navegable, hipervínculos internos, botones y al menos un recurso de audio o video integrado.',
+    'Migración a Figma: frames móvil y escritorio, layout grids y versión responsive de tres pantallas clave.',
+    'Narrativa visual completa: la publicación entera maquetada con ritmo de lectura resuelto. Hito: Corte 2.',
+    'Librería de componentes, revisión colaborativa, preflight y primera exportación a EPUB y PDF interactivo.',
+    'Pruebas de usabilidad cruzadas, iteración final, empaquetado y bitácora de decisiones. Entrega final.'
+  ];
+
+  var lista = document.getElementById('ruta-semanas');
+  var yaHayActual = false;
+
+  CURSO.unidades.forEach(function (u, i) {
+    var completa = CURSO.estaCompleta(u.id);
+    var estado = 'futura';
+
+    if (completa) {
+      estado = 'hecha';
+    } else if (!yaHayActual) {
+      estado = 'actual';
+      yaHayActual = true;
+    }
+
+    var li = document.createElement('li');
+    li.className = estado;
+    li.innerHTML =
+      '<span class="sem">Sem ' + (i + 1) + '<br>' + ROLES[i] + '</span>' +
+      '<span>' + ENTREGAS[i] + '</span>';
+    lista.appendChild(li);
+  });
+})();
+</script>
+</body>
+</html>

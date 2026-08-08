@@ -6,7 +6,6 @@
 <title>Diseño y Diagramación Digital · Material de estudio</title>
 <meta name="description" content="Material de estudio en ocho unidades para la asignatura Diseño y Diagramación Digital de la Escuela de Diseño y Comunicación de la CUN.">
 <link rel="stylesheet" href="assets/css/portal.css">
-<link rel="icon" type="image/png" href="assets/images/favicon.png">
 </head>
 <body>
 <a class="saltar" href="#principal">Saltar al contenido</a>
@@ -29,7 +28,7 @@
 
       <form class="form-ingreso" id="form-ingreso" novalidate>
         <label for="correo-estudiante">Tu correo</label>
-        <p class="ayuda-ingreso">Ingresa tu correo institucional <strong>@cun.edu.co.</strong> Tu avance quedará guardado en este computador cada vez que entres con ese correo.</p>
+        <p class="ayuda-ingreso">Ingresa el mismo correo que tu docente registró para este curso. Tu avance quedará guardado en este computador cada vez que entres con ese correo.</p>
         <div class="fila-ingreso">
           <input type="email" id="correo-estudiante" name="correo" placeholder="nombre@correo.com" autocomplete="email" required>
           <button type="submit" class="btn-grande">
@@ -55,6 +54,7 @@
         <span id="prog-txt">0 de 8 completadas</span>
         <div class="barra"><i id="prog-barra"></i></div>
       </div>
+      <a class="btn sec" href="proyectos.html">Ideas de proyectos</a>
     </header>
 
     <main id="principal">
@@ -98,7 +98,7 @@
     var ok = CURSO.iniciarSesion(campoCorreo.value);
     if (!ok) {
       errorIngreso.hidden = false;
-      errorIngreso.textContent = 'Ese correo no está autorizado para este curso. Verifica que sea tu correo institucional @cun.edu.co';
+      errorIngreso.textContent = 'Ese correo no está autorizado para este curso. Verifica que sea el mismo que te compartió tu docente.';
       campoCorreo.focus();
       return;
     }
