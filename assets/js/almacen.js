@@ -4,9 +4,16 @@
    Expone el mismo objeto SCORM que usan las unidades, pero
    respaldado por el navegador en vez de por un LMS. Así el
    motor de navegación funciona sin cambiar una sola línea.
+
+   Novedades sobre la versión anterior:
+   - El progreso se guarda por correo del estudiante (sesión),
+     no de forma anónima para todo el que use el equipo.
+   - Las unidades se activan o no según el Sheet de control
+     (ENDPOINT_UNIDADES, definido en estudiantes.js). El docente
+     marca los checkbox ahí y el cambio llega a todos.
    ============================================================ */
 var CURSO = {
-  clave: 'ddd_progreso',
+  claveSesion: 'ddd_sesion',
   unidades: [
     { id: 'u01', n: 1, titulo: '¿Con qué herramientas se diagrama hoy y cómo funciona su lógica?', tema: 'El documento base' },
     { id: 'u02', n: 2, titulo: '¿Cómo se construye una estructura que sostenga cualquier página?', tema: 'La retícula' },
@@ -19,14 +26,79 @@ var CURSO = {
   ]
 };
 
+/* ---------- Unidades activas (controladas por el docente en el Sheet) ---------- */
+
+CURSO.claveActivas = 'ddd_activas_cache';
+
+/* Devuelve una promesa con un objeto { u01: true, u02: false, ... }.
+   Si el Sheet no responde (sin internet, endpoint caído), usa la
+   última copia guardada en este navegador; si nunca hubo una,
+   deja solo la unidad 1 disponible. */
+CURSO.obtenerActivas = function () {
+  var respaldo = function () {
+    try {
+      var guardado = localStorage.getItem(CURSO.claveActivas);
+      if (guardado) return JSON.parse(guardado);
+    } catch (e) { /* nada */ }
+    var soloUno = {};
+    CURSO.unidades.forEach(function (u, i) { soloUno[u.id] = i === 0; });
+    return soloUno;
+  };
+
+  if (!window.ENDPOINT_UNIDADES) return Promise.resolve(respaldo());
+
+  return fetch(window.ENDPOINT_UNIDADES, { cache: 'no-store' })
+    .then(function (r) { return r.json(); })
+    .then(function (datos) {
+      try { localStorage.setItem(CURSO.claveActivas, JSON.stringify(datos)); } catch (e) { /* nada */ }
+      return datos;
+    })
+    .catch(respaldo);
+};
+
+/* ---------- Sesión del estudiante ---------- */
+
+CURSO.normalizar = function (correo) {
+  return (correo || '').trim().toLowerCase();
+};
+
+CURSO.correoValido = function (correo) {
+  var c = CURSO.normalizar(correo);
+  if (!c) return false;
+  return (window.ESTUDIANTES || []).some(function (e) {
+    return CURSO.normalizar(e) === c;
+  });
+};
+
+CURSO.sesion = function () {
+  try { return localStorage.getItem(CURSO.claveSesion) || ''; } catch (e) { return ''; }
+};
+
+CURSO.iniciarSesion = function (correo) {
+  var c = CURSO.normalizar(correo);
+  if (!CURSO.correoValido(c)) return false;
+  try { localStorage.setItem(CURSO.claveSesion, c); } catch (e) { /* modo privado */ }
+  return true;
+};
+
+CURSO.cerrarSesion = function () {
+  try { localStorage.removeItem(CURSO.claveSesion); } catch (e) { /* nada */ }
+};
+
+/* ---------- Progreso (por estudiante) ---------- */
+
+CURSO.claveProgreso = function () {
+  return 'ddd_progreso_' + (CURSO.sesion() || 'anonimo');
+};
+
 CURSO.leer = function () {
   try {
-    return JSON.parse(localStorage.getItem(CURSO.clave)) || {};
+    return JSON.parse(localStorage.getItem(CURSO.claveProgreso())) || {};
   } catch (e) { return {}; }
 };
 
 CURSO.guardar = function (datos) {
-  try { localStorage.setItem(CURSO.clave, JSON.stringify(datos)); } catch (e) { /* modo privado */ }
+  try { localStorage.setItem(CURSO.claveProgreso(), JSON.stringify(datos)); } catch (e) { /* modo privado */ }
 };
 
 CURSO.completar = function (id) {
@@ -42,16 +114,12 @@ CURSO.estaCompleta = function (id) {
   return !!(d[id] && d[id].completa);
 };
 
-CURSO.desbloqueada = function (indice) {
-  if (indice === 0) return true;
-  return CURSO.estaCompleta(CURSO.unidades[indice - 1].id);
-};
-
 CURSO.reiniciar = function () {
-  try { localStorage.removeItem(CURSO.clave); } catch (e) { /* nada */ }
+  try { localStorage.removeItem(CURSO.claveProgreso()); } catch (e) { /* nada */ }
 };
 
-/* Modo docente: ?docente=1 desbloquea todas las unidades */
+/* Modo docente: ?docente=1 desbloquea todas las unidades para probar,
+   sin necesidad de iniciar sesión ni de cambiar la fecha */
 CURSO.modoLibre = (function () {
   try {
     if (/[?&]docente=1/.test(window.location.search)) {
@@ -66,7 +134,9 @@ CURSO.modoLibre = (function () {
 var SCORM = (function () {
   var unidadActual = (document.body && document.body.getAttribute('data-unidad')) || '';
 
-  function clave(k) { return 'ddd_' + unidadActual + '_' + k; }
+  function clave(k) {
+    return 'ddd_' + (CURSO.sesion() || 'anonimo') + '_' + unidadActual + '_' + k;
+  }
 
   return {
     iniciar: function () { return true; },
