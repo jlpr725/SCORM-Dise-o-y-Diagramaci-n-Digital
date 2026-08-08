@@ -21,7 +21,7 @@
   --display:'Montserrat',system-ui,sans-serif;
   --texto:'DM Sans',system-ui,sans-serif;
   --mono:'DM Mono',Menlo,monospace;
-  --marco-w:960px; --marco-h:540px;
+  --marco-w:1280px; --marco-h:600px;
 }
 *,*::before,*::after{box-sizing:border-box}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}}
