@@ -28,7 +28,7 @@
 
       <form class="form-ingreso" id="form-ingreso" novalidate>
         <label for="correo-estudiante">Tu correo</label>
-        <p class="ayuda-ingreso">Ingresa el mismo correo que tu docente registró para este curso. Tu avance quedará guardado en este computador cada vez que entres con ese correo.</p>
+        <p class="ayuda-ingreso">Ingresa tu correo institucional <strong>@cun.edu.co.</strong> Tu avance quedará guardado en este computador cada vez que entres con ese correo.</p>
         <div class="fila-ingreso">
           <input type="email" id="correo-estudiante" name="correo" placeholder="nombre@correo.com" autocomplete="email" required>
           <button type="submit" class="btn-grande">
@@ -97,7 +97,7 @@
     var ok = CURSO.iniciarSesion(campoCorreo.value);
     if (!ok) {
       errorIngreso.hidden = false;
-      errorIngreso.textContent = 'Ese correo no está autorizado para este curso. Verifica que sea el mismo que te compartió tu docente.';
+      errorIngreso.textContent = 'Ese correo no está autorizado para este curso. Verifica que sea tu correo institucional @cun.edu.co';
       campoCorreo.focus();
       return;
     }
